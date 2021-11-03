@@ -5,4 +5,4 @@ Status do curso:
 
 ![Fernando Bade stats](https://github-readme-stats.vercel.app/api?username=FernandoBade&show_icons=true&theme=dracula&show_owner) 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FernandoBadeshow_icons=true&theme=dracula&show_owner)](https://github.com/FernandoBade/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FernandoBade&show_icons=true&theme=dracula)](https://github.com/FernandoBade/github-readme-stats)
