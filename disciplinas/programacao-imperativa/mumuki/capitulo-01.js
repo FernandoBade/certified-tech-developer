@@ -366,11 +366,79 @@ procedure Triade(corX, corY, corZ) {
 
 // 4.Prática Procedimentos
 // Exercícío 1
+procedure ColocarUmaDeCada() {
+  Colocar(Vermelho);
+  Colocar(Verde);
+  Colocar(Azul);
+  Colocar(Preto)
+}
+
+procedure MoverOeste3() {
+  repeat(3){
+    Mover(Oeste) }
+}
+
+procedure ColocarLinhaMulticolorida4() {
+  ColocarUmaDeCada();
+  Mover(Leste)
+  ColocarUmaDeCada();
+  Mover(Leste)
+  ColocarUmaDeCada();
+  Mover(Leste)
+  ColocarUmaDeCada();
+  MoverOeste3()
+}
+
 // Exercícío 2
+procedure ColocarQuadradoMulticolorido4(){
+  ColocarLinhaMulticolorida4()
+  Mover(Norte)
+  ColocarLinhaMulticolorida4()
+  Mover(Norte)
+  ColocarLinhaMulticolorida4()
+  Mover(Norte)
+  ColocarLinhaMulticolorida4()
+  Mover(Sul)
+  Mover(Sul)
+  Mover(Sul)
+ }
+
 // Exercícío 3
+procedure  ColocarADistancia3(x, y){
+  repeat(3) { Mover(y) }
+  Colocar(x)
+}
+
 // Exercícío 4
+procedure  ColocarPontos3 (cor){
+  Colocar(cor);
+  ColocarADistancia3(cor, Leste)
+  ColocarADistancia3(cor, Leste)
+  repeat(6) {Mover(Oeste)}
+}
+
 // Exercícío 5
+procedure ColocarPontos3Recarregado(cor){
+  Colocar(cor)
+  ColocarADistancia3(cor, Leste)
+  Colocar(cor)
+  ColocarADistancia3(cor, Leste)
+  Colocar(cor)
+  Colocar(cor)
+}
+
 // Exercícío 6
+program {
+  ColocarADistancia3(Verde, Sul)
+  Mover3(Oeste)
+  ColocarADistancia3(Azul, Norte)
+  Mover3(Norte)
+  ColocarADistancia3(Preto, Leste)
+  Mover3(Leste)
+  ColocarADistancia3(Vermelho, Sul)
+  Mover3(Oeste)
+}
+
 // Exercícío 7
 // Exercícío 8
 // Exercícío 9
