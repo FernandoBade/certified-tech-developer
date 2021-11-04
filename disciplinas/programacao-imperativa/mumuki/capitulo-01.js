@@ -8,6 +8,7 @@ function metade(numero) {
  }
  
 // Exercícío 2
+ 
 
 
 // Exercícío 3
