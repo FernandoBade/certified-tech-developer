@@ -4,7 +4,7 @@ Mochila do viajante, contendo conteúdos de exercícios e atividades executadas 
 <p align="center">  
 Atividades do curso:
 
-
+<p align="center">  
 ![Fernando Bade stats](https://github-readme-stats.vercel.app/api?username=FernandoBade&show_icons=true&theme=dracula&show_owner) 
 
 
