@@ -8,6 +8,20 @@ function metade(numero) {
  }
  
 // Exercícío 2
+
+function anterior(numero){
+    return numero - 1
+  }
+  
+  function triplo(numero){
+    return numero * 3
+  }
+  
+  function anteriorDoTriplo(numero){
+   return  triplo(numero) - (anterior(numero)) + numero - 2
+    
+   }
+   
 // Exercícío 3
 // Exercícío 4
 // Exercícío 5
