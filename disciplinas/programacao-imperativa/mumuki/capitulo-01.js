@@ -439,6 +439,10 @@ program {
   Mover3(Oeste)
 }
 
+
+
+.......
+
 // Exercícío 7
 // Exercícío 8
 // Exercícío 9
