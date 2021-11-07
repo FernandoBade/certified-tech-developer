@@ -439,14 +439,78 @@ program {
   Mover3(Oeste)
 }
 
-
-
-.......
-
 // Exercícío 7
+program {
+  ColocarPontos3(Azul)
+  Mover(Leste)
+  ColocarPontos3(Preto)
+  Mover(Leste)
+  ColocarPontos3(Verde)
+  Mover(Norte)
+  Mover(Oeste)
+  ColocarPontos3(Vermelho)
+  Mover(Oeste)
+  Mover(Sul)
+}
+
 // Exercícío 8
+procedure Aspas(cor, direcao) {
+  Mover(direcao)
+  Colocar(cor)
+  Mover(direcao)
+  Colocar(cor)
+  Colocar(cor)
+  Mover(direcao)
+  Colocar(cor)
+  Colocar(cor)
+  Colocar(cor)
+}
+
+procedure VoltarMeio(direcao){
+  repeat (3) {Mover(direcao)}
+}
+
+program {
+  Aspas(Preto, Leste)
+  VoltarMeio(Oeste)
+  Aspas(Preto, Norte)
+  VoltarMeio(Sul)
+  Aspas(Preto, Oeste)
+  VoltarMeio(Leste)
+  Aspas(Preto, Sul)
+  VoltarMeio(Norte)
+}
+
 // Exercícío 9
+procedure VermelhoABorda (){
+  IrABorda(Norte)
+  IrABorda(Oeste)
+  Colocar(Vermelho)
+}
+
 // Exercícío 10
+procedure CriarVaso(cor){
+  Colocar(cor)
+  Mover(Leste)
+  Colocar(cor)
+  Mover(Norte)
+  Colocar(cor)
+  Mover(Oeste)
+  Colocar(cor)
+  Mover(Sul)
+}
+
+program{
+  CriarVaso(Vermelho)
+  IrABorda(Leste)
+  Mover(Oeste)
+  CriarVaso(Azul)
+  IrABorda(Norte)
+  Mover(Sul)
+  CriarVaso(Verde)
+  IrABorda(Oeste)
+  CriarVaso(Preto)
+}
 
 // 5.Repetição Simples
 // Exercícío 1
