@@ -489,7 +489,28 @@ procedure VermelhoABorda (){
 }
 
 // Exercícío 10
+procedure CriarVaso(cor){
+  Colocar(cor)
+  Mover(Leste)
+  Colocar(cor)
+  Mover(Norte)
+  Colocar(cor)
+  Mover(Oeste)
+  Colocar(cor)
+  Mover(Sul)
+}
 
+program{
+  CriarVaso(Vermelho)
+  IrABorda(Leste)
+  Mover(Oeste)
+  CriarVaso(Azul)
+  IrABorda(Norte)
+  Mover(Sul)
+  CriarVaso(Verde)
+  IrABorda(Oeste)
+  CriarVaso(Preto)
+}
 
 // 5.Repetição Simples
 // Exercícío 1
