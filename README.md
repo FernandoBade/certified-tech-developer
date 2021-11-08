@@ -12,3 +12,4 @@ Atividades do curso:
 <p align="center">
 <a href="https://github.com/FernandoBade"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FernandoBade&show_icons=true&theme=dracula" data-canonical-src="https://github.com/FernandoBade/github-readme-stats?style=social" style="max-width: 100%;"></a>
 </p>
+
