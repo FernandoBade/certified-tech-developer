@@ -1,0 +1,47 @@
+.square{
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.first-square{
+    background-color: salmon;
+    
+}
+
+.second-square{
+    background-color: brown;
+    position: relative;
+    left: 20px;
+    /* position: absolute;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0%; */
+
+}
+
+.third-square{
+    background-color:skyblue;
+    position: relative;
+    left: 40px;
+}
+
+body{
+    height: 2000px;
+}
+
+header {
+    background-color: blueviolet;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+}
