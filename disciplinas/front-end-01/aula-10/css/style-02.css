@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.banner {
+    background-image: url("https://i.pinimg.com/originals/0a/4d/cb/0a4dcb92fa2d3c601b58d72720d6bec4.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20%;
+}
+
+button {
+    padding: 20px;
+    margin: 10px auto;
+    color: rgb(255, 255, 255);
+    background-color: rgb(71, 5, 102);
+    border-color:rgb(223, 9, 252);
+    border-radius: 15px;
+    border-width: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+}
+
+h1 {
+    color: #ff1de1;
+    size: 25px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(64, 8, 109);
+    text-align: center;
+}

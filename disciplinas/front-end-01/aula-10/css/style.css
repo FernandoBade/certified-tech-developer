@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+div {
+    background-color:  salmon;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+button {
+    height: 100px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
