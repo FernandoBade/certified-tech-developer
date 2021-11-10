@@ -143,6 +143,5 @@ console.log(aquecerComida("Pipoca", 10)); //Prato pronto! Bom apetite!
 console.log(aquecerComida("Pipoca", 25)); //Seu prato queimou
 console.log(aquecerComida("Pipoca", 50)); //KABOOM!
 console.log(aquecerComida("Frango", 25)); //Prato Inexistente!
-console.log(aquecerComida("Batata", 45)); //Prato Inexistente!
 console.log(aquecerComida("Macarrão", 20)); //Seu prato queimou!
-console.log(aquecerComida("Brigadeiro", 15)); //Prato Pronto! Bom Apetiete!
+console.log(aquecerComida("Brigadeiro", 15)); //Prato Pronto! Bom Apetiete! 
