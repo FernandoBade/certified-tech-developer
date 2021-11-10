@@ -14,86 +14,127 @@
 - Se o tempo for 3x maior que o necessário para o prato, o microondas deve exibir a mensagem: “kabumm”;
 - No final de cada tarefa, o microondas deverá exibir a mensagem: "Prato pronto, bom apetite!!!".*/
 
+ 
+////////// Versão inicial 1.0
 
-// Versão inicial: Funcionando
+// function aquecerComida(prato, tempo) {
+//     var tempoIdeal = 0
+//     var tempoInsulficiente = "Tempo Insulficiente!"
+//     var tempo3x = "KABOOOM!!!"
+//     var tempo2x = "Seu prato queimou!"
+//     var tempoMedio = "Prato Pronto! Bom Apetiete!"
+//     var pratoIncorreto = "Prato Inexistente!"
+
+//     switch (prato) {
+
+//         case "Pipoca":
+//             tempoIdeal = 10
+//             if (tempo < tempoIdeal) {
+//                 return tempoInsulficiente
+//             } else if (tempo >= (3 * tempoIdeal)) {
+//                 return tempo3x
+//             } else if (tempo >= (2 * tempoIdeal)) {
+//                 return tempo2x
+//             }
+//             else {
+//                 return tempoMedio
+//             } 
+
+//         case "Macarrão":
+//             tempoIdeal = 8
+//             if (tempo < tempoIdeal) {
+//                 return tempoInsulficiente
+//             } else if (tempo >= (3 * tempoIdeal)) {
+//                 return tempo3x
+//             } else if (tempo >= (2 * tempoIdeal)) {
+//                 return tempo2x
+//             }
+//             else {
+//                 return tempoMedio
+//             } 
+
+//         case "Carne":
+//             tempoIdeal = 15
+//             if (tempo < tempoIdeal) {
+//                 return tempoInsulficiente
+//             } else if (tempo >= (3 * tempoIdeal)) {
+//                 return tempo3x
+//             } else if (tempo >= (2 * tempoIdeal)) {
+//                 return tempo2x
+//             }
+//             else {
+//                 return tempoMedio
+//             } 
+
+//         case "Feijão":
+//             tempoIdeal = 12
+//             if (tempo < tempoIdeal) {
+//                 return tempoInsulficiente
+//             } else if (tempo >= (3 * tempoIdeal)) {
+//                 return tempo3x
+//             } else if (tempo >= (2 * tempoIdeal)) {
+//                 return tempo2x
+//             }
+//             else {
+//                 return tempoMedio
+//             } 
+
+//         case "Brigadeiro":
+//             tempoIdeal = 8
+//             if (tempo < tempoIdeal) {
+//                 return tempoInsulficiente
+//             } else if (tempo >= (3 * tempoIdeal)) {
+//                 return tempo3x
+//             } else if (tempo >= (2 * tempoIdeal)) {
+//                 return tempo2x
+//             }
+//             else {
+//                 return tempoMedio
+//             } 
+
+//         default: return pratoIncorreto
+//     }
+
+// }
+
+//////////  Versão aprimorada 2.0
 
 function aquecerComida(prato, tempo) {
-    var tempoIdeal = 0
-    var tempoInsulficiente = "Tempo Insulficiente!"
-    var tempo3x = "KABOOOM!!!"
-    var tempo2x = "Seu prato queimou!"
-    var tempoMedio = "Prato Pronto! Bom Apetiete!"
-    var pratoIncorreto = "Prato Inexistente!"
 
     switch (prato) {
 
         case "Pipoca":
-            tempoIdeal = 10
-            if (tempo < tempoIdeal) {
-                return tempoInsulficiente
-            } else if (tempo >= (3 * tempoIdeal)) {
-                return tempo3x
-            } else if (tempo >= (2 * tempoIdeal)) {
-                return tempo2x
-            }
-            else {
-                return tempoMedio
-            } 
-
+            return validaAquecimento(tempo,10);
+            
         case "Macarrão":
-            tempoIdeal = 8
-            if (tempo < tempoIdeal) {
-                return tempoInsulficiente
-            } else if (tempo >= (3 * tempoIdeal)) {
-                return tempo3x
-            } else if (tempo >= (2 * tempoIdeal)) {
-                return tempo2x
-            }
-            else {
-                return tempoMedio
-            } 
+            return validaAquecimento(tempo,8);
 
         case "Carne":
-            tempoIdeal = 15
-            if (tempo < tempoIdeal) {
-                return tempoInsulficiente
-            } else if (tempo >= (3 * tempoIdeal)) {
-                return tempo3x
-            } else if (tempo >= (2 * tempoIdeal)) {
-                return tempo2x
-            }
-            else {
-                return tempoMedio
-            } 
+            return validaAquecimento(tempo,15);
 
         case "Feijão":
-            tempoIdeal = 12
-            if (tempo < tempoIdeal) {
-                return tempoInsulficiente
-            } else if (tempo >= (3 * tempoIdeal)) {
-                return tempo3x
-            } else if (tempo >= (2 * tempoIdeal)) {
-                return tempo2x
-            }
-            else {
-                return tempoMedio
-            } 
+            return validaAquecimento(tempo,12);
 
         case "Brigadeiro":
-            tempoIdeal = 8
-            if (tempo < tempoIdeal) {
-                return tempoInsulficiente
-            } else if (tempo >= (3 * tempoIdeal)) {
-                return tempo3x
-            } else if (tempo >= (2 * tempoIdeal)) {
-                return tempo2x
-            }
-            else {
-                return tempoMedio
-            } 
+            return validaAquecimento(tempo,8);
 
-        default: return pratoIncorreto
+        default: return "Prato Inexistente!"
     }
+
+}
+
+function validaAquecimento (tempo, tempoIdeal){
+
+        if (tempo < tempoIdeal) {
+            return "Tempo insulficiente!"
+        } else if (tempo >= (3 * tempoIdeal)) {
+            return "KABOOM!"
+        } else if (tempo >= (2 * tempoIdeal)) {
+            return "Seu prato queimou"
+        }
+        else {
+            return "Prato pronto! Bom apetite!"
+        }
 
 }
 
@@ -103,4 +144,5 @@ console.log(aquecerComida("Pipoca", 25)); //Seu prato queimou
 console.log(aquecerComida("Pipoca", 50)); //KABOOM!
 console.log(aquecerComida("Frango", 25)); //Prato Inexistente!
 console.log(aquecerComida("Batata", 45)); //Prato Inexistente!
-console.log(aquecerComida("Macarrão", 20)) //Seu prato queimou!
+console.log(aquecerComida("Macarrão", 20)); //Seu prato queimou!
+console.log(aquecerComida("Brigadeiro", 15)); //Prato Pronto! Bom Apetiete!
