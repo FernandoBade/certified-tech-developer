@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cb1e40;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+input, textarea, select {
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px auto;
+
+}
+
+div {
+    background-color: #fff;
+    width: 400px;
+    height: 600px;
+    padding: 30px;
+    padding: 25px;
+    text-align: left;
+    position: absolute;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 0.25);
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 25px;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+}
+
+img {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    left: 50%;
+}

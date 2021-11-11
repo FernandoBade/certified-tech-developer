@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+label {
+    margin-top: 24px;
+}
+
+label, input, textarea, select, button{
+    display: block;
+    margin-left: 24px;
+}
+
+h1 {
+    margin: 24px;
+}
+
+button{
+    margin: 24px;
+}

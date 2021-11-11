@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-mesa.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <form>
+            
+            <div>
+
+            <img src="https://www.digitalhouse.com/logo-DH.png" alt="Logo Digital House">
+
+            <h1>Acesso ao Playground</h1>
+           
+            <label for="username">Nome de Usuário</label>
+            <input type="text" name="username" id="username" placeholder="Digite aqui">
+
+            <label for="emailUsuario">E-mail</label>
+            <input type="email" name="emailUsuario" id="emailUsuario" placeholder="exemplo@exemplo.com">
+            
+            <label for="senhaUsuario">Senha</label>
+            <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Escolha uma senha">
+
+            <label for="mensagemUsuario">Como conheceu a DH?</label>
+            <textarea name="mensagemUsuario" id=mensagemUsuario></textarea>
+
+            <label for="estadoUsuario">Idioma</label>
+            <select name="estadoUsuario" id="estadoUsuario">
+                <option disabled selected value="vazio">Escolha o seu idioma</option>
+                <option value="pt">Português</option>
+                <option value="in">Inglês</option>
+                <option value="es">Espanhol</option>
+            </select>
+            <button type="reset">Limpar Formulário</button>
+            <button type="submit">Enviar</button>
+        </form>
+        </div>
+    </main>
+
+</body>
+</html>
