@@ -5,11 +5,10 @@
 }
 
 body {
-    background-color: darkturquoise;
+    background-color: #cb1e40;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 section {
     display: block;
-
 }
-

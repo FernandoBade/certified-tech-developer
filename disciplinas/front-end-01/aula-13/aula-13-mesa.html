@@ -11,40 +11,35 @@
 <body>
     <main>
 
-        <form>
+        <form class="col-auto ">
             
-            <img src="https://www.digitalhouse.com/logo-DH.png" alt="Logo Digital House">
+            <img src="./images/logo-DH.png" alt="Logo Digital House">
 
-            <h1>Acesso ao Playground</h1>
-            <section>
+            <h1 class="">Acesso ao Playground</h1> 
+
             <label for="username">Nome de Usuário</label>
             <input type="text" name="username" id="username" class="form-control" placeholder="Digite aqui">
-            </section>  
+
             
             <section>
             <label for="emailUsuario">E-mail</label>
             <input type="email" name="emailUsuario" id="emailUsuario" class="form-control" placeholder="exemplo@exemplo.com">
-            </section>
-            
+             
             <section>
             <label for="senhaUsuario">Senha</label>
             <input type="password" name="senhaUsuario" id="senhaUsuario" class="form-control" placeholder="Escolha uma senha">
-            </section>
             
             <section>
             <label for="mensagemUsuario">Como conheceu a DH?</label>
             <textarea name="mensagemUsuario" id=mensagemUsuario class="form-control"></textarea>
-            </section>
-            
-            <section>
+
             <label for="estadoUsuario">Idioma</label>
             <select name="estadoUsuario" id="estadoUsuario" class="custom-select">
             <option disabled selected value="vazio">Escolha o seu idioma</option>
-            <option value="pt">Português</option>
+            <option value="pt"><img src="./images/brasil.png"/>Português Brasileiro</option>
             <option value="in">Inglês</option>
             <option value="es">Espanhol</option>
             </select>
-            </section>
 
             <section>
             <button type="reset">Limpar Formulário</button>
