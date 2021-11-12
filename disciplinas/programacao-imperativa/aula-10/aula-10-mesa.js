@@ -32,16 +32,21 @@
 
 // Array Invertido
 // Neste exercício, você terá que criar uma função que retorne um array com seus elementos invertidos, sem modificá-lo. Então, você deve fazer uma função que o modifique e inverta a ordem de seus elementos.
-
-let listagem = [1, 2, 3, 4, 5]
-
-var imprimirInverso = listagem.slice(0).reverse();
-
-console.log(imprimirInverso)
-
 // Crie a função imprimirInverso que pega um Array como um argumento e imprime cada elemento em ordem reversa no console (você não precisa inverter o Array).
 
+// function imprimirInverso(array){
+//     console.log(array[2]);
+//     console.log(array[1]);
+//     console.log(array[0]);
+// }
+// imprimirInverso([true, 1, 2])
+
 // Crie a função inverter que recebe um Array como argumento e retorna um novo invertido.
+
+// function inverter(array) {
+//     return array.reverse();
+// }
+// console.log(inverter([1, 2, 3]));
 
 // somarArray()
 // Neste exercício, você criará uma função somarArray() que aceita um array de números e retorna a soma de todos eles.
@@ -50,6 +55,16 @@ console.log(imprimirInverso)
 // somarArray([10, 3, 10, 4])     // 27
 // somarArray([-5,100])             // 95
 
+// function somaArray(array){
+//     let soma = 0;
+//     soma += array.pop();
+//     soma += array.pop();
+//     soma += array.pop();
+//     soma += array.pop();
+//     soma += array.pop();
+//     return soma;
+// }   
+// console.log(somaArray([1, 2 , 3 , 4 , 5]));
 
 // Simulação Array.join()
 // Neste exercício, você criará uma função chamada join que recebe um array e simula o comportamento do método Array.join().
@@ -57,6 +72,19 @@ console.log(imprimirInverso)
 // Por exemplo:
 // join(["o","l","á"]) deve retornar a string "olá".
 // join([“t”,"c","h","a,"u"]) deve retornar a string "tchau".
+
+// function join ([array]){
+//     var juncao = ""
+//     juncao += array[0];
+//     juncao += array[1];
+//     juncao += array[2];
+//     juncao += array[2];
+//     juncao += array[3];
+//     juncao += array[5];
+//     return juncao
+// }
+// console.log(join (["c", "a", "v", "a", "l","o"]));
+
 
 // Coleções de Filmes (e mais…)
 // O tech leader da equipe precisa conhecer a estrutura de dados do novo projeto. Para isso, devemos:
