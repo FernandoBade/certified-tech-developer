@@ -695,7 +695,18 @@ procedure GuardaDe5(){
 }
 
 // Exercícío 10
-
+procedure GuardaEmL(){
+  repeat(2){
+  ColocarAzulejo()
+  MoverN (1, Leste)
+} ColocarAzulejo()
+  MoverN(2, Oeste)
+  MoverN(1, Norte)  
+  ColocarAzulejo()
+  MoverN(1, Norte)  
+  ColocarAzulejo()
+  MoverN(2, Sul)  
+}
 
 // 7. Expressões
 // Exercícío 1
