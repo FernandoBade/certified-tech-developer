@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {font-family: 'Stardew Valley ALL CAPS.ttf';
+    src: local('Stardew Valley ALL CAPS.ttf') format('truetype'),
+    local('StStardew Valley ALL CAPS.ttf')format('truetype'),
+    url('Stardew Valley ALL CAPS.ttf') format('truetype');
+}
+
+@font-face {font-family: 'Stardew Valley Regular.ttf';
+    src: local('Stardew Valley Regular.ttf') format('truetype'),
+    local('Stardew Valley Regular.ttf') format('truetype'),
+    url('Stardew Valley Regular.ttf') format('truetype');
+}
+
+
+body {
+    background-image: url("../img/bg-stardew-valley.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Stardew Valley ALL CAPS';
+    font-size: 60px;
+    font-weight:normal;
+    color: #ffffff;
+    padding: 45px 0 30px 0;
+    text-align: center;
+
+}
+
+header{
+    background-image: linear-gradient(#006ac4, #3cd6c2);
+    box-shadow: 1px 3px 3px 3px rgb(0, 15, 70);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+iframe {
+    display: block;
+    margin: 25px auto;
+    box-shadow: 3px 5px 5px 3px rgb(16, 54, 189);
+    /* width: 1280px;
+    padding: 720px; */
+    width: 100%;
+    height: 480px;
+    padding: 5px;
+
+}
+
+.video {
+    width: 800px;
+    margin: 25px auto;
+}
+
+span {
+    font-weight: bold;
+}
+
+p {
+    color: white;
+    font-family: sans-serif;
+    text-align: justify;
+    padding: 30px 25px 2px; 
+    margin: 0 auto;
+}
+
+.resumo {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.referencia {
+    color: rgb(150, 210, 255);
+    font-family: sans-serif;
+}
+
+.referencia:hover {
+    color: rgb(0, 255, 221);
+    font-family: sans-serif;
+}
+
+.curiosidades {
+    display: flex;
+    gap: 20px;
+    flex-flow: row;
+    width: 800px;
+    margin: 50px auto;
+}
+
+.card {
+    background-color: #fff;
+    width: 250px;
+    height: 100%;
+    box-shadow: 2px 2px 5px 2px rgb(0, 0, 0, 0.3 );
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 25px;
+    
+}
+
+.icones{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'VT323', monospace;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3{
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 20px;
+}
+
+footer{
+    background-color: #13b92e;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+a {
+    color: #fff;
+}
