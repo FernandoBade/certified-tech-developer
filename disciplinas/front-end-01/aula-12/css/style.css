@@ -158,6 +158,10 @@ h3 {
     z-index: 5;
 }
 
+.whatsapp a{
+    color: white;
+}
+
 .whatsapp:hover{
    background-color: #8547c7;
 }
@@ -174,7 +178,7 @@ h3 {
 .vitrine {
     width: 55%;
     display: flex;
-    grid-gap: 4em 0;
+    grid-gap: 2em 0;
     flex-wrap: wrap;
     margin: 0 auto;
 }
@@ -183,8 +187,11 @@ h3 {
     width: 200px;
     height: 350px;
     margin: 0 auto;
-    background-color: snow;
+    outline: 2px solid #dcc7f3;
+    border-radius: 20px;
+    margin-bottom: 50px;
 }
+
 
 .produto:hover {
     box-shadow: 0px 3px 5px 3px rgb(177, 177, 177);
@@ -194,11 +201,23 @@ h3 {
 .foto-produto{
     position: relative;
     width: 80%;
-    background-color: tan;
+    background-color: white;
     height: 70%;
     margin: 10px auto;
     top: 15px;
     border-radius: 10px;
+}
+
+.foto-produto img{
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .comprar {
@@ -246,4 +265,13 @@ footer{
     height: 30px;
     background-color:#61279f;
     position: sticky;
+    text-align: center;
+}
+
+h4{
+    font-size: 15px;
+    font-weight: lighter;
+    color: white;
+    position: relative;
+    top:7px;
 }
