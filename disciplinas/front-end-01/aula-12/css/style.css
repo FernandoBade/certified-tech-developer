@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #61279f;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+header a{
+    color: snow;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    justify-content:center;
+}
+
+header li:hover {
+    outline: 2px ridge white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+header li{
+    padding: 15px;
+}
+
+.banner{
+    background-image: url("../img/banner-dog.jpg");
+    background-size: cover;
+    background-position:bottom;
+    height: 75vh;
+    width: 100%;
+}
+
+.ver-ofertas{
+    margin-top: 25px;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    color: snow;
+    background-color: #d65ac6;
+    border: none;
+    display: block;   
+}
+
+.ver-ofertas:hover{
+    background-color: #f181e3;
+}
+
+.ver-ofertas:active{
+    background-color: #c126cf;
+
+}
+
+.inside-banner{
+    position: relative;
+    left: 20%;
+    top: 20%;
+    width: 350px;
+}
+
+h1{
+    font-size: 50px;
+    color: snow;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    color: snow;
+}
+
+.destaques{
+    display: flex;
+    gap: 30px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+.dtq-container {
+    position: relative;
+    width: 50%;
+}
+  
+.dtq-image {
+    display: block;
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #61279f;
+    border-radius: 12px;
+}
+
+.dtq-container:hover .overlay {
+    opacity: .85;
+}
+
+.dtq-texto {
+    color: white;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ofertas{
+    font-size: 50px;
+    color: #61279f;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    color: snow;
+    background-color: #61279f;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 3px 3px 5px rgb(41, 41, 41);
+    z-index: 5;
+}
+
+.whatsapp:hover{
+   background-color: #8547c7;
+}
+
+.banner-horizontal{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+.vitrine {
+    width: 55%;
+    display: flex;
+    grid-gap: 4em 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.produto {
+    width: 200px;
+    height: 350px;
+    margin: 0 auto;
+    background-color: snow;
+}
+
+.produto:hover {
+    box-shadow: 0px 3px 5px 3px rgb(177, 177, 177);
+}
+
+
+.foto-produto{
+    position: relative;
+    width: 80%;
+    background-color: tan;
+    height: 70%;
+    margin: 10px auto;
+    top: 15px;
+    border-radius: 10px;
+}
+
+.comprar {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #61279f;
+    color: snow;
+    border-radius: 10px;
+    border:none;
+    position: relative;
+    margin: 10px auto;
+    bottom: 2%;
+}
+
+.comprar:hover {
+    background-color: #8547c7;
+    cursor:pointer;
+}
+
+.descricao-produto {
+    color: rgb(54, 54, 54);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.preco-produto {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #61279f;
+    font-weight: bold;
+    text-align: center;
+}
+
+.comprar:active {
+    background-color: #7212da;
+}
+
+
+footer{
+    margin-top: 5em;
+    height: 30px;
+    background-color:#61279f;
+    position: sticky;
+}
