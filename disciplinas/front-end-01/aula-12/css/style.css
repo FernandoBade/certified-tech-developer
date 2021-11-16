@@ -178,7 +178,7 @@ h3 {
 .vitrine {
     width: 55%;
     display: flex;
-    grid-gap: 2em 0;
+    grid-gap: 2em 20px;
     flex-wrap: wrap;
     margin: 0 auto;
 }
