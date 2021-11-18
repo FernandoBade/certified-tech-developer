@@ -16,15 +16,15 @@
 // }
 
 
-let peliculas = ["star wars", "totoro",  "rocky", "pulp fiction",  "la vida es bella"]
+// let peliculas = ["star wars", "totoro",  "rocky", "pulp fiction",  "la vida es bella"]
 
-for (let x = 0; x < peliculas.length; x++){
-console.log(x, " - ", peliculas[x].toUpperCase());
-}
+// for (let x = 0; x < peliculas.length; x++){
+// console.log(x, " - ", peliculas[x].toUpperCase());
+// }
 
 // 2.	Agora precisamos modificar afunçãode passagemde elemento() que nos permite adicionar o conteúdo de nossa matriz de filme animado à matriz de filme original.
 // função pasajeDeElementos(array1, array2) { 
-//  array1.push(array2.pop().  toUpperCase()) 
+//  array1.push(array2.pop(). toUpperCase()) 
 //  array1.push(array2.pop(). toUpperCase()) 
 //  array1.push(array2.pop(). toUpperCase()) 
 //  array1.push(array2.pop(). toUpperCase()) 
@@ -32,14 +32,41 @@ console.log(x, " - ", peliculas[x].toUpperCase());
 //  array de retorno1  
 // }
 
+// let animes = ["naruto", "yu yu hakusho", "dragon ball", "pokémon", "cavaleiros do zodíaco"]
+
+// function passarElemento(array1, array2) {
+    
+// let qtd = array2.length;
+//         for (let i = 0; i < qtd; i++) {
+//     array1.push(array2.pop().toUpperCase())
+//     }
+//     return array1
+// }
+// console.log(passarElemento(peliculas, animes))
+
+//3.	A partir deste ponto, se você decidiu trabalhar em um arquivo diferente ao invés de modificar o anterior, lembre-se que tivemos um infiltrado dentro de nossos filmes de animação, o qual tivemos que tirar e salvar em outra variável antes de fazer a passagem de elementos de um array para outro!
+
 let animes = ["naruto", "yu yu hakusho", "dragon ball", "pokémon", "cavaleiros do zodíaco"]
 
-function trocaArray(array1, array2) {
-    let itemRetirado = array2.pop();
-        for (let x = 0; x < array2.length; x++) {
-        array1.push(array2[x])
- }
+function passarElemento(array1, array2) {
+let impostor = array2.pop()
+let qtd = array2.length;
+        for (let i = 0; i < qtd; i++) {
+    array1.push(array2.pop().toUpperCase())
+    }
     return array1
 }
-console.log(trocaArray(peliculas, animes))
+console.log(animes)
 
+//4.	Finalmente, devemos modificar nossa função comparadora para os filmes como temos feito até agora.
+
+const asiaScores = [8, 10, 6, 9, 10, 6, 6, 8, 4];
+const euroScores = [8, 10, 6, 8, 10, 6, 7, 9, 5]; 
+
+function compararClassificacoes(asia, europa) {
+  let comparacoesAsiaEuropa = []
+  comparacoesAsiaEuropa[0] = asia[0] === europa[0]
+  comparacoesAsiaEuropa[1] = asia[1] === europa[1]
+  comparacoesAsiaEuropa[2] = asia[2] === europa[2]
+  comparacoesAsiaEuropa[3] = asia[3] === europa[3]
+}
