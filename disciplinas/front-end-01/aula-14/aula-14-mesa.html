@@ -1,74 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Cadastro de Usuário 2.0</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style-mesa.css">
+  <title>Página de Pedidos</title>
 </head>
+
 <body>
-  
+
   <section class="video-overlay">
-  <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-    <source src="./video/dh-video.mp4" type="video/mp4">
-  </video>
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+      <source src="./video/bakery.mp4" type="video/mp4">
+    </video>
   </section>
 
-    <main>
+  <main>
 
-        <section>
-        <div class="container">
-        <form class="col-auto ">
-            
-            <img src="./images/pg-logo.svg" alt="Logo Digital House">
+    <section>
+      <div class="container">
+        <form class="">
 
-            <h1 class="titulo">Acesso ao Playground 2.0</h1> 
+          <img src="./images/bakery-logo.png" alt="Logo Digital House">
 
-            <label for="username">Nome de Usuário</label>
-            <input type="text" name="username" id="username" class="form-control" placeholder="Digite aqui">
+          <h1 class="titulo">Escolha seus ingredientes</h1>
 
-            
-            <section>
-            <label for="emailUsuario">E-mail</label>
-            <input type="email" name="emailUsuario" id="emailUsuario" class="form-control" placeholder="exemplo@exemplo.com">
-             
-            <section>
-            <label for="senhaUsuario">Senha</label>
-            <input type="password" name="senhaUsuario" id="senhaUsuario" class="form-control" placeholder="Escolha uma senha">
-            
-            <section>
-            <label for="mensagemUsuario">Como conheceu a DH?</label>
-            <textarea name="mensagemUsuario" id=mensagemUsuario class="form-control"></textarea>
+          <section class="farinha">
+            <input type="radio" name="tipoFarinha" id="tipoFarinha" class="inline-button">
+            <label for="tipoFarinha">Farinha comum</label>
+            <input type="radio" name="tipoFarinha" id="tipoFarinha" class="inline-button">
+            <label for="tipoFarinha">Farinha integral</label>
+            <input type="radio" name="tipoFarinha" id="tipoFarinha" class="inline-button">
+            <label for="tipoFarinha">Farinha de centeio</label>
+            <input type="radio" name="tipoFarinha" id="tipoFarinha" class="inline-button">
+            <label for="tipoFarinha">Farinha de aveia</label>
+          </section>
 
-            <label for="estadoUsuario">Idioma</label>
-            <select name="estadoUsuario" id="estadoUsuario" class="custom-select">
-            <option disabled selected value="vazio">Escolha o seu idioma</option>
-            <option value="pt"><img src="./images/brasil.png"/>Português Brasileiro</option>
-            <option value="in">Inglês</option>
-            <option value="es">Espanhol</option>
-            </select>
+
+          <section><label for="username">Seu nome:</label>
+            <input type="text" name="username" id="username" class="" placeholder="Digite aqui">
+          </section>
+
+          <section>
+            <label for="telUsuario">Telefone/WhatsApp:</label>
+            <input type="tel" name="telUsuario" id="telUsuario" class="" placeholder="exemplo@exemplo.com">
 
             <section class="botoes">
-            <button type="reset" class="limpar">Limpar Formulário</button>
-            <button type="submit" class="enviar">Enviar</button>
+              <button type="reset" class="limpar">Recomeçar</button>
+              <button type="submit" class="enviar">Enviar</button>
             </section>
         </form>
-        </div>
-    </main>
-    <script>
-        var video = document.getElementById("myVideo");
-        var btn = document.getElementById("myBtn");
-        
-        function myFunction() {
-          if (video.paused) {
-            video.play();
-            btn.innerHTML = "Pause";
-          } else {
-            video.pause();
-            btn.innerHTML = "Play";
-          }
-        }
-        </script>
+      </div>
+  </main>
+  <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+  </script>
 </body>
+
 </html>
