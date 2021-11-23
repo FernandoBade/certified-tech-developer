@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+}
+
+button {
+    border: 0;
+    padding: 24px;
+    font-size: 22px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 12px;
+    transition: .3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.main-button-scale:hover {
+    background-color: rgb(169, 96, 238);
+    transform: scale(1.5);
+
+}
+
+.main-button-skew:hover {
+    background-color: rgb(169, 96, 238);
+    /* transform: skew(20deg) scale(5); */
+    transform: skew(20deg);
+}
+
+.main-button-rotate:hover {
+    background-color: rgb(169, 96, 238);
+    transform: rotate(360deg);
+}
+
+.main-button-translate:hover {
+    background-color: rgb(169, 96, 238);
+    transform:translate(150px, -150px)
+}
+
+.main-button-transform-origin:hover {
+    background-color: rgb(169, 96, 238);
+    transform: rotate(360deg);
+    transform-origin: bottom right 60px;
+
+}
+
+@keyframes floating {
+    
+    0% {
+        transform: translate(0, -30px);
+        opacity: .5;
+    }
+
+    50%{
+        
+        opacity: 1;
+    }
+
+    100%{
+        opacity: .1;
+        transform: translate(500px, 200px) scaleX(-1);;
+    }
+
+    50%{
+        opacity: .2;
+    }
+}
+
+.fantasma {
+    display: block;
+    width: 200px;
+    text-align: center;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite ;
+}
+
