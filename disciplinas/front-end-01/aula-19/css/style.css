@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    background-color: blueviolet;
+    list-style: none;
+    gap: 24px;
+    padding: 32px;
+    justify-content: center;
+}
+
+ui a {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+footer {
+    top: 100px;
+    position:sticky;
+    width: 100%;
+}
+
+
+input, label, textarea, select {
+
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 7px;
+    border-width: 1px;
+}
+
+form {
+    display: block;
+}
+
+label{
+    font-size: 14px;
+    font-weight:700;
+    color: #404040;
+    padding: 5px;
+}
+
+input, select{
+    padding: 15px
+}
+
+select{
+    margin-bottom: 15px;
+}
+
+textarea {
+    padding: 15px;
+    resize: none;
+    height: auto;
+}
+
+button {
+    display: inline;
+    width: 50%;
+    margin:auto;
+}
+
+main {
+    width: 650px;
+}
