@@ -24,7 +24,7 @@ main {
 
 
 .container {
-    width: 680px;
+    width: 650px;
     height: auto;
     background: #39302d;
     padding: 20px;
@@ -86,30 +86,29 @@ button {
 
 .enviar {
     text-align: center;
-    background-color: #4349b5;
-    margin: 0 auto;
+    background-color: #edd1ad;
+    margin-top: 20px ;
     border:none;
-    color: #fff;
+    color: #6b220a;
     font-weight: 700;
     border-radius: 5px;
     padding: 15px;
+    transition: .3s;
 }
 
 .enviar:hover {
-    background-color: #1B207B;
+    background-color: #ddb887;
 }
 
 
 .limpar {
-    text-align: center;
+    margin-top: 35px;
+    align-items: baseline ;
     font-size: 12px;
     background-color: transparent;
-    margin: auto;
     border:none;
     color: #edd1ad;
     font-weight: bold;
-    border-radius: 5px;
-    padding: 15px;
     width: 50%;
 }
 .limpar:hover {
@@ -140,10 +139,11 @@ button {
   .farinha {
     width: auto;
     height: auto;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-top: 12px;
   }
 
   .inline-button {
@@ -151,3 +151,15 @@ button {
     width: fit-content;
 }
 
+fieldset {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 12px;
+}
+
+h3 {
+    margin-bottom: 15px;
+}

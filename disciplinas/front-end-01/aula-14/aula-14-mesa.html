@@ -2,72 +2,114 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style-mesa.css">
-  <title>Página de Pedidos</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/style-mesa.css">
+<title>Página de Pedidos</title>
 </head>
 
 <body>
 
-  <section class="video-overlay">
-    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-      <source src="./video/bakery.mp4" type="video/mp4">
-    </video>
-  </section>
+<section class="video-overlay">
+<video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+  <source src="./video/bakery.mp4" type="video/mp4">
+</video>
+</section>
 
-  <main>
+<main>
 
-    <section>
-      <div class="container">
-        <form class="">
-
-          <img src="./images/bakery-logo.png" alt="Logo Digital House">
-
-          <h1 class="titulo">Escolha seus ingredientes</h1>
-
-          <section class="farinha">
-            <input type="radio" name="tipoFarinha" id="tipoFarinha" class="inline-button">
-            <label for="tipoFarinha">Farinha comum</label>
-            <input type="radio" name="tipoFarinha" id="tipoFarinha" class="inline-button">
-            <label for="tipoFarinha">Farinha integral</label>
-            <input type="radio" name="tipoFarinha" id="tipoFarinha" class="inline-button">
-            <label for="tipoFarinha">Farinha de centeio</label>
-            <input type="radio" name="tipoFarinha" id="tipoFarinha" class="inline-button">
-            <label for="tipoFarinha">Farinha de aveia</label>
-          </section>
+<section>
+  <div class="container">
 
 
-          <section><label for="username">Seu nome:</label>
-            <input type="text" name="username" id="username" class="" placeholder="Digite aqui">
-          </section>
+      <img src="./images/bakery-logo.png" alt="Logo Digital House">
+      <form class="">
 
-          <section>
-            <label for="telUsuario">Telefone/WhatsApp:</label>
-            <input type="tel" name="telUsuario" id="telUsuario" class="" placeholder="exemplo@exemplo.com">
+        <section>
+        <h3>Escolha a farinha:</h3>
+        <fieldset class="farinha">
+          <input type="radio" name="tipoFarinha" id="tipoFarinha1" class="inline-button">
+          <label for="tipoFarinha1">Farinha comum</label>
+          <input type="radio" name="tipoFarinha" id="tipoFarinha2" class="inline-button">
+          <label for="tipoFarinha2">Farinha integral</label>
+          <input type="radio" name="tipoFarinha" id="tipoFarinha3" class="inline-button">
+          <label for="tipoFarinha3">Farinha de centeio</label>
+          <input type="radio" name="tipoFarinha" id="tipoFarinha4" class="inline-button">
+          <label for="tipoFarinha4">Farinha de aveia</label>
+        </fieldset>
+      </section>
 
-            <section class="botoes">
-              <button type="reset" class="limpar">Recomeçar</button>
-              <button type="submit" class="enviar">Enviar</button>
-            </section>
-        </form>
-      </div>
-  </main>
-  <script>
-    var video = document.getElementById("myVideo");
-    var btn = document.getElementById("myBtn");
+      <section>
+        <h3>Escolha o formato:</h3>
+        <fieldset class="farinha">
+          <input type="radio" name="formato" id="formato1" class="inline-button">
+          <label for="formato1">Baguete</label>
+          <input type="radio" name="formato" id="formato2" class="inline-button">
+          <label for="formato2">Bisnaga</label>
+          <input type="radio" name="formato" id="formato3" class="inline-button">
+          <label for="formato3">Rosca</label>
+          <input type="radio" name="formato" id="formato4" class="inline-button">
+          <label for="formato4">Trançado</label>
+        </fieldset>
+      </section>
 
-    function myFunction() {
-      if (video.paused) {
-        video.play();
-        btn.innerHTML = "Pause";
-      } else {
-        video.pause();
-        btn.innerHTML = "Play";
-      }
-    }
-  </script>
+      <section>
+        <h3>Escolha o tamanho:/h3>
+          <fieldset class="farinha">
+            <input type="radio" name="tamanho" id="tamanho1" class="inline-button">
+            <label for="tamanho1">Pequeno (300g)</label>
+            <input type="radio" name="tamanho" id="tamanho2" class="inline-button">
+            <label for="tamanho2">Médio (500g)</label>
+            <input type="radio" name="tamanho" id="tamanho3" class="inline-button">
+            <label for="tamanho3">Grande (750g)</label>
+            <input type="radio" name="tamanho" id="tamanho4" class="inline-button">
+            <label for="tamanho4">Super (1kg)</label>
+          </fieldset>
+      </section>
+
+      <section>
+        <h3>Escolha os adicionais:</h3>
+        <fieldset class="farinha">
+          <input type="checkbox" class="inline-button" id="add1" name="adicionais" value="adicionais">
+          <label for="add1">Granola</label>
+          <input type="checkbox" class="inline-button" id="add2" name="adicionais" value="adicionais">
+          <label for="add2">Aveia</label>
+          <input type="checkbox" class="inline-button" id="add3" name="adicionais" value="adicionais">
+          <label for="add3">Linhaça</label>
+          <input type="checkbox" class="inline-button" id="add4" name="adicionais" value="adicionais">
+          <label for="add4">Amêndoas</label>
+          <input type="checkbox" class="inline-button" id="add5" name="adicionais" value="adicionais">
+          <label for="add5">Macadâmia</label>
+          </fieldset>
+      </section>
+      <section>
+        <h3>Escolha a data de entrega:</h3>
+        <fieldset>
+          <input type="date" name="dataEntrega" min="2021-11-28" placeholder="2021-11-25">
+        </fieldset>
+      </section>
+      <section class="botoes">
+        <button type="reset" class="limpar">Recomeçar</button>
+        <button type="submit" class="enviar">Enviar</button>
+      </section>
+    </form>
+  </div>
+</main>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
 </body>
 
 </html>
