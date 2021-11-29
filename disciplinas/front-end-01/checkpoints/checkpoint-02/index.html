@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,59 +10,85 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/9f82d0c498.js" crossorigin="anonymous"></script>
 
-    
+
     <title>Stardew Valley</title>
 </head>
 
 <body>
-  <main>
-        <h1>Stardew Valley</h1>
-    </header>
-
     <main>
-        
-        <section class="containerForm">
-            
-                <form>
-                    <h2>Cadastro de Usuário</h2>
-                   
-                    <label for="username">Nome de Usuário</label>
-                    <input type="text" name="username" id="username" placeholder="Digite aqui">
-        
+
+        <header>
+            <h1>Stardew Valley</h1>
+        </header>
+
+        <section class="formularioCompleto">
+            <h2>Envie sua fazenda</h2>
+            <form>
+
+                <section id="dadosUsuario">
+                    <label for="nomeUsuario">Nome Completo (até 100 caracteres)</label>
+                    <input type="text" name="nomeUsuario" maxlength="100" id="nomeUsuario" placeholder="Digite aqui">
+
                     <label for="emailUsuario">E-mail</label>
                     <input type="email" name="emailUsuario" id="emailUsuario" placeholder="exemplo@exemplo.com">
-                    
-                    <label for="senhaUsuario">Senha</label>
-                    <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Escolha uma senha">
-        
-                    <label for="mensagemUsuario">Observações</label>
-                    <textarea name="mensagemUsuario" id=mensagemUsuario></textarea>
-        
-                    <label for="estadoUsuario">Estado</label>
-                    <select name="estadoUsuario" id="estadoUsuario">
+
+                    <label for="telUsuario">Telefone/WhatsApp</label>
+                    <input type="tel" name="telUsuario" id="telUsuario" placeholder="(99) 9999-9999">
+
+                    <label for="dataNascimento">Data de Nascimento</label>
+                    <input type="date" name="DataNascimento" id="dataNascimento">
+                </section>
+
+                <h3>Possui mais de 18 anos?</h3>
+
+                <section class="maior-idade">
+                    <input type="radio" name="idade" id="maiorIdade" class="">
+                    <label for="maiorIdade" class="maiorIdade">Sim</label>
+                    <input type="radio" name="idade" id="menorIdade" class="">
+                    <label for="menorIdade" class="maiorIdade">Não</label>
+                </section>
+
+                <section id="tipoDeFazenda">
+                    <label for="tipoFazenda">Escolha o tipo da sua fazenda</label>
+                    <select name="tipoFazenda" id="tipoFazenda">
                         <option disabled selected value="vazio">Escoha aqui</option>
-                        <option value="sp">Padrão</option>
-                        <option value="rj">Montanha</option>
-                        <option value="mg">Lagoa</option>
-                    </select>
-    <input type="checkbox"> 
-    <!--Conquistas realizadas--> 
+                        <option value="fazendaPadrao">Fazenda Padrão</option>
+                        <option value="fazendaMontanha">Fazenda na Montanha</option>
+                        <option value="fazendaRio">Fazena com Riachos</option>
+                        <option value="fazendafloresta">Fazena Na Floresta</option>
+                </section>
 
+                <section id="suasConquistas">
+                    <h3>Selecione suas conquistas</h3>
 
-                    <button type="reset" >Limpar Formulário</button>
+                    <input type="checkbox" class="" id="achiv1" name="conquistas" value="adicionais">
+                    <label for="achiv1">Completou o Centro Comunutário</label>
+                    <input type="checkbox" class="" id="achiv2" name="conquistas" value="adicionais">
+                    <label for="achiv2">Level 100 da mina</label>
+                    <input type="checkbox" class="" id="achiv3" name="conquistas" value="adicionais">
+                    <label for="achiv3">Level 10 de atributos</label>
+                    <input type="checkbox" class="" id="achiv4" name="conquistas" value="adicionais">
+                    <label for="achiv4">10 de amizade com todos</label>
+                    <input type="checkbox" class="" id="achiv5" name="conquistas" value="adicionais">
+                    <label for="achiv5">Desbloqueou a Ilha Gengibre</label>
+                </section>
+
+                <section>
+                    <button type="reset">Limpar Formulário</button>
                     <button type="submit">Enviar</button>
-                </form>
+                </section>
+            </form>
 
         </section>
-            
-
-
-        <!-- <footer>
+        <footer>
             <ul>
-                <li><a href="https://www.youtube.com/channel/UClLilfnwQ_8LoGVpjo4SP3g"><i class="fab fa-youtube"></i> YouTube</a></li>
-                <li><a href="https://pt.stardewvalleywiki.com/Stardew_Valley_Wiki"><i class="fas fa-book"></i> Wiki</a></li>
+                <li><a href="https://www.youtube.com/channel/UClLilfnwQ_8LoGVpjo4SP3g"><i class="fab fa-youtube"></i>
+                        YouTube</a></li>
+                <li><a href="https://pt.stardewvalleywiki.com/Stardew_Valley_Wiki"><i class="fas fa-book"></i> Wiki</a>
+                </li>
             </ul>
-        </footer> -->
+        </footer>
     </main>
 </body>
+
 </html>

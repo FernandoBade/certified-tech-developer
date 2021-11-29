@@ -24,6 +24,7 @@ body {
     background-position:center;
     height: 100vh;
     background-attachment: fixed;
+    font-size: 16px;
 }
 
 h1 {
@@ -44,75 +45,10 @@ header{
     width: 100%;
 }
 
-iframe {
-    display: block;
-    margin: 25px auto;
-    box-shadow: 3px 5px 5px 3px rgb(16, 54, 189);
-    /* width: 1280px;
-    padding: 720px; */
-    width: 100%;
-    height: 480px;
-    padding: 5px;
-
-}
-
-.video {
-    width: 800px;
-    margin: 25px auto;
-}
-
 span {
     font-weight: bold;
 }
 
-p {
-    color: white;
-    font-family: sans-serif;
-    text-align: justify;
-    padding: 30px 25px 2px; 
-    margin: 0 auto;
-}
-
-.resumo {
-    width: 800px;
-    margin: 0 auto;
-}
-
-.referencia {
-    color: rgb(150, 210, 255);
-    font-family: sans-serif;
-}
-
-.referencia:hover {
-    color: rgb(0, 255, 221);
-    font-family: sans-serif;
-}
-
-.curiosidades {
-    display: flex;
-    gap: 20px;
-    flex-flow: row;
-    width: 800px;
-    margin: 50px auto;
-}
-
-.card {
-    background-color: #fff;
-    width: 250px;
-    height: 100%;
-    box-shadow: 2px 2px 5px 2px rgb(0, 0, 0, 0.3 );
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 25px;
-    
-}
-
-.icones{
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    padding: 15px;
-}
 
 h2 {
     font-size: 50px;
@@ -120,13 +56,15 @@ h2 {
     color: white;
     font-weight: normal;
     text-align: center;
-    margin-top: 50px;
+    margin: 25px;
 }
 
 h3{
     font-family: sans-serif;
     font-size: 18px;
-    padding: 20px;
+    color: white;
+    margin: 25px;
+    text-align: center;
 }
 
 footer{
@@ -151,53 +89,6 @@ a {
     color: #fff;
 }
 
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    /* color: #6b220a;
-    color: #edd1ad; */
-    color: #e1a921;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-main {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.container {
-    width: 650px;
-    height: auto;
-    background: #39302d;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px #39302d50;
-    opacity: .9;
-}
-
-.titulo {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 30px;
-}
-
-img {
-    width: 100%;
-    padding: 20px;
-}
-
 input, label, textarea, select {
 
     display: block;
@@ -207,15 +98,16 @@ input, label, textarea, select {
     border-width: 1px;
 }
 
-form {
-    display: block;
-}
 
 label{
     font-size: 14px;
-    font-weight:700;
-    color: #edd1ad;
+    font-weight:bold;
+    color: #ffffff;
     padding: 5px;
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
 }
 
 input, select{
@@ -278,28 +170,6 @@ button {
     display: flex;
 }
 
-#background-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-
-  .farinha {
-    width: auto;
-    height: auto;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 12px;
-  }
-
   .inline-button {
     display:inline-flex;
     width: fit-content;
@@ -314,6 +184,25 @@ section {
     margin-bottom: 12px;
 }
 
-h3 {
-    margin-bottom: 15px;
+
+.formularioCompleto {
+    width: 700px;
+    margin: 0 auto;
 }
+
+.maior-idade{
+    display: flex;
+    width: 25%;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+}
+
+label[for=maiorIdade]{
+    font-size: 20px;
+}
+label[for=menorIdade]{
+    font-size: 20px;
+}
+
+
