@@ -46,10 +46,6 @@ header{
     width: 100%;
 }
 
-span {
-    font-weight: bold;
-}
-
 
 h2 {
     font-size: 50px;
@@ -102,11 +98,10 @@ input, label, textarea, select {
     border-radius: 7px;
     border-width: 1px;
     transition: .5s;
-
 }
 
 input[type=text]:hover, input[type=tel]:hover, input[type=email]:hover, input[type=date]:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: .3s;
     outline: 3px solid #28c021;
 
@@ -121,7 +116,7 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, input[ty
 
 select:hover{
     outline: 3px solid #7fff8a;
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: .3s;
 }
 
@@ -149,11 +144,6 @@ select{
     margin-bottom: 15px;
 }
 
-textarea {
-    padding: 15px;
-    resize: none;
-    height: auto;
-}
 
 button {
     display: inline;
@@ -225,7 +215,12 @@ section {
 
 .formularioCompleto {
     width: 700px;
-    margin: 0 auto;
+    margin: 25px auto;
+    background-image: linear-gradient(to bottom, #0069c454, #28c02130);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 3px 3px 3px #00000050;
+
 }
 
 .maior-idade{
