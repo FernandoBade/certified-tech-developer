@@ -36,6 +36,8 @@ aside {
     height: fit-content;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 15px
 }
 
 iframe {
@@ -56,4 +58,5 @@ iframe {
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    justify-content: space-between;
 }
