@@ -12,4 +12,12 @@ let maiores = idades.filter(function(item) {
     return item >= 18;
 });
 
-console.log(maiores);
+// console.log(maiores);
+
+
+let total = idades.reduce(function(acumulador, item) {
+    return acumulador+' - '+item;
+});
+
+console.log(total);
+
