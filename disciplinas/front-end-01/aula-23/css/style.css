@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 800px;
+    height: 800px;
+}
+
+body {
+    height: 500px;
+}
+
+.main-header {
+    width: 75%;
+    height: 50%;
+    background-color: blueviolet;
+}
+
+.post {
+    height: 200px;
+    background-color: lightskyblue;
+}
