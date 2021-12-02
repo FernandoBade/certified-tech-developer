@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-title {
+    color: red;
+}
+
+@media (max-width: 420px){
+
+    .main-title {
+        color: blueviolet;
+}
+}
