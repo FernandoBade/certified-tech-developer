@@ -224,7 +224,6 @@ aside {
 
 .player .other-controls{
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -240,6 +239,5 @@ aside {
 .player .other-controls span:hover{
     opacity: .6;
     cursor: pointer;
-
 }
 

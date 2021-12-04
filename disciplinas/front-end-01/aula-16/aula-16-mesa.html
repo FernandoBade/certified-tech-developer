@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style-mesa.css">
-    <title>Cadastro de Usuário 2.0</title>
+    <title>Cadastro de Usuário</title>
 </head>
+
 <body>
-  
-  <section class="video-overlay">
-  <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-    <source src="./video/dh-video.mp4" type="video/mp4">
-  </video>
-  </section>
+    <video id="background-video" autoplay loop muted>
+        <source src="./video/dh-video.mp4" type="video/mp4">
+    </video>
 
     <main>
-
-        <section>
-        <div class="container">
-        <form class="col-auto ">
-            
-            <img src="./images/pg-logo.svg" alt="Logo Digital House">
-
-            <h1 class="titulo">Acesso ao Playground 2.0</h1> 
-
-            <label for="username">Nome de Usuário</label>
-            <input type="text" name="username" id="username" class="form-control" placeholder="Digite aqui">
-
-            
+        <section class="principal-total">
             <section>
-            <label for="emailUsuario">E-mail</label>
-            <input type="email" name="emailUsuario" id="emailUsuario" class="form-control" placeholder="exemplo@exemplo.com">
-             
-            <section>
-            <label for="senhaUsuario">Senha</label>
-            <input type="password" name="senhaUsuario" id="senhaUsuario" class="form-control" placeholder="Escolha uma senha">
+<h1 class="home-title">Te damos as boas vindas :)</h1>
 
+                <div class="container">
+                    <form class="col-auto ">
 
-            <section class="botoes">
-            <button type="reset" class="limpar">Limpar Formulário</button>
-            <button type="submit" class="enviar">Enviar</button>
+                        <img src="./images/pg-logo.svg" alt="Logo Digital House">
+
+                        <h1 class="titulo">Cadastro de Usuário</h1>
+
+                        <section>
+                            <label for="username">Nome de Usuário</label>
+                            <input type="text" name="username" id="username" class="form-control"
+                                placeholder="Digite aqui">
+                        </section>
+
+                        <section>
+                            <label for="emailUsuario">E-mail</label>
+                            <input type="email" name="emailUsuario" id="emailUsuario" class="form-control"
+                                placeholder="exemplo@exemplo.com">
+
+                            <section>
+                                <label for="senhaUsuario">Senha</label>
+                                <input type="password" name="senhaUsuario" id="senhaUsuario" class="form-control"
+                                    placeholder="Escolha uma senha">
+
+                                <section>
+                                    <label for="mensagemUsuario">Como conheceu a DH?</label>
+                                    <textarea name="mensagemUsuario" id=mensagemUsuario class="form-control"></textarea>
+
+                                    <label for="estadoUsuario">Idioma</label>
+                                    <select name="estadoUsuario" id="estadoUsuario" class="custom-select">
+                                        <option disabled selected value="vazio">Escolha o seu idioma</option>
+                                        <option value="pt">Português Brasileiro</option>
+                                        <option value="in">Inglês</option>
+                                        <option value="es">Espanhol</option>
+                                    </select>
+
+                                    <section class="botoes">
+                                        <button type="submit" class="enviar">Enviar</button>
+                                        <button type="submit" class="enviar">Acessar com o Google</button>
+                                    </section>
+                    </form>
+                </div>
             </section>
-        </form>
-        </div>
     </main>
-    <script>
-        var video = document.getElementById("myVideo");
-        var btn = document.getElementById("myBtn");
-        
-        function myFunction() {
-          if (video.paused) {
-            video.play();
-            btn.innerHTML = "Pause";
-          } else {
-            video.pause();
-            btn.innerHTML = "Play";
-          }
-        }
-        </script>
 </body>
+
 </html>
