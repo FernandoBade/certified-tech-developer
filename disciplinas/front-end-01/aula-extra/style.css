@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp%27");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+::-webkit-scrollbar {
+
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #282828;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #353535;
+}
+
+::-webkit-scrollbar-thumb:active { 
+    background-color: #505050;
+}  
+ 
+body {
+    height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: 250px auto 250px;
+    grid-template-areas: 
+    "navigation-aside main-content social-aside"
+    "player           player       player";
+}
+
+aside {
+    background-color: black;
+}
+
+.navigation-aside { 
+    grid-area: navigation-aside;
+    padding: 6px;
+}
+
+.navigation-aside li a {
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.navigation-aside li a:active {
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #282828;
+    opacity: 1;
+}
+
+.navigation-aside .primary-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-aside .primary-nav a{
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    opacity: .4;
+    transition:  .3s ease-in-out;
+}
+
+.navigation-aside .primary-nav a.active{
+    opacity: 1;
+    background-color: #282828;
+}
+.navigation-aside .primary-nav a:hover{
+    opacity: 1;
+    background-color: #282828;
+    border-radius: 8px;
+
+}
+
+.primary-nav a .material-icons{
+    font-size: 25px;
+}
+
+.navigation-aside .playlists{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-top: 1px solid #282828;
+    height: calc(100vh - 259px);
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.navigation-aside .playlists a{
+    font-weight: bold;
+    font-size: 14px;
+    opacity: .4;
+    transition:  .1s ease-in-out;
+}
+
+.navigation-aside .playlists a:hover{
+    margin-left: 10px;
+    opacity: 1;
+}
+
+
+.main-content {
+    grid-area:  main-content;
+    height: calc(100vh - 100px);
+    background-color: #121212;
+}
+
+.social-aside {
+    grid-area: social-aside;
+}
+
+.player {
+    grid-area: player;
+    height: 100px;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    padding: 12px;
+}
+
+.player section{
+    background-color: salmon;
+    height: 100%;
+}
