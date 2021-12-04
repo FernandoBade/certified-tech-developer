@@ -133,9 +133,113 @@ aside {
     background-color: #181818;
     border-top: 1px solid #282828;
     padding: 12px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .player section{
-    background-color: salmon;
     height: 100%;
+    justify-content: space-between;
 }
+
+.player .music-info{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.player .music-info img{
+    width: 80px;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.player .music-info h1{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.player .music-info h2{
+    color: #ffffff90;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.player .music-info span{
+    color: #b3b3b3;
+    font-size: 20px;
+}
+
+.player-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+.player-wrapper .controls{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.player-wrapper .controls span{
+    color: white;
+    opacity: .1;
+    transition: .1s ease-in-out;
+}
+
+.player-wrapper .controls span.play{
+    color: white;
+    opacity: .1;
+    transition: .1s ease-in-out;
+    font-size: 40px;
+}
+
+.player-wrapper .controls span.play:hover{
+    transform: scale(1.25);
+}
+
+
+.player-wrapper .controls span:hover{
+    color: white;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.player-wrapper .player-time span{
+    color: white;
+    font-size: 12px;
+    opacity: .6;
+}
+
+.player-wrapper .player-time input{
+    width: 600px;
+    
+}
+
+.player .other-controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.player .other-controls span{
+    color: white;
+    opacity: .1;
+    font-size: 20px;
+    font-weight: lighter;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+
+.player .other-controls span:hover{
+    opacity: .6;
+    cursor: pointer;
+
+}
+
