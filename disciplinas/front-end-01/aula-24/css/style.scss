@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cavalo {
+    background-color: red;
+    padding: 24px;
+    height: 500px;
+    width: 500px;
+
+    img {
+        width: 75%;
+        height: 75%px
+    };
+
+    ul {
+    margin-top: 20px;    
+    background-color: aliceblue;
+    }
+}
