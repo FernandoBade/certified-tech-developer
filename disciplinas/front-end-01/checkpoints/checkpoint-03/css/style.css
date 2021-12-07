@@ -7,14 +7,12 @@
 }
 
 .slider-home{
-    position: absolute;
-    width: 100%;
+    width: 100vw;
     height: calc(100vh - 80px);
     background-image: url(../images/slider-home.png);
 }
 
 .inside-slider{
-    background-color: cornflowerblue;
     max-width: fit-content;
     height: auto;
     margin: 10px auto;
@@ -40,16 +38,61 @@
 }
 
 .botao-explorar {
-padding: 10px 10px 15px 10px;
-background: rgba(51, 187, 105, 0.05);
-border: 2px solid #33BB69;
-box-sizing: border-box;
-border-radius: 12px;
-font-family: 'Roboto', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 28px;
-letter-spacing: 0.06em;
-color: #FFFFFF;
+    padding: 10px 20px 10px; 
+    background: transparent;
+    border: 2px solid #33BB69;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    transition: .1s ease-in-out;
+    margin: 15px;
 }
+
+.botao-explorar:hover {
+    
+    background: #33BB69;
+    border: 2px solid #33BB69;
+    color: #FFFFFF;
+}
+    
+.botao-explorar:active {
+    background: #33BB69;
+    border: 2px solid #33BB69;
+    transform: scale(1.05);
+    color: #FFFFFF;
+}
+
+.botao-explorar:focus {
+    outline: none;
+    border: 2px solid #33BB69;
+    box-shadow: none;
+    background: #33BB69;
+    color: #FFFFFF;
+}
+    
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.movies-list{
+    text-align: center;
+    justify-content: center;
+    margin: 50px 0px 50px 0px;
+    max-width: 960px;
+}
+
+
+.titulo-filmes {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+}
+
