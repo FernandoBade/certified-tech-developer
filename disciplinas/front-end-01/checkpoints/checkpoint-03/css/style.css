@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 .navbar-custom{
     height: 80px;
     padding-right: 24px;
@@ -16,7 +15,7 @@
 .inside-slider{
     max-width: fit-content;
     height: auto;
-    margin: 10px auto;
+    margin: 20px;
 }
 
 .titulo-principal {
@@ -100,4 +99,42 @@
     justify-content: center;
     margin: 10px auto;
     margin-top: 35px;
+}
+
+.card-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;   
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    z-index: -1000;
+}
+
+.card img{
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card-body{
+    position: relative;
+    border-radius: 12px;
+    background: #F4F4F4;
+    padding: 20px;
+    z-index: 0;
+    bottom: 12px;
+
 }
