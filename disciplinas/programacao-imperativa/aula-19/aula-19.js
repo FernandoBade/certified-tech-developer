@@ -7,10 +7,12 @@
 const listaPessoas = require('./pessoas')
 
 
-let menorAltura = Math.min.apply(Math, listaPessoas.map(function (x) { return x.altura; }))
+let menorAltura = Math.min.apply(Math, listaPessoas.map(function (x) {
+    return x.altura; }))
 
 
-let maiorAltura = Math.max.apply(Math, listaPessoas.map(function (x) { return x.altura; }))
+let maiorAltura = Math.max.apply(Math, listaPessoas.map(function (x) {
+    return x.altura; }))
 
 console.log(`A menor altura do grupo é ${menorAltura}m e a maior é ${maiorAltura}m.`)
 
