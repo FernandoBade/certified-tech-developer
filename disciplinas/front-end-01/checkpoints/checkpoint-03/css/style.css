@@ -198,3 +198,17 @@ body{
     margin-left: 10px;
     margin-bottom: 10px;
   }
+
+  .modal-body img{
+      width: 20rem; 
+      margin-bottom: 20px;
+
+  }
+
+.modal-body form{
+    padding: 20px;
+}
+
+/.modal-body {
+
+}

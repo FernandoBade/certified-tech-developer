@@ -36,7 +36,29 @@
               <a class="nav-link" href="#">Sobre Nós</a>
             </li>
           </ul>
-          <button class="btn btn-outline-success" type="submit">Login</button>
+          <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modal-login"
+            type="submit">Login</button>
+          <div class="modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <form>
+                    <img src="./images/logo-dh-lg.png" class="rounded mx-auto d-block img-fluid">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email de usuário</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">senha</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -63,7 +85,7 @@
           <div class="card" style="width: 18rem;">
             <img src="./images/joker.png" class="card-img-top " alt="...">
             <div class="card-body border-0">
-              <h5 class="card-title">Joker</h5>
+              <h5 class="card-title">Coringa</h5>
               <p class="card-text">Isolado, intimidado e desconsiderado pela sociedade, o fracassado comediante Arthur
                 Fleck inicia seu caminho como uma mente criminosa...</p>
               <a href="#" class="btn botao-filme raise">Assistir</a>
@@ -86,7 +108,8 @@
             <img src="./images/cptmarvel.png" class="card-img-top " alt="...">
             <div class="card-body border-0">
               <h5 class="card-title">Capitã Marvel</h5>
-              <p class="card-text">Capitã Marvel, parte do exército de elite dos Kree, uma raça alienígena, encontra-se no meio de uma batalha entre seu povo e os Skrulls...</p>
+              <p class="card-text">Capitã Marvel, parte do exército de elite dos Kree, uma raça alienígena, encontra-se
+                no meio de uma batalha entre seu povo e os Skrulls...</p>
               <a href="#" class="btn botao-filme">Assistir</a>
             </div>
           </div>
@@ -96,7 +119,8 @@
             <img src="./images/dora.png" class="card-img-top " alt="...">
             <div class="card-body border-0">
               <h5 class="card-title">Dora Aventureira</h5>
-              <p class="card-text">A aventureira Dora rapidamente se vê liderando o macaco Botas, o primo Diego, um misterioso habitante da selva, seus pais e um grupo de...</p>
+              <p class="card-text">A aventureira Dora rapidamente se vê liderando o macaco Botas, o primo Diego, um
+                misterioso habitante da selva, seus pais e um grupo de...</p>
               <a href="#" class="btn botao-filme">Assistir</a>
             </div>
           </div>
@@ -106,7 +130,8 @@
             <img src="./images/1917.png" class="card-img-top " alt="...">
             <div class="card-body border-0">
               <h5 class="card-title">1917</h5>
-              <p class="card-text">Na Primeira Guerra Mundial, dois soldados britânicos recebem ordens aparentemente impossíveis de cumprir. Em uma corrida contra o tempo...</p>
+              <p class="card-text">Na Primeira Guerra Mundial, dois soldados britânicos recebem ordens aparentemente
+                impossíveis de cumprir. Em uma corrida contra o tempo...</p>
               <a href="#" class="btn botao-filme">Assistir</a>
             </div>
           </div>
@@ -116,7 +141,8 @@
             <img src="./images/thor-tdw.png" class="card-img-top " alt="...">
             <div class="card-body border-0">
               <h5 class="card-title">Thor: O mundo sombrio</h5>
-              <p class="card-text">Thor precisa contar com a ajuda de seus companheiros e até de seu traiçoeiro irmão Loki em um plano audacioso para salvar o universo...</p>
+              <p class="card-text">Thor precisa contar com a ajuda de seus companheiros e até de seu traiçoeiro irmão
+                Loki em um plano audacioso para salvar o universo...</p>
               <a href="#" class="btn botao-filme">Assistir</a>
             </div>
           </div>
