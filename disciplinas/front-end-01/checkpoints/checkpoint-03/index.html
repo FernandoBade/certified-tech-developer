@@ -15,7 +15,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./images/logo-dh.png" alt="" width="167" height="50">
@@ -30,7 +30,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Filmes</a>
+              <a class="nav-link" href="#filmes-recentes">Filmes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sobre Nós</a>
@@ -38,43 +38,26 @@
           </ul>
           <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modal-login"
             type="submit">Login</button>
-          <div class="modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <form>
-                    <img src="./images/logo-dh-lg.png" class="rounded mx-auto d-block img-fluid">
-                    <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                      <label for="floatingInput">Email de usuário</label>
-                    </div>
-                    <div class="form-floating">
-                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                      <label for="floatingPassword">senha</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
+            
+          
         </div>
       </div>
     </nav>
   </header>
   <main>
+   
     <section class="slider-home row">
       <div class="inside-slider align-self-center col-xs-1">
         <h1 class="titulo-principal">DH Flix</h1>
         <p class="slide-text">Confira a maior coletânea de filmes que a Digital House tem a te oferecer</p>
         <div class="d-grid gap-2 col-12 mx-auto">
-          <button class="btn btn-primary botao-explorar" type="button">Explorar</button>
+          <a class="nav-link btn btn-primary botao-explorar" href="#filmes-recentes">Explorar</a>
         </div>
       </div>
       </div>
     </section>
-    <section class="container-fluid movies-list mx-auto">
+    <section class="clear" id="filmes-recentes"></section>
+    <section class="container-fluid movies-list mx-auto" >
 
       <div class="row g-5">
         <div class="col-lg-12 col-md-12 col-sm-12 mx-auto">
@@ -157,7 +140,30 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-
+    <div class="modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <img src="./images/logo-dh-lg.png" class="rounded mx-auto d-block img-fluid">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email de usuário</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Senha</label>
+            </div>
+            <button type="submit" class="btn btn-primary botao-entrar">Entrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

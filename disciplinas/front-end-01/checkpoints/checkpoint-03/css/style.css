@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/*Css do header, body e main*/
+
 body{
     background-color: #fefefe;
 }
+
 .navbar-custom{
     height: 80px;
     padding-right: 24px;
@@ -10,9 +13,11 @@ body{
 }
 
 .slider-home{
+    background-size: cover;
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: 100vh;
     background-image: url(../images/slider-home.png);
+    background-attachment: fixed;
 }
 
 .inside-slider{
@@ -78,7 +83,7 @@ body{
     color: #FFFFFF;
 }
     
-.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn:focus,.btn:active:focus,.btn.active:focus, .btn-close:focus, .btn-close:active
 .btn.focus,.btn:active.focus,.btn.active.focus {
     outline: none;
     box-shadow: none;
@@ -89,6 +94,9 @@ body{
     margin-top: 40px;
 }
 
+#filmes-recentes{
+    padding-top: 40px;
+}
 
 .titulo-filmes, h2{
     font-family: 'Roboto', sans-serif;
@@ -192,19 +200,75 @@ body{
     opacity: 1;
     right: 10px;
     background: #40d47c;
-  }
+}
 
-  .navbar-collapse {
+.navbar-collapse {
     margin-left: 10px;
     margin-bottom: 10px;
-  }
+}
 
   .modal-body img{
-      width: 20rem; 
-      margin-bottom: 20px;
-
-  }
+    width: 20rem; 
+    margin-bottom: 20px;
+}
 
 .modal-body form{
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
+}
+
+.btn-close {
+    width: 1rem;
+    height: 1rem;
+}
+
+.modal-header {
+    border: none;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+
+.botao-entrar {
+    background: #33BB69;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: auto 10px;
+    transition: 0.5s;
+    padding: 10px;
+    border: none;
+    margin: 15px auto;
+    width: 100%;
+    height: calc(3.5rem);
+    font-family: 'Roboto', sans-serif;
+}
+
+.botao-entrar:hover{
+    background: #40d47c;
+}
+
+.botao-entrar:focus,.botao-entrar:active:focus,.botao-entrar.active:focus,
+.botao-entrar.focus,.btbotao-entrar:active.focus,.botao-entrar.active.focus {
+    outline: none;
+    box-shadow: none;
+    background-color: #33BB69;
+}
+
+.botao-explorar:active {
+    background: #33BB69;
+    border: 2px solid #33BB69;
+    transform: scale(1.05);
+    color: #FFFFFF;
+}
+
+.form-control:focus, .form-floating:focus{
+    border: 2px solid #33BB69;
+    box-shadow: none;
+}
+
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item .nav-link:active,
+.navbar-light .nav-item .nav-link:focus,
+.navbar-light .nav-item:hover .nav-link {
+    color: #E51B3E;
 }
