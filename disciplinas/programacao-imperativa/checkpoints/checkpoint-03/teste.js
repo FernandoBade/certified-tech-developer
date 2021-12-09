@@ -23,8 +23,8 @@ console.log(curso.retornarAlunosAprovados());
 // TESTES COM CARREGAMENTO DE ALUNOS NOVOS
 
 var listaAlunos = [];
-for (let index = 0; index < Estudantes.length; index++) {
-    listaAlunos.push(new Aluno(Estudantes[index]["nome"], Estudantes[index]["qtdFaltas"], Estudantes[index]["notas"])) ; 
+for (let i = 0; i < Estudantes.length; i++) {
+    listaAlunos.push(new Aluno(Estudantes[i]["nome"], Estudantes[i]["qtdFaltas"], Estudantes[i]["notas"])) ; 
 }
 
 var curso = new Curso("Informatica2", 5, 3, listaAlunos)
