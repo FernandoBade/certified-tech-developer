@@ -287,13 +287,19 @@ body{
 
 .video-about-us {
     max-width: 960px;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin:30px auto;
+}
+.margin-video{
+    margin-left: auto;
 }
 
 #sobre-nos-clear{
     margin-top: 50px;
     height: 30px;
+}
+
+.video-inst{
+    margin: 50px;
 }
 
 /*Footer - Códigos da Danielle*/
