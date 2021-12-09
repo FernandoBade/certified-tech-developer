@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/*Css do header, body e main*/
+/*Css do header e main: Fernando*/
 
 body{
     background-color: #fefefe;
@@ -10,6 +10,10 @@ body{
     height: 80px;
     padding-right: 24px;
     padding-left: 20px;
+}
+
+.navbar-nav > .active > a {
+    color: #E51B3E;
 }
 
 .slider-home{
@@ -131,9 +135,10 @@ body{
     font-weight: 300;
     line-height: 21px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: -webkit-left;
     z-index: -1000;
-    text-align: justify;
+    text-align:-webkit left;
+    
 }
 
 
@@ -176,7 +181,7 @@ body{
     border-radius: 5px;
     color: white;
     font-family: 'Roboto', sans-serif;
-    margin: auto 10px;
+    margin: auto 30px;
     transition: 0.5s;
     padding-left: 25px;
 }
@@ -271,4 +276,100 @@ body{
 .navbar-light .nav-item .nav-link:focus,
 .navbar-light .nav-item:hover .nav-link {
     color: #E51B3E;
+    border-bottom: 2px solid #E51B3E;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+.video-about-us {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#sobre-nos-clear{
+    margin-top: 50px;
+    height: 30px;
+}
+
+/*Footer - Códigos da Danielle*/
+
+
+footer{
+
+    background-color: #171717;
+    width: 100%;
+    height: fit-content;
+    border-top: 24px;
+    
+}    
+.principal-rodape{
+    
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    bottom: 0;
+    margin-top: 70px;
+}
+
+@media(max-width:650px){
+.principal-rodape{
+
+    background-color: #171717;
+    width: 100%;
+    height: fit-content;
+    border-top: 24px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    bottom: 0;
+    }
+}
+
+.informacoes{
+    
+    width: 250px;
+    height: fit-content;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #f4f3fa;
+    text-align: center;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nome-rodape{
+
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.p-rodape{
+
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 20px;
 }

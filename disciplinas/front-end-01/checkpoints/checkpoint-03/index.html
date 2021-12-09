@@ -9,9 +9,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
-
-  <title>DH Flix</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>DH Flix - O seu oortal de filmes</title>
 </head>
+
+
+<!-- Códigos do Fernando-->
 
 <body>
   <header>
@@ -26,28 +29,26 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 smooth-scroll ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#filmes-recentes">Filmes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre Nós</a>
+              <a class="nav-link" href="#sobre-nos-clear">Sobre Nós</a>
             </li>
           </ul>
           <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modal-login"
             type="submit">Login</button>
-            
-          
         </div>
       </div>
     </nav>
   </header>
   <main>
-   
+
     <section class="slider-home row">
-      <div class="inside-slider align-self-center col-xs-1">
+      <div class="inside-slider align-self-center col-xs-1 ">
         <h1 class="titulo-principal">DH Flix</h1>
         <p class="slide-text">Confira a maior coletânea de filmes que a Digital House tem a te oferecer</p>
         <div class="d-grid gap-2 col-12 mx-auto">
@@ -57,7 +58,7 @@
       </div>
     </section>
     <section class="clear" id="filmes-recentes"></section>
-    <section class="container-fluid movies-list mx-auto" >
+    <section class="movies-list mx-auto">
 
       <div class="row g-5">
         <div class="col-lg-12 col-md-12 col-sm-12 mx-auto">
@@ -134,13 +135,39 @@
       </div>
     </section>
   </main>
-  <!-- Optional JavaScript; choose one of the two! -->
+
+  <div id="sobre-nos-clear"></div>
+<section id="sobre-nos">
+  <div class="col-lg-12 col-md-12 col-sm-12 mx-auto">
+    <h2 titulo-itens>Sobre Nós</h2>
+  </div>
+  <div class="ratio ratio-16x9 video-about-us">
+    <iframe src="https://www.youtube.com/embed/sqaZ_dHnHYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>
+</section>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-    <div class="modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+
+  <script>
+    $(document).ready(function () {
+      $("ul.navbar-nav > li").click(function (e) {
+        $("ul.navbar-nav > li").removeClass("active");
+        $(this).addClass("active");
+      });
+    });
+  </script>
+  <script>
+    let windowTop = $(this).scrollTop();
+    $('.nav a').each(function (event) {
+      if (windowTop >= $($(this).attr('href')).offset().top - 100) {
+        $('.nav .active').removeClass('active');
+        $(this).addClass('active');
+      }
+    });
+  </script>
+  <div class="modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -164,6 +191,50 @@
       </div>
     </div>
   </div>
+<!-- Button trigger modal -->
+
+
+
+<!-- Códigos da Danielle -->
+
+  <footer>
+    <section class="principal-rodape">
+    <div class="informacoes">
+
+      <h3 class="nome-rodape">Fernando Bade</h3>
+      <p class="p-rodape"> Responsável pelo desenvolvimento do header e todo o resto.</p>
+      <div>
+        <a href="https://www.linkedin.com/in/fernandobade/" target="_blank"><img src="./images/image 2.png"></a>
+        <a href="https://github.com/FernandoBade" target="_blank"><img src="./images/image 3.png"></a>
+      </div>
+    </div>
+
+    <div class="informacoes">
+
+      <h3 class="nome-rodape">Luiz de Souza</h3>
+      <p class="p-rodape"> Responsável pelo desenvolvimento pelas páginas de detalhes.</p>
+      <div>
+        <a href="https://www.linkedin.com/in/dalceuluizdesouza/" target="_blank"><img src="./images/image 2.png"></a>
+        <a href="https://github.com/DevLuizSouza" target="_blank"><img src="./images/image 3.png"></a>
+      </div>
+    </div>
+
+    <div class="informacoes">
+
+      <h3 class="nome-rodape">Danielle Alves</h3>
+      <p class="p-rodape"> Responsável pelo desenvolvimento do footer.</p>
+      <div>
+        <a href="https://www.linkedin.com/in/danielle-alves-feih-473487223/" target="_blank"><img src="./images/image 2.png"></a>
+        <a href="https://github.com/DanielleAlves17" target="_blank"><img src="./images/image 3.png"></a>
+      </div>
+    </div>
+</section>
+
+<p class="p-rodape">2021 - Checkpoint 3 - ♫ O dono da lancha é o cabeça branca ♪</p>
+
+  </footer>
+  
+
 </body>
 
 </html>
