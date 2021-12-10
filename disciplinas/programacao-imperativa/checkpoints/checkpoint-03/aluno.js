@@ -1,7 +1,7 @@
 let aluno = function (nome, qtdFaltas, notas) 
 {
-    this.nome  = nome;
-    this.qtdFaltas = qtdFaltas,
+    this.nome  = nome
+    this.qtdFaltas = qtdFaltas
     this.notas = notas
     this.calcularMedia =  function ()
     {

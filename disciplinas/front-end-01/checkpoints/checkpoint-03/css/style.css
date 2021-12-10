@@ -6,6 +6,10 @@ body{
     background-color: #fefefe;
 }
 
+.row{
+    margin: auto;
+}
+
 .navbar-custom{
     height: 80px;
     padding-right: 24px;
@@ -18,7 +22,7 @@ body{
 
 .slider-home{
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url(../images/slider-home.png);
     background-attachment: fixed;
@@ -130,7 +134,7 @@ body{
 
 .card-text {
     font-family: 'Roboto', sans-serif;
-    font-size: .85rem;
+    font-size: .8rem;
     font-style: normal;
     font-weight: 300;
     line-height: 21px;
