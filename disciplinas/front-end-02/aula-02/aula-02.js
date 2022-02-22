@@ -54,3 +54,19 @@
 // }
 
 // document.querySelector("h1").innerText = jokenpo
+
+// let carro = {
+//     nome: "fox",
+//     ano: "2011"
+// }
+
+// for (let propriedade in carro){
+//     console.log(carro[propriedade]);
+// }
+
+// let series = ["Friends", "GoT", "Breaking Bad"];
+
+// for(let valor of series){
+//     console.log(valor);
+// }
+
