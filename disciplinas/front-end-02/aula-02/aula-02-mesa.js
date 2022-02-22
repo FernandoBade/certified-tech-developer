@@ -13,7 +13,8 @@
 
 alert(`Bem-vindo(a) a mais uma partida de Jokenpô!`);
 
-var jogador = prompt(`Escolha abaixo:\n• 1, para pedra; \n• 2, para papel ou \n• 3, para tesoura:`)
+var jogador = prompt(`Escolha abaixo:\n• pedra; \n• papel; \n• para tesoura:`)
+
 
 var cpu = Math.round(Math.random() * 2);
 switch (cpu) {
@@ -38,7 +39,7 @@ if (jogador == 'pedra') {
         vencedor = 'jogador';
     }
 
-} else if (cpu == 'papel') {
+} else if (jogador == 'papel') {
 
     if (cpu == 'pedra') {
         vencedor = 'jogador';
@@ -49,7 +50,6 @@ if (jogador == 'pedra') {
     }
 
 } else if (jogador == 'tesoura') {
-
     if (cpu == 'pedra') {
         vencedor = 'computador';
     } else if (cpu == 'papel') {
@@ -60,3 +60,6 @@ if (jogador == 'pedra') {
 
 }
 
+document.querySelector("h2").innerText += `Você escolheu ${jogador} e o computador escolheu ${cpu}.`
+
+document.querySelector("h3").innerText += `Quem ganhou foi: ${vencedor}.`
