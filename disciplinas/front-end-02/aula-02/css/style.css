@@ -6,16 +6,35 @@ margin: 0;
 
 body {
     width: 800px;
-    text-align: center;
+    display:block;
     margin: 0 auto;
 }
 
 img {
     width: 50%;
+    display:block;
+    text-align: center;
 }
 
 h1 {
     font-size: 2rem;
     color: #505050;
     padding: 20px;
+}
+
+
+
+h2 {
+    color: #909090;
+    padding: 20px;
+}
+
+h3 {
+    color: #700404;
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
 }

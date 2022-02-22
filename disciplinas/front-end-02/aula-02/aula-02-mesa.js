@@ -13,7 +13,7 @@
 
 alert(`Bem-vindo(a) a mais uma partida de Jokenpô!`);
 
-var jogador = prompt(`Escolha abaixo:\n• pedra; \n• papel; \n• para tesoura:`)
+var jogador = prompt(`Escolha abaixo:\n• pedra; \n• papel; \n• tesoura:`)
 
 
 var cpu = Math.round(Math.random() * 2);
@@ -60,6 +60,19 @@ if (jogador == 'pedra') {
 
 }
 
+if(vencedor === "computador"){
+    pontosCpu = 0
+    pontosCpu++
+} else if(vencedor === "jogador"){
+    pontosJogador = 0
+    pontosJogador++
+} else {
+    document.querySelector("h4").innerText += "Empate! Ninguém pontou";
+}
+
 document.querySelector("h2").innerText += `Você escolheu ${jogador} e o computador escolheu ${cpu}.`
 
 document.querySelector("h3").innerText += `Quem ganhou foi: ${vencedor}.`
+
+document.querySelector("h4").innerText += `Você está com ${pontosJogador} pontos. O computador está com ${pontosCpu} pontos. `
+
