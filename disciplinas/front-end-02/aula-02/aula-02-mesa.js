@@ -182,15 +182,16 @@ function pontuacao(escolha1, escolha2) {
     }
 }
 
-//Keep looping infinitely:
 while (true) {
-    //Get the user's choice:
     var continuaJogando = escolhaJogador();
-    //If the user's choice is clicking the "Cancel" button, exit:
     if (continuaJogando == null) break;
-    if (pontosCpu = 2){
-        alert("O jogo avabou")
+    if (pontosCpu == 2){
+        alert("O jogo acabou! Dessa vez o computador ganhou.")
+        break
     }
-    //Otherwise, play the game and alert the user:
+    if (pontosJogador == 2){
+        alert("O jogo acabou. A vitória é sua!")
+        break
+    }
     alert(pontuacao(continuaJogando, escolhaCPU()));
 }
