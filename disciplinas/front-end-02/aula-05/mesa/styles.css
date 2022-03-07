@@ -66,3 +66,17 @@ h1 {
 .item-dm-h2{
   color: rgb(230, 230, 230);
 }
+
+button {
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  background-color: #505050;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.botao {
+  text-align: center;
+  margin: 10px;
+}
