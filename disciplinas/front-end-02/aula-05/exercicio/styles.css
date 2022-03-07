@@ -31,5 +31,14 @@ li {
   background-color: white;
   border-radius: 5px;
   color: rgb(71, 71, 71);
-  font-size: 1.1em;
+  font-size: 1em;
+}
+
+.novo-li {
+  padding: .5em 2em;
+  margin-bottom: 1em;
+  background-color: #888;
+  border-radius: 5px;
+  color: rgb(50, 15, 146);
+  font-size: 1.2em;
 }
