@@ -69,15 +69,28 @@ h1 {
 }
 
 button {
-  padding: 10px;
-  margin: 10px;
+  width: 20%;
+  padding: 25px;
+  margin: 25px;
   color: white;
   background-color: #505050;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .botao {
   text-align: center;
-  margin: 10px;
+  display: inline;
+}
+.botoes {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.listaFelinosOn{
+  visibility: visible;
+}
+
+.listaFelinosOff{
+  visibility: hidden;
 }

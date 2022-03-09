@@ -33,26 +33,6 @@ function darkMode() {
 // console.log(h4.parentElement);
 
 
-var listaFelinos = document.querySelectorAll(".item")
-
-listaFelinos.forEach(item => {
-    var felinos = []
-    felinos.push(felinos[item])
-
-    console.log(listaFelinos);
-})
-
-function mostrarCard() {
-
-    var botao = document.getElementById("mostrarCard");
-    if (botao.style.display === "none") {
-        listaFelinos.style.display = "block";
-    } else {
-        listaFelinos.style.display = "none";
-    }
-
-}
-
 
 // container2.firstElementChild.remove()
 // container2.firstElementChild.remove()
@@ -73,8 +53,35 @@ function mostrarCard() {
 //     </div>
 // `
 // container2.appendChild(novaDiv)
-container2.insertBefore
 
 // console.log(container2)
 // window.onload = () => {
 // }
+
+
+// var todosFelinos = []
+
+// for (var i = 0; i < document.querySelectorAll(".item").length; i++) {
+//     todosFelinos.push(i)
+//     console.log(todosFelinos)
+
+//     function mostrarCards() {
+
+//         listaFelinos = document.getElementById("listaFelinos")
+//         listaFelinos.classList.toggle('listaFelinosOff')
+//     }
+
+// }
+
+function mostrarCards(){
+
+    var todosFelinos = []
+
+    var todosFelinos = document.querySelectorAll('.item')
+    todosFelinos.forEach(i => {
+        i.classList.toggle('listaFelinosOff')
+    });
+
+
+}
+
