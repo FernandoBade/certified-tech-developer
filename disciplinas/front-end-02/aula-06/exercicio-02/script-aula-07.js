@@ -67,37 +67,6 @@
 //     4 - Acessar o atributo "src" das imagens e fazer a nova atribuição
 // */
 
-
-var idH2 = document.querySelectorAll('h2')
-var imgs = document.querySelectorAll('img');
-imgs.forEach(function(item, i){
-  item.setAttribute('id', idH2[i].innerText.toLocaleLowerCase());
-});
-
-console.log(idH2)
-
-
-function botaoTrocarImg() {
-    var escolhaUsuario = prompt(`De qual felino gostaria de trocar a imagem?`, `Digite "tigre" ou "leão", por exemplo`).toLocaleLowerCase();
-
-    switch (escolhaUsuario) {
-        case 'tigre':
-
-            alert(`Imagem do tigre trocada com sucesso!`)
-
-
-            break;
-
-        case 'Papayas':
-            console.log('Mangoes and papayas are $2.79 a pound.');
-            // expected output: "Mangoes and papayas are $2.79 a pound."
-            break;
-        default:
-            console.log(`Sorry, we are out of ${expr}.`);
-    }
-}
-
-
     // for (let img of listaImagensFelinos) {
 
     //     console.log(img);
@@ -126,3 +95,50 @@ function botaoTrocarImg() {
     //     //@@removeAttribute -> Remove um atrivuto especifico
     //     img.removeAttribute("src");
     // }
+
+    
+var idPeloH2 = document.querySelectorAll('h2')
+var imgs = document.querySelectorAll('img');
+imgs.forEach(function(item, i){
+  item.setAttribute('id', idPeloH2[i].innerText.toLocaleLowerCase());
+});
+
+function botaoTrocarImg() {
+    var escolhaUsuario = prompt(`De qual felino gostaria de trocar a imagem?`, `Digite "tigre" ou "leão", por exemplo`).toLocaleLowerCase();
+
+    switch (escolhaUsuario) {
+        case 'tigre':
+            let tigre = document.getElementById('tigre')
+            tigre.setAttribute('src', 'https://images.hdqwalls.com/download/tiger-in-snow-image-2048x2048.jpg' )
+            setTimeout(() => { alert('Imagem do tigre trocada com sucesso!') }, 700)
+            break;
+        case 'leão':
+            let leao = document.getElementById('leão')
+            leao.setAttribute('src', 'https://images.wallpaperscraft.com/image/single/lion_big_cat_art_147996_300x300.jpg')
+            setTimeout(() => { alert('Imagem do leão trocada com sucesso!') }, 700)
+            break;
+        case 'leopardo':
+            let leopardo = document.getElementById('leopardo')
+            leopardo.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYrMyYDOE_Eha7aZ5rorfFtB4M8JkECb3ySx7MEx5_TENWQ6zQLe1KsYZAsXtowo6F4wY&usqp=CAU')
+            setTimeout(() => { alert('Imagem do leopardo trocada com sucesso!') }, 700)
+            break;
+        case 'pantera':
+            let pantera = document.getElementById('pantera')
+            pantera.setAttribute('src', 'https://download.cnet.com/a/img/resize/a03049891e38c3255e411b56c5ef7eec46285381/catalog/2017/02/02/701d8c49-4ccf-47d4-9a85-88ee0ee29017/fmimg1496852370544008806.jpg?auto=webp&width=416')
+            setTimeout(() => { alert('Imagem da pantera trocada com sucesso!') }, 700)
+            break;
+        case 'jaguar':
+            let jaguar = document.getElementById('jaguar')
+            jaguar.setAttribute('src', 'https://i.pinimg.com/564x/d1/b7/e4/d1b7e4712eb8e47d2eea349963f060df.jpg')
+            setTimeout(() => { alert('Imagem do jaguar trocada com sucesso!') }, 700)
+            break;
+        case 'guepardo':
+            let guepardo = document.getElementById('guepardo')
+            guepardo.setAttribute('src', 'https://i.natgeofe.com/n/de5643df-d07b-4547-b10a-3d5941022d46/01sarahcheetah_square.jpg')
+            setTimeout(() => { alert('Imagem do guepardo trocada com sucesso!') }, 700)
+            break;
+        default:
+            alert(`Felino não encontrado. Tente novamente`);
+            botaoTrocarImg()
+    }
+}
