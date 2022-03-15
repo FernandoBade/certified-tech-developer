@@ -14,7 +14,7 @@ function passaOMouse() {
     document.getElementById('btn').style.backgroundColor = "crimson"
     document.getElementById('btn').style.fontSize = "20px"
     document.getElementById('btn').style.color = "white"
-    document.getElementById('btn').innerText = "TIRA O MOUSE DE CIMA DE MIM"
+    document.getElementById('btn').innerText = "( ͡° ͜ʖ ͡°)"
 }
 
 //texto do botão ao retirar o mouse
@@ -24,7 +24,7 @@ document.getElementById('btn').addEventListener('mouseout', tiraOMouse)
 function tiraOMouse() {
     document.getElementById('btn').style.backgroundColor = "purple"
     document.getElementById('btn').style.fontSize = "20px"
-    document.getElementById('btn').innerText = "Ufá...tá tudo bem agora."
+    document.getElementById('btn').innerText = "( ͡° ʖ̯ ͡°)"
 }
 
 //insert do conteúdo do input no textarea

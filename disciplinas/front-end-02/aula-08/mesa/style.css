@@ -9,18 +9,27 @@ form {
 input {
     width: 100%;
     margin-bottom: 20px;
-    height: 50px;
+    height: 60px;
     border-radius: 4px;
+    text-align: center;
+}
+
+#light, label {
+    color: rgb(157, 139, 168);
+    font-size: 14px;
+    text-align: center;
 }
 
 textarea {
     width: 100%;
     margin-bottom: 20px;
-    height:50px;
+    height:60px;
     border-radius: 4px;
     text-align: center;
     display: flex;
-    line-height: 40px
+    line-height: 50px;
+    border-color: rgb(241, 241, 241);
+    color: #aaa;
 }
 
 section {
@@ -31,6 +40,7 @@ section {
 body{
     padding: 10px;
     width: 800px;
+    margin: 0 auto;
 }
 
 .botoes {
@@ -40,14 +50,17 @@ body{
 }
 
 button {
-    background-color: rgba(138, 77, 218, 0.205);
-    border: 1px solid rgb(207, 187, 206);
+    background-color: rgb(157, 139, 168);
+    border: 1px solid rgb(157, 139, 168);
     border-radius: 4px;
-    color: rgb(112, 112, 112);
-    height: 40px;
-
+    color: white;
+    height: 50px;
 }
 
 #btn {
-    height: 90px;
+    height: 100px;
+}
+
+iframe {
+    display: block;
 }
