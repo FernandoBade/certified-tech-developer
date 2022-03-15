@@ -8,25 +8,27 @@
     <title>Projeto DS Movies</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main>
         <section>
-            <form class="dsmovie-form">
-                <div class="form-group dsmovie-form-group">
-                    <label for="email">Informe seu e-mail</label>
-                    <input class="form-control" type="email" id="email">
+            <form>
+                <div>
+                    <label for="nome">Digite uma frase</label>
+                    <input type="text" onkeypress="contador()" id="nome">
                 </div>
-                <div class="form-group dsmovie-form-group">
-                    <label for="email">Informe sua senha</label>
-                    <input class="form-control" type="password" id="email">
+                <div>
+                    <label for="texto">Contador de Caracteres</label>
+                    <textarea type="textarea" disabled id="texto"></textarea>
                 </div>
-                <div class="dsmovie-form-btn-container">
-                    <button class="dsmovie-btn" id="enviar" type="submit">Enviar</button>
-                    <button class="dsmovie-btn" id="limpar" type="reset">Limpar</button>
-                    <button class="dsmovie-btn" id="crazy" type="submit">GO CRAZY</button>
+                <div class="botoes">
+                    <button id="enviar" type="submit">Enviar</button>
+                    <button id="limpar" type="reset">Limpar Frase</button>
+                    <button onClick="window.location.reload()">Recarregar a página</button>
+
+                    <button id="btn" type="submit">Passe o mouse</button>
                 </div>
             </form>
         </section>
