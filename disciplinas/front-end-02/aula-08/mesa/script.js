@@ -4,7 +4,7 @@ document.getElementById("enviar").addEventListener("click", (evento) => { evento
 
 //alerta ao terminar de carregar a página, com delay de 2 segundos
 
-// setTimeout(()=>{window.onload = alert("Página carregada com sucesso")}, 2000);
+setTimeout(()=>{window.onload = alert("Página carregada com sucesso")}, 2000);
 
 //texto do botão muda ao passar o mouse
 
