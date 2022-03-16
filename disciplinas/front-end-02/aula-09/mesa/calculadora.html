@@ -13,28 +13,28 @@
 
     <div class="estrutura-calculadora">
         <div class="visor">
-            <div class="resultado">123456789</div>
+            <p id="resultado" class="resultado"></p>
         </div>
-        <button class="botao-duplo">C</button>
-        <button>DEL</button>
-        <button>/</button>
-        <button onclick="calc.txt.value">1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>*</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>+</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>-</button>
-        <button>.</button>
-        <button>0</button>
-        <button class="botao-duplo">=</button>
+        <button id="limpar" class="botao-duplo" onclick="limpar()">C</button>
+        <button id="del" onclick="deletar()">DEL</button>
+        <button id="divisao">/</button>
+        <button id="1" onkeyup="input('1')">1</button>
+        <button id="2">2</button>
+        <button id="3">3</button>
+        <button id="mutiplica">*</button>
+        <button id="4">4</button>
+        <button id="5">5</button>
+        <button id="6">6</button>
+        <button id="soma">+</button>
+        <button id="7">7</button>
+        <button id="8">8</button>
+        <button id="9">9</button>
+        <button id="menos">-</button>
+        <button id="ponto">.</button>
+        <button id="0">0</button>
+        <button id="igual" class="botao-duplo">=</button>
     </div>
-
+    <script src="script/main.js"></script>
 </body>
 
 </html>
