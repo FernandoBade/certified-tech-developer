@@ -11,14 +11,30 @@
 
 <body>
 
-    <div class="estrutura-calculadora">
+    <form>
+        <label for="">Valor 1</label>
+        <input id="n1" type="number" placeholder="Digite Aqui">
+        <select name="">
+            <option value="" disable selected hidden>Escolha a operação</option>
+            <option value="">+</option>
+            <option value="">-</option>
+            <option value="">*</option>
+            <option value="">/</option>
+        </select>
+        <label for="">Valor 2</label>
+        <input id="n2" type="number">
+        <button id="calcular">Calcular</button>
+        <button id="limpar" type="reset">Limpar</button>
+        <div id="teste">Qualquer coisa</div>
+    </form>
+    <!-- <div class="estrutura-calculadora">
         <div class="visor">
             <p id="resultado" class="resultado"></p>
         </div>
         <button id="limpar" class="botao-duplo" onclick="limpar()">C</button>
         <button id="del" onclick="deletar()">DEL</button>
         <button id="divisao">/</button>
-        <button id="1" onkeyup="input('1')">1</button>
+        <button id="1" onclick="input('1')">1</button>
         <button id="2">2</button>
         <button id="3">3</button>
         <button id="mutiplica">*</button>
@@ -33,7 +49,7 @@
         <button id="ponto">.</button>
         <button id="0">0</button>
         <button id="igual" class="botao-duplo">=</button>
-    </div>
+    </div> -->
     <script src="script/main.js"></script>
 </body>
 
