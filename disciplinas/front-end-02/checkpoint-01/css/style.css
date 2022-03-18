@@ -4,11 +4,3 @@
     box-sizing: border-box;
 }
 
-aside {
-    width: 250px;
-    background-color: red;
-}
-
-main {
-    background-color: aquamarine;
-}
