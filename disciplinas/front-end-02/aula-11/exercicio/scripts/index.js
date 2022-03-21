@@ -8,22 +8,22 @@ registerBtn.addEventListener("click", () => {
   // 1. Obter o valor introduzido no input do e-mail.
 
   var email = document.getElementById('email-input').value
-  console.log(email);
+  // console.log(email);
 
   // 2. Obter o valor introduzido no input de senha.
 
   var senha = document.getElementById('password-input').value
-  console.log(senha);
+  // console.log(senha);
 
   // 3. Obter o valor do input de rádio.
 
   var maioridade = document.getElementsByName("legalAge").checked
-  console.log(maioridade);
+  // console.log(maioridade);
 
   // 4. Obter o valor do input com o checkbox.
 
   var termosCondicoes = document.getElementById('tyc-input').checked
-  console.log(termosCondicoes);
+  // console.log(termosCondicoes);
 
   // 5. Validar se o utilizador for maior de idade. Caso contrário, mostramos
   // uma mensagem de erro: "Tem de ser maior de idade para se registar no site".
