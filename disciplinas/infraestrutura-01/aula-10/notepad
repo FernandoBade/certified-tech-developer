@@ -1,0 +1,23 @@
+docker image build . -t pyimage
+docker container run -it --name pycon pyimage bash
+//
+python helloworld.py
+Hello World!!!
+doker build . -t pyimage
+docker run pyimage
+
+docker run -it --name pycon pyimage bash
+
+python:alpine3.14
+
+docker start pycon
+
+pause
+
+docker stop pycon
+
+
+docker start -i pycon
+
+solis rh
+soldis rh
