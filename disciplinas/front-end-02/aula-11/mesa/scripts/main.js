@@ -13,10 +13,10 @@ function sub() {
 
     var resultado = document.getElementById('resultado')
     resultado.innerHTML = `
-    
-        Sem espaços: ${nomeCompleto.trim()} <br>
-        Em maiúscula: ${nomeCompleto.toUpperCase()} <br>
-        Em minúscula: ${nomeCompleto.toLowerCase()} <br>
-        "a" = "@", "e" = "3": ${nomeCompleto.replaceAll('a', '@').replaceAll('e', '3')}
+        Resultado:<br><br>
+        <b>Sem espaços:</b> ${nomeCompleto.trim()} <br>
+        <b>Em maiúscula:</b> ${nomeCompleto.toUpperCase()} <br>
+        <b>Em minúscula:</b> ${nomeCompleto.toLowerCase()} <br>
+        <b>"a" = "@", "e" = "3":</b> ${nomeCompleto.replaceAll('a', '@').replaceAll('e', '3')}
         `
 }

@@ -48,3 +48,13 @@ button {
     border-radius: 8px;
     font-size: 16px;
 }
+
+#resultado {
+    margin-top: 10px;
+    height: fit-content;
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+    color: rgb(124, 124, 124);
+    border-radius: 8px;
+    font-size: 14px;
+}
