@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/7cbbc7871e.js" crossorigin="anonymous"></script>
 
-    <title>Hello, world!</title>
+    <title>Sobremesas & Cia</title>
 </head>
 
 <body>
@@ -87,13 +87,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
-            </div>
-            </div>
-            </div>
-
         </section>
 
         <!-- Botão de adição de novas receitas + modal -->
@@ -106,8 +100,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="nomeCompleto"
-                                placeholder="Nome completo">
+                            <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome completo">
                             <label for="nomeCompleto">Nome completo</label>
                         </div>
                         <div class="form-floating mb-3">
@@ -119,15 +112,15 @@
                             <label for="imgReceita">Endereço da imagem</label>
                         </div>
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Descrição de sua receita" id="floatingTextarea2"
+                            <textarea class="form-control" placeholder="Descrição de sua receita" id="descricaoReceita"
                                 style="height: 100px"></textarea>
-                            <label for="floatingTextarea2">Descrição de sua receita</label>
+                            <label for="descricaoReceita">Descrição de sua receita</label>
                         </div>
 
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn" id="botao-fechar" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn">Adicionar receita</button>
+                        <button type="button" class="btn" onclick="adicionarReceita()">Adicionar receita</button>
                     </div>
                 </div>
             </div>
