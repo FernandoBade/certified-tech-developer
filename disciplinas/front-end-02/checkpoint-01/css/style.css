@@ -68,16 +68,16 @@
 
 
 #adicionar-receita:hover {
-    background-color: rgba(250, 250, 250, 0.95);
+    background-color: #f4646415;
     transform: scale(1.5);
     box-shadow: 1px 3px 5px #30303050;
 }
 
 .btn {
-    background-color: #eeeeee75;
+    background-color: #f4646405;
     border: none;
     border-radius: .5rem;
-    color: #aaaaaa;
+    color: #f46464;
     text-align: center;
     outline: none;
     cursor: pointer;
@@ -88,7 +88,7 @@
                 1px 3px 5px rgba(0, 0, 0, .15);
   }
 .btn:hover {
-    background-color: #fefefe;
+    background-color: #f4646415;
     color: #f46464;
     font-weight: 400;
     box-shadow: -2px -2px 3px rgba(255, 255, 255, .6),
