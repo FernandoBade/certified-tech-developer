@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
 }
 
 .main-grid{
@@ -12,6 +15,13 @@
     max-width:20rem;
     border-radius:12px;
     margin: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .card > img {
@@ -34,9 +44,9 @@
     right: 40px;
     z-index: 10;
     border-radius: 50%;
-    background-color: rgba(240, 240, 240);
+    background-color: rgba(250, 250, 250);
     padding: 5px;
-    box-shadow: 3px 3px 5px #30303030;
+    box-shadow: 3px 3px 3px #30303030;
     transition: .5s ease-in-out;
 }
 
@@ -60,4 +70,38 @@
 #adicionar-receita:hover {
     background-color: rgba(250, 250, 250, 0.95);
     transform: scale(1.5);
+    box-shadow: 1px 3px 5px #30303050;
 }
+
+.btn {
+    background-color: #eeeeee75;
+    border: none;
+    border-radius: .5rem;
+    color: #aaaaaa;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    box-shadow: -6px -6px 7px rgba(255, 255, 255, .7),
+                -6px -6px 5px rgba(255, 255, 255, .5),
+                2px 2px 4px rgba(255, 255, 255, .075),
+                1px 3px 5px rgba(0, 0, 0, .15);
+  }
+.btn:hover {
+    background-color: #fefefe;
+    color: #f46464;
+    font-weight: 400;
+    box-shadow: -2px -2px 3px rgba(255, 255, 255, .6),
+                -2px -2px 2px rgba(255, 255, 255, .4),
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+.btn:active {
+    background-color: #fefefe50;
+    color: #ddd;
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .7),
+                inset -2px -2px 2px rgba(255, 255, 255, .5),
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+  }
