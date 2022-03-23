@@ -46,7 +46,7 @@ function adicionarReceita() {
 }
 
 const createCard = () => {
-    
+
     //Criação da estrutura do card
 
     const cardCol = document.createElement('div');
@@ -60,7 +60,7 @@ const createCard = () => {
 
     var tituloReceita = document.getElementById("tituloReceita").value.toLowerCase().trim()
     console.log(tituloReceita);
-    
+
     const cardTitle = document.createElement('h1')
     cardTitle.classList.add('card-title')
     //ajuste do título com primeira em maiúscula
@@ -72,11 +72,11 @@ const createCard = () => {
     }
 
     var tituloCorrigido = tituloEmMaiusculo.join(" ");
-    
+
     cardTitle.innerText = tituloCorrigido
 
     //captura e adição da URL e ALT da imagem
-    
+
     const cardImg = document.createElement('img');
 
     var urlImg = document.getElementById("urlImg").value
@@ -108,7 +108,7 @@ const createCard = () => {
     var nomeCorrigido = nomeEmMaiusculo.join(" ");
     console.log(nomeCorrigido);
 
-  
+
     const cardAuthor = document.createElement('p')
     cardAuthor.classList.add('bottom-p')
     cardAuthor.innerText = `por ${nomeCorrigido}`
@@ -140,6 +140,8 @@ const addCard = () => {
     cardsRow.appendChild(card)
 }
 
+
+//base dos cards
 
 /* <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
 <div class="card">

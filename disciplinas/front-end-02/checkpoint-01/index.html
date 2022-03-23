@@ -16,16 +16,16 @@
 <body>
     <main>
         <section class="banner-home"></section>
-
+         
         <section class="container">
             <div class="row cards-row">
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
                     <div class="card">
-                        <img src="img/recipe1.jpg"
-                            class="card-img-top" alt="Petit Gateau">
+                        <img src="img/recipe1.jpg" class="card-img-top" alt="Petit Gateau">
                         <div class="card-body">
                             <h5 class="card-title">Petit Gateau Clássico</h5>
-                            <p class="card-text">Bolinho de chocolate cremoso, acompanhado de frutas frestas e sorvete de baunilha.</p>
+                            <p class="card-text">Bolinho de chocolate cremoso, acompanhado de frutas frestas e sorvete
+                                de baunilha.</p>
 
                             <p class="bottom-p" id="author">por Erick Jacquin</p>
                             <a href="#" class="btn btn-primary">Ver receita</a>
@@ -34,11 +34,11 @@
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
                     <div class="card">
-                        <img src="img/recipe3.jpg"
-                            class="card-img-top" alt="Cheesecake">
+                        <img src="img/recipe3.jpg" class="card-img-top" alt="Cheesecake">
                         <div class="card-body">
                             <h5 class="card-title">Cheesecake com cereja</h5>
-                            <p class="card-text">Receita tradicional com massa especial feita com Oreo e geléia caseira de cereja</p>
+                            <p class="card-text">Receita tradicional com massa especial feita com Oreo e geléia caseira
+                                de cereja</p>
 
                             <p class="bottom-p" id="author">por Thiago Silva</p>
                             <a href="#" class="btn btn-primary">Ver receita</a>
@@ -47,11 +47,11 @@
                 </div>
                 <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
                     <div class="card">
-                        <img src="img/recipe2.jpg"
-                            class="card-img-top" alt="Panna Cotta">
+                        <img src="img/recipe2.jpg" class="card-img-top" alt="Panna Cotta">
                         <div class="card-body">
                             <h5 class="card-title">Panna Cotta</h5>
-                            <p class="card-text">Creme de leite, gelatina e essência de baunilha, com calda fresca de morango.</p>
+                            <p class="card-text">Creme de leite, gelatina e essência de baunilha, com calda fresca de
+                                morango.</p>
 
                             <p class="bottom-p" id="author">por Fernando Bade</p>
                             <a href="#" class="btn btn-primary">Ver receita</a>
@@ -76,7 +76,8 @@
                             <label for="nomeCompleto">Nome completo</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="tituloReceita" placeholder="Título da receita" maxlength="25">
+                            <input type="text" class="form-control" id="tituloReceita" placeholder="Título da receita"
+                                maxlength="25">
                             <label for="tituloReceita">Título da receita</label>
                         </div>
                         <div class="form-floating mb-3">
@@ -84,15 +85,16 @@
                             <label for="imgReceita">Endereço da imagem</label>
                         </div>
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Descrição de sua receita" id="descricaoReceita" maxlength="100"
-                                style="height: 100px"></textarea>
+                            <textarea class="form-control" placeholder="Descrição de sua receita" id="descricaoReceita"
+                                maxlength="100" style="height: 100px"></textarea>
                             <label for="descricaoReceita">Descrição de sua receita</label>
                         </div>
 
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn" id="botao-fechar" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" data-dismiss="modal" id="enviarReceia" class="btn" onclick="adicionarReceita()">Adicionar receita</button>
+                        <button type="button" data-dismiss="modal" id="enviarReceia" class="btn"
+                            onclick="adicionarReceita()">Adicionar receita</button>
                     </div>
                 </div>
             </div>
@@ -118,11 +120,11 @@
     <script src="js/main.js"></script>
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
     <script>
-        $('#enviarReceia').click(function() {
-           setTimeout(function() {$('#exampleModal').modal('toggle');}, 200);
-           setTimeout(function() {alert("Receita adicionada com sucesso :)")}, 1000);
-       });
-       </script>
+        $('#enviarReceia').click(function () {
+            setTimeout(function () { $('#exampleModal').modal('toggle'); }, 200);
+            setTimeout(function () { alert("Receita adicionada com sucesso :)") }, 700);
+        });
+    </script>
 </body>
 
 </html>
