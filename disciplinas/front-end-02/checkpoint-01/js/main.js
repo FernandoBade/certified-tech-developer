@@ -135,9 +135,10 @@ const createCard = () => {
 
 const addCard = () => {
     const cardsRow = document.querySelector('.cards-row')
+    const firstCard = cardsRow.children.item(0)
     const card = createCard();
 
-    cardsRow.appendChild(card)
+    firstCard.before(card)
 }
 
 
