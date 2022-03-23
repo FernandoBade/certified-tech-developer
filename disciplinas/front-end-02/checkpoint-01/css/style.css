@@ -46,8 +46,14 @@ h5{
     text-align: center;
 }
 
+.card h1  {
+    color: #808080;
+    font-size:1.25rem
+}
+
 .card > img {
     border-radius: 12px 12px 0 0;
+    max-height: 220px ;
 }
 
 .banner-home{
@@ -56,7 +62,7 @@ h5{
     background-image: url("banner.jpg");
     background-blend-mode: overlay;
     background-size: cover;
-    background-position: 10% 85%;
+    background-position: 10% 50%;
     margin-bottom: 20px;
     box-shadow: 3px 5px 5px #30303020;
 }
