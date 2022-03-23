@@ -2,19 +2,19 @@ function adicionarReceita() {
 
     //captura do nome
 
-    var nomeCompleto = document.getElementById("nomeCompleto").value.toLowerCase().trim()
-    console.log(nomeCompleto);
+    // var nomeCompleto = document.getElementById("nomeCompleto").value.toLowerCase().trim()
+    // console.log(nomeCompleto);
 
     //primeira letra do nome maiúscula
 
-    var nomeEmMaiusculo = nomeCompleto.split(" ");
+    // var nomeEmMaiusculo = nomeCompleto.split(" ");
 
-    for (var i = 0; i < nomeEmMaiusculo.length; i++) {
-        nomeEmMaiusculo[i] = nomeEmMaiusculo[i].charAt(0).toUpperCase() + nomeEmMaiusculo[i].slice(1);
-    }
+    // for (var i = 0; i < nomeEmMaiusculo.length; i++) {
+    //     nomeEmMaiusculo[i] = nomeEmMaiusculo[i].charAt(0).toUpperCase() + nomeEmMaiusculo[i].slice(1);
+    // }
 
-    var nomeCorrigido = nomeEmMaiusculo.join(" ");
-    console.log(nomeCorrigido);
+    // var nomeCorrigido = nomeEmMaiusculo.join(" ");
+    // console.log(nomeCorrigido);
 
     //captura do título da receita
 
@@ -39,8 +39,8 @@ function adicionarReceita() {
 
     //captura da descrição da receita
 
-    var descricaoReceita = document.getElementById("descricaoReceita").value
-    console.log(descricaoReceita);
+    // var descricaoReceita = document.getElementById("descricaoReceita").value
+    // console.log(descricaoReceita);
 
     addCard()
 }
