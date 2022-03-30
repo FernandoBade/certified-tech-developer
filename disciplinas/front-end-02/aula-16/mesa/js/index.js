@@ -123,11 +123,6 @@ function renderizarDadosUsuario(users) {
     // a foto, o nome completo do usuário e seu e-mail.
     //  Isso deve ser baseado nas informações que chegam até nós e são inseridas no HTML.
     //  Dica: você pode manipular o CSS e estruturar o card ao seu gosto.
-
-
-
-
-
 }
 
 // Fernando Bade
