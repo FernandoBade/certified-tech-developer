@@ -31,7 +31,7 @@ h1{
 .tarjeta{
   background-color: white;
   margin: 0 auto;
-  height: fit-content;
+  height: 330px;
   width: 50%;
   max-width: 400px;
   box-shadow: 3px 3px 5px #20202050;
@@ -69,6 +69,13 @@ h2, h3{
   color: var(--secondary);
 }
 
+h4 {
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  margin: 20px;
+}
+
 button{
   margin: 12px;
   margin-top: 24px;
@@ -80,8 +87,7 @@ button{
   font-weight: bold;
   transition: .2s ease-in-out;
   border:none;
-  box-shadow: 3px 3px 5px #20202050;
-  
+  box-shadow: 3px 3px 5px #20202050; 
 }
 
 button:hover{
