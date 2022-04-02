@@ -20,7 +20,12 @@ height: 100vh;
 
 main {
 text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 margin: 0 auto;
+width: 750px;
 }
 
 h1{
@@ -44,7 +49,8 @@ h1{
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 36px;
+  text-decoration: underline;
   background: -webkit-linear-gradient(-45deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -53,9 +59,9 @@ h1 {
 
 img {
   border-radius:50%;
-  margin-bottom: 0px;
+  margin: 0 auto;
   width: 150px;
-  border:5px solid transparent;
+  border:7px solid transparent;
   background:linear-gradient(45deg, var(--primary), var(--secondary)) border-box; 
   -webkit-mask: 4
      linear-gradient(#fff 0 0) padding-box, 
@@ -73,7 +79,7 @@ h4 {
   color: #ffffff;
   font-size: 32px;
   text-align: center;
-  margin: 20px;
+  margin: 15px;
 }
 
 button{
