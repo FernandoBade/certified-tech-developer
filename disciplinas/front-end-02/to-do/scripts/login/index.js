@@ -29,6 +29,7 @@ botaoAcessar.addEventListener('click', function (evento) {
         usuarioObjeto.password = campoSenhaLoginNormalizado;
 
         console.log(usuarioObjeto);
+        evento.preventDefault(); //Não permite que o formulário seja executado / realizado o 'submit'
 
 
     } else {
@@ -73,7 +74,10 @@ function validacaoTelaDeLogin() {
         botaoAcessar.setAttribute('disabled', true);
         botaoAcessar.innerText = "Bloqueado";
         return false;
+        
     }
+
+
 }
 
 
