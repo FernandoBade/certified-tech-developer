@@ -1,7 +1,7 @@
 //Capturando as informações
 let campoEmailLogin = document.getElementById('inputEmail');
 let campoSenhaLogin = document.getElementById('inputPassword');
-let botaoAcessar = document.getElementById('botaoAcessar');
+var botaoAcessar = document.getElementById('botaoAcessar');
 
 let campoEmailLoginNormalizado;
 let campoSenhaLoginNormalizado
@@ -15,7 +15,9 @@ const usuarioObjeto = {
     password: "",
 }
 
-botaoAcessar.addEventListener('click', function (evento) {
+window.onload = () => {
+    
+    botaoAcessar.addEventListener('click', function (evento) {
 
     if (validacaoTelaDeLogin()) {
 
@@ -29,7 +31,6 @@ botaoAcessar.addEventListener('click', function (evento) {
         usuarioObjeto.password = campoSenhaLoginNormalizado;
 
         console.log(usuarioObjeto);
-        evento.preventDefault(); //Não permite que o formulário seja executado / realizado o 'submit'
 
 
     } else {
@@ -39,7 +40,7 @@ botaoAcessar.addEventListener('click', function (evento) {
 
 });
 
-
+}
 //Validando o campo de Email
 campoEmailLogin.addEventListener('blur', function () {
     //Captura o elemento "small"
