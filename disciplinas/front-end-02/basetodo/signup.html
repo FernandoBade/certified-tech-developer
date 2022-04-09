@@ -10,44 +10,52 @@
   <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
   <link rel="stylesheet" href="styles/acesso.css">
 
-  <!-- ---------------------- lógica aplicada no login ----------------------- -->
-  
+  <!-- ---------------------- lógica aplicada no registro -------------------- -->
+  <script src="/scripts/utils.js"></script>
+  <script src="/scripts/signup.js"></script>
+
 </head>
 
 <body>
-  <div class="left">
-    <img src="./assets/pessoa-login.png" alt="">
-  </div>
 
+  <div class="left">
+    <img src="./assets/pessoa-signup.png" alt="">
+  </div>
   <div class="right">
     <form>
       <div class="form-header">
         <p>To-Do App</p>
       </div>
-      <h1>Acessar</h1>
-
 
       <label>
+        Nome:
+        <input type="text">
+      </label>
+      <label>
+        Apelido:
+        <input type="text">
+      </label>
+      <label>
         Email:
-        <input id="inputEmail" type="text">
-        <small id="inputEmailValidacao"></small>
+        <input type="text">
       </label>
       <label>
         Senha:
-        <input id="inputPassword" type="password">
+        <input type="password">
+      </label>
+      <label>
+        Repetir senha:
+        <input type="password">
       </label>
 
-      <button id="botaoAcessar" type="submit">Acessar</button>
+      <button>Criar conta</button>
 
     </form>
     <div class="ingressar">
-      <a href="signup.html">Não possui conta? Crie agora mesmo</a>
+      <a href="index.html">Já possui conta? Acesse aqui</a>
     </div>
   </div>
 
-  <script src="scripts/login/index.js"></script>
-  <script src="scripts/cadastro/cadastro.js"></script>
-  <script src="scripts/validacoes/utils.js"></script>
 </body>
 
 </html>
