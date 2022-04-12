@@ -13,30 +13,30 @@
 <body>
     <main>
         <section id="signupHolder">
-            <img src="assets/logo-vertical.svg" id="imgSignup">
+            <img src="assets/logo-vertical.svg" class="imgSignup">
             <h1 id="signupTitle">Realizar Cadastro</h1>
             <form autocomplete="off">
-                <label for="inputEmailSignup">
-                    <img src="assets/user.png" id="user-icon">
-                    <input id="inputEmailLogin" type="email" required placeholder="exemplo@email.com">
+                <label for="inputFirstNameSignup">
+                    <img src="assets/user1.png" class="labelIcon">
+                    <input id="inputFirstNameSignup" type="text" maxlength="50" required placeholder="Nome">
+                </label>
+                <label for="inputLastNameSignup">
+                    <img src="assets/user.png" class="labelIcon">
+                    <input id="inputLastNameSignup" type="text" maxlength="150" required placeholder="Sobrenome">
                 </label>
                 <label for="inputEmailSignup">
-                    <img src="assets/user.png" id="user-icon">
-                    <input id="inputEmailLogin" type="email" required placeholder="exemplo@email.com">
-                </label>
-                <label for="inputEmailSignup">
-                    <img src="assets/user.png" id="user-icon">
-                    <input id="inputEmailLogin" type="email" required placeholder="exemplo@email.com">
+                    <img src="assets/email.png" class="labelIcon">
+                    <input id="inputEmailSignup" type="email" required placeholder="Seu melhor e-mail">
                 </label>
                 <label for="inputPasswordSignup">
-                    <img src="assets/key.png" id="password-icon">
-                    <input id="inputPasswordLogin" type="password" required placeholder="••••••">
+                    <img src="assets/key.png" class="labelIcon">
+                    <input id="inputPasswordSignup" type="password" minlength="6" maxlength="12" required placeholder="Escolha uma senha">
                 </label>
-                <label for="inputPasswordSignup">
-                    <img src="assets/key.png" id="password-icon">
-                    <input id="inputPasswordLogin" type="password" required placeholder="••••••">
+                <label for="inputPasswordConfirmSignup">
+                    <img src="assets/key1.png" class="labelIcon">
+                    <input id="inputPasswordConfirmSignup" type="password" minlength="6" maxlength="14" required placeholder="Repita sua senha">
                 </label>
-                <button id="btnSignup" type="submit" disabled>Entrar</button>
+                <button id="btnSignup" type="submit">Entrar</button>
             </form>
             <p id="loginAlternate">
                 Já tem conta? <a href="index.html">Clique aqui</a>.
@@ -46,8 +46,8 @@
     </main>
 
     <!-- Carregamento dos scripts principais -->
-    <script src="scripts/index.js"></script>
-    <script src="scripts/login.js"></script>
+    <script src="scripts/tools.js"></script>
     <script src="scripts/signup.js"></script>
+
 </body>
 </html>

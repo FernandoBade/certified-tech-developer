@@ -33,7 +33,7 @@ main {
     margin: 1.2rem 0 1rem 0;
 }
 
-#imgSignup {
+.imgSignup {
     bottom:6rem;
     position: relative;
     margin-bottom: -6rem;
@@ -69,15 +69,7 @@ input::placeholder {
     color: var(--cinza-medio);
 }
 
-input[type=password] {
-    font-weight: bolder;
-    letter-spacing: .2rem;
-    font-size: 1.5rem;
-    height: 1.7rem;
-}
-
-#user-icon,
-#password-icon {
+.labelIcon {
     position: relative;
     bottom: -.5rem;
     width: 1.75rem;
