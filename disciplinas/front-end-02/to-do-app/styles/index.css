@@ -1,0 +1,106 @@
+@import url('./root.css');
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type="password"] {
+       -webkit-text-stroke-width: 0.2rem;
+       letter-spacing: 0.4rem;
+    }
+}
+
+body {
+    background-image: url('../assets/bg.webp');
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000a6;
+}
+
+#login-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: fit-content;
+    border-radius: .5rem;
+    padding: 2rem;
+    background: linear-gradient(15deg,#1a1118bb, #050718bb);
+}
+
+#login-title{
+    color: var(--branco);
+    text-align: center;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#img-login{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: .4rem 0rem;
+    background: transparent;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-bottom: .15rem solid var(--branco);
+    margin-top: .5rem;
+    color: var(--rosa-claro);
+    margin-bottom: 1.5rem;
+}
+
+
+input:focus, input:checked{
+    border-bottom: .15rem solid var(--rosa-claro);
+}
+
+input::placeholder {
+    color: var(--cinza-medio);
+}
+
+label, label:valid {
+    width: 100%;
+    font-weight: normal;
+    margin-top: 1em;
+    font-size: .7em;
+    color: var(--branco);
+}
+
+#btn-login{
+    width: 100%;
+    padding: .75rem .5rem;
+    background: var(--roxo-claro);
+    color: var(--branco);
+    border: none;
+    border-radius: .2rem;
+    font-weight: bold;
+    font-size: .9em;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#btn-login:disabled{
+    background: var(--cinza-escuro);
+    color: var(--cinza-medio);
+}
