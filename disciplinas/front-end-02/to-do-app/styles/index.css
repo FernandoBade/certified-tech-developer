@@ -66,17 +66,24 @@ input {
     outline: none;
     border-bottom: .15rem solid var(--branco);
     margin-top: .5rem;
-    color: var(--rosa-claro);
+    color: var(--roxo-claro);
     margin-bottom: 1.5rem;
 }
 
 
-input:focus, input:checked{
-    border-bottom: .15rem solid var(--rosa-claro);
+input:focus{
+    border-bottom: .15rem solid var(--roxo-claro);
+}
+
+input:valid{
+    border-bottom: .15rem solid var(--roxo-claro);
 }
 
 input::placeholder {
     color: var(--cinza-medio);
+}
+input::placeholder::before {
+    content: 'reasdasdst';
 }
 
 label, label:valid {
@@ -101,6 +108,6 @@ label, label:valid {
 }
 
 #btn-login:disabled{
-    background: var(--cinza-escuro);
-    color: var(--cinza-medio);
+    background: #251831;
+    color: #4c3d3c;
 }
