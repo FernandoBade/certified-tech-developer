@@ -1,12 +1,5 @@
 @import url('./root.css');
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    input[type="password"] {
-       -webkit-text-stroke-width: 0.2rem;
-       letter-spacing: 0.4rem;
-    }
-}
-
 body {
     background-image: url('../assets/bg.webp');
     background-size: cover;
@@ -20,10 +13,10 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #000000a6;
+    background-color: #000000d2;
 }
 
-#login-holder{
+#login-holder {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,17 +25,17 @@ main {
     height: fit-content;
     border-radius: .5rem;
     padding: 2rem;
-    background: linear-gradient(15deg,#1a1118bb, #050718bb);
+    /* background: linear-gradient(15deg,#1a1118bb, #050718bb); */
 }
 
-#login-title{
+#login-title {
     color: var(--branco);
     text-align: center;
     padding: 1.2rem;
     margin-bottom: 1rem;
 }
 
-#img-login{
+#img-login {
     width: 100%;
     height: 150px;
     position: relative;
@@ -50,10 +43,6 @@ main {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
 }
 
@@ -64,37 +53,58 @@ input {
     font-weight: 500;
     border: none;
     outline: none;
-    border-bottom: .15rem solid var(--branco);
+    border-bottom: .15rem solid var(--cinza-medio);
     margin-top: .5rem;
     color: var(--roxo-claro);
     margin-bottom: 1.5rem;
+    transition: .2s ease-in-out;
 }
 
-
-input:focus{
+input:focus {
     border-bottom: .15rem solid var(--roxo-claro);
 }
 
-input:valid{
+input:valid {
     border-bottom: .15rem solid var(--roxo-claro);
 }
 
 input::placeholder {
     color: var(--cinza-medio);
 }
-input::placeholder::before {
-    content: 'reasdasdst';
+
+input[type=password] {
+    font-weight: bolder;
+    letter-spacing:.3rem;
+    font-size: 1.5rem;
+    height: 1.7rem;
 }
 
-label, label:valid {
+#user-icon,#password-icon {
+    position: relative;
+    bottom: -.5rem;
+    width: 1.75rem;
+    height: 100%;
+    filter: invert(47%) sepia(14%) saturate(1467%) hue-rotate(243deg) brightness(88%) contrast(84%);
+}
+
+label,
+label:valid {
+    display: flex;
+    align-items: top;
+    gap: .5rem;
     width: 100%;
     font-weight: normal;
     margin-top: 1em;
     font-size: .7em;
-    color: var(--branco);
+    color: var(--roxo-claro);
 }
 
-#btn-login{
+.material-icons-outlined {
+    font-size: 2rem;
+    color: var(--roxo-claro);
+}
+
+#btn-login {
     width: 100%;
     padding: .75rem .5rem;
     background: var(--roxo-claro);
@@ -107,7 +117,7 @@ label, label:valid {
     transition: .2s;
 }
 
-#btn-login:disabled{
+#btn-login:disabled {
     background: #251831;
     color: #4c3d3c;
 }

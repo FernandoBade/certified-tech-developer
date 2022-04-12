@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
     <title>To-Do App</title>
 </head>
@@ -13,18 +14,18 @@
     <main>
         <section id="login-holder">
             <!-- <img id="img-login" src="./assets/login.svg" alt="To-Do list"> -->
-                <h1 id="login-title">Efetue seu login</h1>
-                <form>
-                    <label for="input-email">
-                        Email:
-                        <input id="input-email" type="email" required placeholder="exemplo@email.com">
-                    </label>
-                    <label for="input-password">
-                        Senha:
-                        <input id="input-password" type="password" required placeholder="••••••">
-                    </label>
-                    <button id="btn-login" type="submit" disabled >Entrar</button>
-                </form>
+            <h1 id="login-title">Efetue seu login</h1>
+            <form autocomplete="off">
+                <label for="input-email">
+                    <img src="assets/user2.png" id="user-icon">
+                    <input id="input-email" type="email" required placeholder="exemplo@email.com">
+                </label>
+                <label for="input-password">
+                    <img src="assets/sec1.png" id="password-icon">
+                    <input id="input-password" type="password" required placeholder="••••••">
+                </label>
+                <button id="btn-login" type="submit" disabled>Entrar</button>
+            </form>
             </div>
         </section>
     </main>
@@ -33,6 +34,6 @@
     <script src="scripts/index.js"></script>
     <script src="scripts/login.js"></script>
     <script src="scripts/signup.js"></script>
-</body> 
+</body>
 
 </html>
