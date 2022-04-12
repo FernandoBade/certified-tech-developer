@@ -13,7 +13,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #000000d2;
+    background-color: #000000a2;
 }
 
 #login-holder {
@@ -23,9 +23,9 @@ main {
     justify-content: center;
     width: 360px;
     height: fit-content;
-    border-radius: .5rem;
+    border-radius: 1rem;
     padding: 2rem;
-    /* background: linear-gradient(15deg,#1a1118bb, #050718bb); */
+    background: linear-gradient(15deg,#1a1118bb, #050718bb);
 }
 
 #login-title {
@@ -36,10 +36,9 @@ main {
 }
 
 #img-login {
-    width: 100%;
-    height: 150px;
+    bottom: 88px;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: -4rem;
 }
 
 form {
@@ -55,17 +54,17 @@ input {
     outline: none;
     border-bottom: .15rem solid var(--cinza-medio);
     margin-top: .5rem;
-    color: var(--roxo-claro);
+    color: var(--rosa-claro);
     margin-bottom: 1.5rem;
     transition: .2s ease-in-out;
 }
 
 input:focus {
-    border-bottom: .15rem solid var(--roxo-claro);
+    border-bottom: .15rem solid var(--rosa-claro);
 }
 
 input:valid {
-    border-bottom: .15rem solid var(--roxo-claro);
+    border-bottom: .15rem solid var(--rosa-claro);
 }
 
 input::placeholder {
@@ -74,18 +73,18 @@ input::placeholder {
 
 input[type=password] {
     font-weight: bolder;
-    letter-spacing:.3rem;
+    letter-spacing: .2rem;
     font-size: 1.5rem;
     height: 1.7rem;
 }
 
-#user-icon,#password-icon {
+#user-icon,
+#password-icon {
     position: relative;
     bottom: -.5rem;
     width: 1.75rem;
     height: 100%;
-    filter: invert(47%) sepia(14%) saturate(1467%) hue-rotate(243deg) brightness(88%) contrast(84%);
-}
+    filter: invert(88%) sepia(71%) saturate(5703%) hue-rotate(285deg) brightness(87%) contrast(101%);}
 
 label,
 label:valid {
@@ -107,8 +106,8 @@ label:valid {
 #btn-login {
     width: 100%;
     padding: .75rem .5rem;
-    background: var(--roxo-claro);
-    color: var(--branco);
+    background: var(--rosa-claro);
+    color: var(--roxo-medio);
     border: none;
     border-radius: .2rem;
     font-weight: bold;
@@ -118,6 +117,7 @@ label:valid {
 }
 
 #btn-login:disabled {
-    background: #251831;
-    color: #4c3d3c;
+    background: var(--cinza-escuro);
+    color: var(--cinza-medio);
+    cursor: default;
 }
