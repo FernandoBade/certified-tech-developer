@@ -12,12 +12,12 @@ const endpointCadastro = "https://ctd-todo-api.herokuapp.com/v1/users";
 
 // função de mostrar a senha cadastro
 
-btnMostrarSenha1.addEventListener('click', function (e) {
+btnMostrarSenha1.addEventListener('click', () => {
     const mudarType = senhaCadastro.getAttribute('type') === 'password' ? 'text' : 'password';
     senhaCadastro.setAttribute('type', mudarType);
     btnMostrarSenha1.classList.toggle('material-icons-outlined-1');
 });
-btnMostrarSenha2.addEventListener('click', function (e) {
+btnMostrarSenha2.addEventListener('click', () => {
     const mudarType = senhaConfCadastro.getAttribute('type') === 'password' ? 'text' : 'password';
     senhaConfCadastro.setAttribute('type', mudarType);
     btnMostrarSenha2.classList.toggle('material-icons-outlined-1');
