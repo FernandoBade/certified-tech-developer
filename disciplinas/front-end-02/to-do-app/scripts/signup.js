@@ -58,6 +58,7 @@ let senhaConfValida = senhaCadastro.addEventListener('blur', () => {
 });
 
 let senhasConferem = false
+
 function confereSenhas() {
     senhaCadastro.value === senhaConfCadastro.value ? senhasConferem = true : alert("Senhas não conferem")
 };
@@ -67,24 +68,24 @@ btnCadastro.addEventListener('click', (e) => {
     confereSenhas()
     if (nomeValido && sobrenomeValido && emailValido && senhaValida && senhaConfValida && senhasConferem) {
         e.preventDefault()
-        
+
         //Normalização dos campos
-        
+
         nomeCadastroNormalizado = nomeCadastro.value.trim().toLowerCase();
         sobrenomeCadastroNormalizado = sobrenomeCadastro.value.trim().toLowerCase();
         emailCadastroNormalizado = emailCadastro.value.trim().toLowerCase();
         senhaCadastroNormalizado = senhaCadastro.value.trim();
         senhaConfCadastroNormalizado = senhaConfCadastro.value.trim();
-        
+
         //Insersão dos valores no objeto de criação de usuário
-        
+
         novoUsuario.firstName = nomeCadastroNormalizado;
         novoUsuario.lastName = sobrenomeCadastroNormalizado;
         novoUsuario.email = emailCadastroNormalizado;
         novoUsuario.password = senhaCadastroNormalizado;
-        
+
         console.log(novoUsuario);
-        
+
         // Envio para API
 
         fetch(endpointCadastro, configApiCadastro)
@@ -104,7 +105,7 @@ btnCadastro.addEventListener('click', (e) => {
                 });
 
     } else {
-        alert("Preencha todos os campos")
+        console.log("falta preencher alguns campos");
     }
 
 });
