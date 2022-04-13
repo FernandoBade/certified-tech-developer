@@ -37,6 +37,7 @@ main {
     bottom:6rem;
     position: relative;
     margin-bottom: -6rem;
+    width: 8rem;
 }
 
 form {
@@ -51,10 +52,12 @@ input {
     border: none;
     outline: none;
     border-bottom: .15rem solid var(--cinza-medio);
-    margin-top: .5rem;
+    margin-top: 0;
     color: var(--rosa-claro);
     margin-bottom: 1.5rem;
     transition: .2s ease-in-out;
+    height: 1.5rem;
+    line-height: .5rem;
 }
 
 input:focus {
@@ -71,9 +74,9 @@ input::placeholder {
 
 .labelIcon {
     position: relative;
-    bottom: -.5rem;
-    width: 1.75rem;
-    height: 100%;
+    bottom: .1rem;
+    width: 1.5rem;
+    height: 1.5rem;
     filter: invert(88%) sepia(71%) saturate(5703%) hue-rotate(285deg) brightness(87%) contrast(101%);
 }
 
@@ -84,7 +87,7 @@ label:valid {
     gap: .5rem;
     width: 100%;
     font-weight: normal;
-    margin-top: 1em;
+    margin-top: 0;
     font-size: .7em;
     color: var(--roxo-claro);
 }
@@ -114,7 +117,7 @@ label:valid {
 }
 
 #loginAlternate {
-    margin: 1.5rem 0 -.4rem 0;    font-size: .8rem;
+    margin: 1rem 0 -1rem 0;    font-size: .8rem;
     color: var(--rosa-claro);
     text-align: center;
 }
@@ -129,4 +132,20 @@ label:valid {
 #loginAlternate>a:hover {
     color: var(--roxo-medio);
     text-decoration: none;
+}
+
+.material-icons-outlined{
+    font-size: 1.25rem;
+    filter: invert(88%) sepia(71%) saturate(5703%) hue-rotate(285deg) brightness(87%) contrast(101%);
+    opacity: .2;
+    margin-left: -1.72rem;
+    transition: .2s;
+}
+
+.material-icons-outlined-1{
+    font-size: 1.25rem;
+    filter: invert(88%) sepia(71%) saturate(5703%) hue-rotate(285deg) brightness(87%) contrast(101%);
+    opacity: .8;
+    margin-left: -1.72rem;
+    transition: .2s
 }

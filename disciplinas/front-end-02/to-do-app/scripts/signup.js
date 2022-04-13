@@ -4,9 +4,24 @@ const nomeCadastro = document.getElementById('inputFirstNameSignup');
 const sobrenomeCadastro = document.getElementById('inputLastNameSignup');
 const emailCadastro = document.getElementById('inputEmailSignup');
 const senhaCadastro = document.getElementById('inputPasswordSignup');
+const btnMostrarSenha1 = document.getElementById('btnMostrarSenha1');
+const btnMostrarSenha2 = document.getElementById('btnMostrarSenha2');
 const senhaConfCadastro = document.getElementById('inputPasswordConfirmSignup');
 const btnCadastro = document.getElementById('btnSignup');
 const endpointCadastro = "https://ctd-todo-api.herokuapp.com/v1/users";
+
+// função de mostrar a senha cadastro
+
+btnMostrarSenha1.addEventListener('click', function (e) {
+    const mudarType = senhaCadastro.getAttribute('type') === 'password' ? 'text' : 'password';
+    senhaCadastro.setAttribute('type', mudarType);
+    btnMostrarSenha1.classList.toggle('material-icons-outlined-1');
+});
+btnMostrarSenha2.addEventListener('click', function (e) {
+    const mudarType = senhaConfCadastro.getAttribute('type') === 'password' ? 'text' : 'password';
+    senhaConfCadastro.setAttribute('type', mudarType);
+    btnMostrarSenha2.classList.toggle('material-icons-outlined-1');
+});
 
 //Objeto de criação de usuário
 
@@ -64,48 +79,50 @@ function confereSenhas() {
 };
 
 
-btnCadastro.addEventListener('click', (e) => {
-    confereSenhas()
-    if (nomeValido && sobrenomeValido && emailValido && senhaValida && senhaConfValida && senhasConferem) {
-        e.preventDefault()
+// btnCadastro.addEventListener('click', (e) => {
+//     confereSenhas()
+//     if (nomeValido && sobrenomeValido && emailValido && senhaValida && senhaConfValida && senhasConferem) {
+//         e.preventDefault()
 
-        //Normalização dos campos
+//         //Normalização dos campos
 
-        nomeCadastroNormalizado = nomeCadastro.value.trim().toLowerCase();
-        sobrenomeCadastroNormalizado = sobrenomeCadastro.value.trim().toLowerCase();
-        emailCadastroNormalizado = emailCadastro.value.trim().toLowerCase();
-        senhaCadastroNormalizado = senhaCadastro.value.trim();
-        senhaConfCadastroNormalizado = senhaConfCadastro.value.trim();
+//         nomeCadastroNormalizado = nomeCadastro.value.trim().toLowerCase();
+//         sobrenomeCadastroNormalizado = sobrenomeCadastro.value.trim().toLowerCase();
+//         emailCadastroNormalizado = emailCadastro.value.trim().toLowerCase();
+//         senhaCadastroNormalizado = senhaCadastro.value.trim();
+//         senhaConfCadastroNormalizado = senhaConfCadastro.value.trim();
 
-        //Insersão dos valores no objeto de criação de usuário
+//         //Insersão dos valores no objeto de criação de usuário
 
-        novoUsuario.firstName = nomeCadastroNormalizado;
-        novoUsuario.lastName = sobrenomeCadastroNormalizado;
-        novoUsuario.email = emailCadastroNormalizado;
-        novoUsuario.password = senhaCadastroNormalizado;
+//         novoUsuario.firstName = nomeCadastroNormalizado;
+//         novoUsuario.lastName = sobrenomeCadastroNormalizado;
+//         novoUsuario.email = emailCadastroNormalizado;
+//         novoUsuario.password = senhaCadastroNormalizado;
 
-        console.log(novoUsuario);
+//         console.log(novoUsuario);
 
-        // Envio para API
+//         // Envio para API
 
-        fetch(endpointCadastro, configApiCadastro)
-            .then(
-                resultado => {
-                    return resultado.json();
-                })
-            .then(
-                resultado => {
-                    console.log(resultado);
-                }).
-            catch(
-                erro => {
-                    if (erro = 400) {
-                        alert("Usuário já cadastrado")
-                    };
-                });
+//         fetch(endpointCadastro, configApiCadastro)
+//             .then(
+//                 resultado => {
+//                     return resultado.json();
+//                 })
+//             .then(
+//                 resultado => {
+//                     console.log(resultado);
+//                 }).
+//             catch(
+//                 erro => {
+//                     if (erro = 400) {
+//                         alert("Usuário já cadastrado")
+//                     };
+//                 });
 
-    } else {
-        console.log("falta preencher alguns campos");
-    }
+//     } else {
+//         console.log("falta preencher alguns campos");
+//     }
 
-});
+// });
+
+
