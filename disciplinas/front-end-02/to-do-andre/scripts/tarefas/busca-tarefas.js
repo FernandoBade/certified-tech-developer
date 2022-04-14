@@ -18,8 +18,8 @@ function buscaListaTarefas() {
 }
 
 //busca uma tarefa especifica, pelo ID
-function buscaTarefaEspecifica(id) {
-    const idTarefaEspecifica = id
+function buscaTarefaEspecifica(idTarefa) {
+    const idTarefaEspecifica = idTarefa
     const configTarefas = {
         method: 'GET',
         headers: {
