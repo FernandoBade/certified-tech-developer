@@ -15,7 +15,7 @@
         <section id="signupHolder">
             <img src="assets/logo-vertical.svg" class="imgSignup">
             <h1 id="signupTitle">Realizar Cadastro</h1>
-            <form autocomplete="off">
+            <form id="formCadastro" autocomplete="off">
                 <label for="inputFirstNameSignup">
                     <img src="assets/user1.png" class="labelIcon">
                     <input id="inputFirstNameSignup" type="text" maxlength="50" required placeholder="Nome">
@@ -39,8 +39,8 @@
                     <input id="inputPasswordConfirmSignup" type="password" minlength="6" maxlength="20" required
                         placeholder="Repita sua senha">
                     <span class="material-icons-outlined" id="btnMostrarSenha2">visibility</span>
-
                 </label>
+                <button id="btnSignup" type="submit" class="btnSignup">Cadastrar</button>
             </form>
             <p id="loginAlternate">
                 Já tem conta? <a href="index.html">Clique aqui</a>.

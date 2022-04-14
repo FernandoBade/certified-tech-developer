@@ -28,13 +28,17 @@ a {
 }
 
 .user-info .user-image {
-  height: 2em;
-  width: 2em;
+  height: 2rem;
+  width: 2rem;
   border-radius: 50%;
   background-color: white;
-  opacity: .4;
   margin-left: .7em;
 }
+
+.user-image {
+  background-image: url('https://picsum.photos/30/');
+  background-size: cover;
+}	
 
 #closeApp{
   margin-left: 15px;
