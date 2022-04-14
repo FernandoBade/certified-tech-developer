@@ -35,7 +35,7 @@ fetch(endPointUsuario, configuracaoRequisicao).then(resultado => {
     console.log(erro);
 }
 );
-
+var testeTarefa;
 //ativa as funções do 'render-tarefas.js' para renderizar as tarefas no HTML
 
 function renderizarTareas(listaTarefas) {
@@ -46,6 +46,8 @@ function renderizarTareas(listaTarefas) {
     tarefasTerminadas.innerHTML = "";
 
     for (const tarefa of listaTarefas) {
+        testeTarefa = tarefa.completed
         tarefa.completed ? renderizaTarefasTerminadas(tarefa) : renderizaTarefasPendentes(tarefa)
     }
+    console.log(testeTarefa);
 }
