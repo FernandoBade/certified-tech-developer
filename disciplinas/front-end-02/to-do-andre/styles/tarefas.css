@@ -136,13 +136,13 @@ a {
   width: 1.5em;
   background-color: white;
   box-shadow: 2px 2px 5px lightgrey;
-  border: 2px solid var(--secondary);
+  border: 2px solid #c9edc2;
   z-index: 2;
   transition: background-color 200ms linear;
 }
 
 .tarefa .not-done:hover {
-  background-color: var(--secondary);
+  background-color: #c9edc2;
 }
 
 .tarefa:first-child .not-done::before {
@@ -153,7 +153,7 @@ a {
   display: block;
   height: 3em;
   width: 2px;
-  background-color: var(--secondary);
+  background-color: #c9edc2;
 }
 
 .tarefa:not(:last-child) .not-done::after {
@@ -164,7 +164,7 @@ a {
   display: block;
   height: 4.5em;
   width: 2px;
-  background-color: var(--secondary);
+  background-color: #c9edc2;
 }
 
 .tarefa .descricao {
@@ -172,9 +172,10 @@ a {
   align-items: center;
   justify-content: space-between;
   flex: 1;
-  background-color: white;
+  background-color: #c9edc2;
   padding: 1em 2em;
   box-shadow: 2px 2px 5px lightgrey;
+  border-radius:.5rem
 }
 
 .tarefa .nome {
@@ -213,14 +214,14 @@ a {
 
 .tarefas-terminadas i{
   color: grey;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(240, 213, 213);
 }
 .tarefas-terminadas button{
   margin-left: 10px;
 }
 
 .tarefas-terminadas .tarefa .descricao {
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(240, 213, 213);
 }
 
 .tarefas-terminadas .tarefa .descricao .nome {

@@ -1,9 +1,11 @@
+const skeleton = document.getElementById('skeleton');
 const tarefasPendetes = document.querySelector('.tarefas-pendentes');
 tarefasPendetes.innerHTML = "";
 const tarefasTerminadas = document.querySelector('.tarefas-terminadas');
 tarefasTerminadas.innerHTML = "";
 
 function renderizaTarefasTerminadas(tarefa) {
+//Da para utilizar o método toLocaleDateString() e Date para transformar a data no formato PT-BR
     const addData = new Date(tarefa.createdAt);
     tarefasTerminadas.innerHTML += `
     <li class="tarefa">
