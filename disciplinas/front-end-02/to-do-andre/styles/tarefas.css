@@ -217,7 +217,7 @@ a {
   background-color: rgb(240, 213, 213);
 }
 .tarefas-terminadas button{
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 .tarefas-terminadas .tarefa .descricao {
@@ -246,4 +246,30 @@ a {
 @keyframes trasparencia {
   0%{ opacity: 0.5;}
   100%{ opacity: 0.8;}
+}
+
+.fa-check, .fa-undo, .fa-trash, .fa-edit{
+  font-size: 1rem;
+  background: #c9edc2;
+  border: inset 2px solid white;
+  outline: none;
+  color:rgb(140, 140, 140);
+  transition: all .2s ease-in-out;
+  padding: .5rem;
+  margin: .1rem;
+  border-radius: 2px;
+}
+
+.fa-check:hover, .fa-undo:hover, .fa-trash:hover, .fa-edit:hover{
+  opacity: 1;
+  background-color: #c9edc298;
+  color:rgb(50, 50, 50);
+}
+
+.icones-edit{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
 }
