@@ -21,8 +21,8 @@ function renderizaTarefasTerminadas(tarefa) {
             <p class="nome">${tarefa.description}</p>
             </div>
             <div class="icones-edit">
-                <button title="Ativar tarefa novamente"><i id="${tarefa.id}" class="fa-solid fa-undo change"></i></button>
-                <button title="Excluir tarefa"><i id="${tarefa.id}" class="fa fa-trash"></i></button>
+                <button id="${tarefa.id}" title="Ativar tarefa novamente"><i class="fa-solid fa-undo change"></i></button>
+                <button id="${tarefa.id}" title="Excluir tarefa"><i class="fa fa-trash"></i></button>
             </div>
         </div>
     </li>
@@ -45,8 +45,8 @@ function renderizaTarefasPendentes(tarefa) {
             <p class="nome">${tarefa.description}</p>
             </div>
             <div class="icones-edit">
-                <button title="Marcar como terminada"><i id="${tarefa.id}" class="fa-solid fa-check"></i></button>
-                <button title="Excluir tarefa"><i id="${tarefa.id}" class="fa fa-trash"></i></button>
+                <button id="${tarefa.id}" title="Marcar como terminada"><i class="fa-solid fa-check"></i></button>
+                <button id="${tarefa.id}" title="Excluir tarefa"><i class="fa fa-trash"></i></button>
             </div>
         </div>
     </li>
