@@ -9,7 +9,7 @@ function renderizaTarefasTerminadas(tarefa) {
     const addData = new Date(tarefa.createdAt);
     tarefasTerminadas.innerHTML += `
     <li class="tarefa">
-        <div class="done"></div>
+        <div class="done estado"></div>
         <div class="descricao">
             <div class="descricaoECriacao">
             <p class="timestamp timestamp-done">
@@ -21,7 +21,7 @@ function renderizaTarefasTerminadas(tarefa) {
             <p class="nome">${tarefa.description}</p>
             </div>
             <div class="icones-edit">
-                <button id="${tarefa.id}" title="Ativar tarefa novamente"><i class="fa-solid fa-undo change"></i></button>
+                <button id="${tarefa.id}" title="Ativar tarefa novamente"><i class="fa-solid fa-edit change"></i></button>
                 <button id="${tarefa.id}" title="Excluir tarefa"><i class="fa fa-trash"></i></button>
             </div>
         </div>
@@ -33,7 +33,7 @@ function renderizaTarefasPendentes(tarefa) {
     const addData = new Date(tarefa.createdAt);
     tarefasPendetes.innerHTML += `
     <li class="tarefa">
-        <div class="not-done change" id="${tarefa.id}"></div>
+        <div class="not-done estado" id="${tarefa.id}"></div>
         <div class="descricao">
             <div class="descricaoECriacao">
             <p class="timestamp">
@@ -45,7 +45,7 @@ function renderizaTarefasPendentes(tarefa) {
             <p class="nome">${tarefa.description}</p>
             </div>
             <div class="icones-edit">
-                <button id="${tarefa.id}" title="Marcar como terminada"><i class="fa-solid fa-check"></i></button>
+                <button onclick="alterarEstadoDaTarefa(${tarefa.id})" id="${tarefa.id}" title="Marcar como terminada"><i class="fa-solid fa-edit"></i></button>
                 <button id="${tarefa.id}" title="Excluir tarefa"><i class="fa fa-trash"></i></button>
             </div>
         </div>

@@ -16,3 +16,20 @@ function buscaListaTarefas() {
     })
     .catch(error => console.log(error));
 }
+
+//busca uma tarefa especifica, pelo ID
+function buscaTarefaEspecifica(id) {
+    const idTarefaEspecifica = id
+    const configTarefas = {
+        method: 'GET',
+        headers: {
+            authorization: tokenJwtusuarioLogado
+        }
+    };
+    fetch(`https://ctd-todo-api.herokuapp.com/v1/tasks/${idTarefaEspecifica}`, configTarefas)
+    .then(response => response.json())
+    .then(tarefaEspecifica => {
+        console.log(tarefaEspecifica)
+    })
+    .catch(error => console.log(error));
+}

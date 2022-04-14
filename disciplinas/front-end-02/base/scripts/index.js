@@ -176,7 +176,6 @@ window.addEventListener('load', function () {
         fetch(url, settingsCambio)
           .then(response => {
             console.log(response.status);
-            //renderizar nuevamente las tareas
             consultarTareas();
           })
       })
