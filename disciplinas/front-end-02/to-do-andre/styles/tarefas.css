@@ -232,8 +232,12 @@ a {
   background-color: rgb(240, 213, 213);
 }
 
-.tarefas-terminadas .tarefa .descricao .nome , p.timestamp {
+.tarefas-terminadas .tarefa .descricao .nome {
   color: grey;
+  text-decoration: line-through;
+}
+
+.timestamp-done{
   text-decoration: line-through;
 }
 

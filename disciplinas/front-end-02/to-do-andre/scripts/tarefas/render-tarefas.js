@@ -12,7 +12,7 @@ function renderizaTarefasTerminadas(tarefa) {
         <div class="done"></div>
         <div class="descricao">
             <div class="descricaoECriacao">
-            <p class="timestamp">
+            <p class="timestamp timestamp-done">
                 Tarefa criada em 
                 ${addData.toLocaleDateString()} às
                 ${addData.getHours()}:${addData.getMinutes()}
