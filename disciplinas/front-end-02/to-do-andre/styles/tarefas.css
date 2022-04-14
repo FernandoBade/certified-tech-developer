@@ -169,7 +169,8 @@ a {
 
 .tarefa .descricao {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: left;
   justify-content: space-between;
   flex: 1;
   background-color: #c9edc2;
@@ -178,14 +179,21 @@ a {
   border-radius:.5rem
 }
 
+.descricaoECriacao{
+  display: flex;
+  flex-direction:column;
+  gap: .5rem;
+}
+
 .tarefa .nome {
   color: rgb(95, 95, 95);
 }
 
 .tarefa .timestamp {
   font-size: .9em;
-  color: rgb(134, 134, 134);
+  color: rgb(150, 150, 150);
 }
+
 
 /* Tarefas terminadas ----------------------------------------------------------- */
 
@@ -224,7 +232,7 @@ a {
   background-color: rgb(240, 213, 213);
 }
 
-.tarefas-terminadas .tarefa .descricao .nome {
+.tarefas-terminadas .tarefa .descricao .nome , p.timestamp {
   color: grey;
   text-decoration: line-through;
 }
@@ -262,7 +270,7 @@ a {
 
 .fa-check:hover, .fa-undo:hover, .fa-trash:hover, .fa-edit:hover{
   opacity: 1;
-  background-color: #c9edc298;
+  background-color: #ececec98;
   color:rgb(50, 50, 50);
 }
 

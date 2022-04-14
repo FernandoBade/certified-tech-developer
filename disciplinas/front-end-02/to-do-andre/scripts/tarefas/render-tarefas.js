@@ -11,11 +11,18 @@ function renderizaTarefasTerminadas(tarefa) {
     <li class="tarefa">
         <div class="done"></div>
         <div class="descricao">
+            <div class="descricaoECriacao">
+            <p class="timestamp">
+                Tarefa criada em 
+                ${addData.toLocaleDateString()} às
+                ${addData.getHours()}:${addData.getMinutes()}
+                <i class="far fa-calendar-alt"></i>
+            </p>
             <p class="nome">${tarefa.description}</p>
-            <p class="timestamp"><i class="far fa-calendar-alt"></i>${addData.toLocaleDateString()} <i class="far fa-clock"></i>${addData.getHours()}:${addData.getMinutes()}</p>
+            </div>
             <div class="icones-edit">
-                <button><i id="${tarefa.id}" class="fa-solid fa-undo change"></i></button>
-                <button><i id="${tarefa.id}" class="fa-solid fa-trash"></i></button>
+                <button title="Ativar tarefa novamente"><i id="${tarefa.id}" class="fa-solid fa-undo change"></i></button>
+                <button title="Excluir tarefa"><i id="${tarefa.id}" class="fa fa-trash"></i></button>
             </div>
         </div>
     </li>
@@ -28,11 +35,18 @@ function renderizaTarefasPendentes(tarefa) {
     <li class="tarefa">
         <div class="not-done change" id="${tarefa.id}"></div>
         <div class="descricao">
+            <div class="descricaoECriacao">
+            <p class="timestamp">
+                Tarefa criada em 
+                ${addData.toLocaleDateString()} às
+                ${addData.getHours()}:${addData.getMinutes()}
+                <i class="far fa-calendar-alt"></i>
+            </p>
             <p class="nome">${tarefa.description}</p>
-            <p class="timestamp"><i class="far fa-calendar-alt"></i>${addData.toLocaleDateString()} <i class="far fa-clock"></i>${addData.getHours()}:${addData.getMinutes()}</p>
+            </div>
             <div class="icones-edit">
-                <button><i id="${tarefa.id}" class="fa-solid fa-check"></i></button>
-                <button><i id="${tarefa.id}" class="fa fa-trash"></i></button>
+                <button title="Marcar como terminada"><i id="${tarefa.id}" class="fa-solid fa-check"></i></button>
+                <button title="Excluir tarefa"><i id="${tarefa.id}" class="fa fa-trash"></i></button>
             </div>
         </div>
     </li>
