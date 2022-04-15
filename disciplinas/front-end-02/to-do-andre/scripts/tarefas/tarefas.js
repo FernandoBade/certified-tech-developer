@@ -47,7 +47,11 @@ function renderizarTareas(listaTarefas) {
 
     for (const tarefa of listaTarefas) {
         testeTarefa = tarefa.completed
-        tarefa.completed ? renderizaTarefasTerminadas(tarefa) : renderizaTarefasPendentes(tarefa)
-    }
+        if (tarefa.completed ) {renderizaTarefasTerminadas(tarefa)
+            
+        } else {
+            renderizaTarefasPendentes(tarefa)
+        }
     console.log(testeTarefa);
+}
 }

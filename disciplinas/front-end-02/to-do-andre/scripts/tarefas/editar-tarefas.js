@@ -18,7 +18,6 @@ const idTarefaBuscada = idTarefaEspecifica
     .catch(error => console.log(error));
 
 
-
     //captura da classe em comum entre as tarefas, "estado"
     //confirmação po parte do usuário
     const confirmacaoDeAlteracao = prompt("Escolha o que deseja alterar", "");
@@ -41,11 +40,11 @@ const idTarefaBuscada = idTarefaEspecifica
             "Authorization": tokenJwtusuarioLogado
         }
     }
+    
     function alteracaoDeTarefaPeloId() {
         //envia as alterações para a API
         fetch(`https://ctd-todo-api.herokuapp.com/v1/tasks/${idTarefaEspecifica}`, configApiAlteracaoEstado)
         //cria o objeto vazio para a API 
-        // objetoTarefaApi = {}
         //configura o JSON para a API
             .then(response => { response.json()})
             .then(response => {
