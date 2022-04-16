@@ -14,7 +14,7 @@ function renderizaTarefasTerminadas(tarefa) {
         <div class="descricao">
             <div class="descricaoECriacao">
             <p class="timestamp timestamp-done">
-                Tarefa criada em 
+                Tarefa ${tarefa.id} criada em 
                 ${addData.toLocaleDateString()} às
                 ${addData.getHours()}:${addData.getMinutes()}
                 <i class="far fa-calendar-alt"></i>
@@ -38,7 +38,7 @@ function renderizaTarefasPendentes(tarefa) {
         <div class="descricao">
             <div class="descricaoECriacao">
             <p class="timestamp">
-                Tarefa criada em 
+                Tarefa ${tarefa.id} criada em 
                 ${addData.toLocaleDateString()} às
                 ${addData.getHours()}:${addData.getMinutes()}
                 <i class="far fa-calendar-alt"></i>
