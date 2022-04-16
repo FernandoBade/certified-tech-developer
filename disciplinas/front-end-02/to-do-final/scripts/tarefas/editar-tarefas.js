@@ -24,18 +24,6 @@ btnCancelar.addEventListener('click', () => {
 
 //função para alterar o estado da tarefa
 
-
-const objetoTarefaApiJson = JSON.stringify(objetoDeAlteracao)
-const configApiAlteracaoEstado = {
-    method: 'PUT',
-    body: objetoTarefaApiJson,
-    headers: {
-        "Content-type": "application/json",
-        "Authorization": tokenJwtusuarioLogado
-    }
-}
-
-
 function alterarEstadoDaTarefa(idTarefaEspecifica) {
     
     const idTarefaBuscada = idTarefaEspecifica
@@ -53,26 +41,24 @@ function alterarEstadoDaTarefa(idTarefaEspecifica) {
         inputAlteracaoTarefa.innerText = tarefaEspecifica.description;
         alteracoesModal.addEventListener('submit', (e) => {
             e.preventDefault();
-                console.log(tarefaEspecifica.id);
-                objetoDeAlteracao.description = inputAlteracaoTarefa.value;
-                objetoDeAlteracao.completed = statusTarefaModal.checked;
-                alteracaoDeTarefaPeloId()
+            objetoDeAlteracao.description = inputAlteracaoTarefa.value;
+            statusTarefaModal.checked===true ? objetoDeAlteracao.completed = true : objetoDeAlteracao.completed = false;
+            const objetoTarefaApiJson = JSON.stringify(objetoDeAlteracao)
+            const configApiAlteracaoEstado = {
+                method: 'PUT',
+                body: objetoTarefaApiJson,
+                headers: {
+                    "Content-type": "application/json",
+                    "Authorization": tokenJwtusuarioLogado
+                }
+            }
+            fetch(`https://ctd-todo-api.herokuapp.com/v1/tasks/${idTarefaBuscada}`, configApiAlteracaoEstado)
+            .then(response => response.json())
+            .then(resposta => {
+            containerModal.classList.remove('show');
+            alert("Tarefa alterada com sucesso!")
+            location.reload();
             })
         })
-        .catch(error => console.log(error));
-
-    //Configuração do envio para API
-    function alteracaoDeTarefaPeloId() {
-        //envia as alterações para a API
-        fetch(`https://ctd-todo-api.herokuapp.com/v1/tasks/${idTarefaEspecifica}`, configApiAlteracaoEstado)
-            //cria o objeto vazio para a API 
-            //configura o JSON para a API
-            .then(response => { response.json() })
-            .then(response => {
-                alert("Tarefa alterada com sucesso!")
-                containerModal.classList.remove('show');
-                location.reload();
-                console.log(response)
-            })
-    }
-}	
+    })
+}
