@@ -1,8 +1,9 @@
 //função para excluir tarefa
 
 function excluirTarefa(idTarefaEspecifica) {
-
+        const confirmaExclusao = confirm("Deseja realmente excluir esta tarefa?");
         //Configuração do envio para API
+        if (confirmaExclusao) {
         const configApiExclusao = {
             method: 'DELETE',
             headers: {
@@ -22,3 +23,4 @@ function excluirTarefa(idTarefaEspecifica) {
                 })
                 .catch(error => console.log(error))
         }
+    }

@@ -31,6 +31,7 @@ addNovaTarefa.addEventListener('submit', function (event) {
         .then(response => response.json())
         .then(response => {
             console.log(response.status);
+            alert("Tarefa adicionada com sucesso!")
             location.reload();
         })
         .catch(error => console.log(error));
