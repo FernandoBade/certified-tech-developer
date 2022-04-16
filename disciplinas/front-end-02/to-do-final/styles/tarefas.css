@@ -120,7 +120,7 @@ a {
 
 .titulo-pendentes {
   position: relative;
-  width: 8em;
+  width: 10em;
   text-align: center;
   padding: .5em 1em;
   background-color: white;
@@ -130,7 +130,7 @@ a {
   font-weight: 400;
   font-size: 1.1em;
   margin-left: calc(15% - 4em);
-  margin-top: 5%;
+  margin-top: 3%;
   z-index: 20;
 }
 
@@ -217,7 +217,7 @@ a {
 
 .titulo-terminadas {
   position: relative;
-  width: 8em;
+  width: 10em;
   text-align: center;
   padding: .5em 1em;
   background-color: white;
