@@ -45,7 +45,7 @@ function renderizaTarefasPendentes(tarefa) {
             <p class="nome">${tarefa.description}</p>
             </div>
             <div class="icones-edit">
-                <button onclick="alterarEstadoDaTarefa(${tarefa.id})" id="${tarefa.id}" title="Marcar como terminada"><i class="fa-solid fa-edit"></i></button>
+                <button dada-open="modal1" onclick="alterarEstadoDaTarefa(${tarefa.id})" id="${tarefa.id}" title="Marcar como terminada"><i class="fa-solid fa-edit"></i></button>
                 <button onclick="excluirTarefa(${tarefa.id})" id="${tarefa.id}" title="Excluir tarefa"><i class="fa fa-trash"></i></button>
             </div>
         </div>

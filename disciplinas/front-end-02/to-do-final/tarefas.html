@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- ----------------------------- estilos CSS ----------------------------- -->
   <link rel="stylesheet" href="./styles/tarefas.css">
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- ------------------- Biblioteca de icones - Fontawesome -------------------- -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/7cbbc7871e.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7cbbc7871e.js" crossorigin="anonymous"></script>
 
   <!-- ----------------------------- sweet alert ----------------------------- -->
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -26,7 +27,7 @@
   <title>To-Do App</title>
 </head>
 
-<body>
+<div>
   <header>
     <nav>
       <a href="#">Tarefas</a>
@@ -39,6 +40,45 @@
       </p>
     </div>
   </header>
+
+  <!-- Modal de captura das alterações -->
+
+  <button id="openModal">ABRIR</button>
+  <div class="modal-container" id="modal-container">
+    <div class="modal">
+      <div class="modalHeader">
+        <div>
+          <h1>Altere sua tarefa</h1>
+        </div>
+        <div>
+          <button id="closeModal"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+      <form id="alteracoesModal" class="alteracoesModal">
+        <label for="inputAlteracaoTarefa">
+          <input type="text" id="inputAlteracaoTarefa">
+        </label>
+        <div id="statusTarefa">
+          <label for="statusPendente">
+            <input type="radio" id="statusPendente" name="statusTarefa" value="false" checked> Pendente
+          </label>
+          <label for="statusTerminada">
+            <input type="radio" id="statusTerminada" name="statusTarefa" value="true"> Terminada
+          </label>
+        </div>
+        <div class="botoesAlteracaoTarefas">
+          <button id="btnCancelar">Cancelar</button>
+          <button id="btnConfirmaAlteracoes" type="submit">Confirmar Alterações</button>
+        </div>
+      </form>
+      </p>
+    </div>
+  </div>
+
+  <!-------------------------------------------------------------------->
+
+  <!-- Skeleton, base e render das tarefas -->
+
 
   <form class="nova-tarefa" id="addNovaTarefa">
     <div class="not-done"></div>
@@ -80,13 +120,13 @@
 
   </ul>
   <script src="./scripts/tarefas/tarefas.js" defer></script>
-  <script src="./scripts/tarefas/render-tarefas.js"defer></script>
-  <script src="./scripts/tarefas/busca-tarefas.js"defer></script>
-  <script src="./scripts/tarefas/criar-tarefas.js"defer></script>
-  <script src="./scripts/tarefas/editar-tarefas.js"defer></script>
-  <script src="./scripts/tarefas/excluir-tarefas.js"defer></script>
-  <script src="./scripts/logout/logout.js"defer></script>
+  <script src="./scripts/tarefas/render-tarefas.js" defer></script>
+  <script src="./scripts/tarefas/busca-tarefas.js" defer></script>
+  <script src="./scripts/tarefas/criar-tarefas.js" defer></script>
+  <script src="./scripts/tarefas/editar-tarefas.js" defer></script>
+  <script src="./scripts/tarefas/excluir-tarefas.js" defer></script>
+  <script src="./scripts/logout/logout.js" defer></script>
 
-</body>
+  </body>
 
 </html>
