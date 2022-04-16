@@ -1,11 +1,13 @@
 //modal para captura das alterações
-const openModal = document.getElementById('openModal');
+const openModal = document.querySelector('.openModal');
 const closeModal = document.getElementById('closeModal');
 const containerModal = document.getElementById('modal-container');
-const inputAlteracaoTarefa = document.getElementById('inputAlteracaoTarefa');
-const statusTarefaModal = document.querySelector('input[name="statusTarefa"]:checked').value;
+const statusTarefaModal = document.getElementById('statusPendente');
 const btnConfirmaAlteracoes = document.getElementById('btnConfirmaAlteracoes');
 const btnCancelar = document.getElementById('btnCancelar');
+const alteracoesModal = document.getElementById('alteracoesModal');
+const inputAlteracaoTarefa = document.getElementById('inputAlteracaoTarefa');
+const objetoDeAlteracao = {}
 
 
 openModal.addEventListener('click', () => {
@@ -16,10 +18,26 @@ closeModal.addEventListener('click', () => {
     containerModal.classList.remove('show');
 })
 
+btnCancelar.addEventListener('click', () => {
+    containerModal.classList.remove('show');
+})
 
 //função para alterar o estado da tarefa
 
+
+const objetoTarefaApiJson = JSON.stringify(objetoDeAlteracao)
+const configApiAlteracaoEstado = {
+    method: 'PUT',
+    body: objetoTarefaApiJson,
+    headers: {
+        "Content-type": "application/json",
+        "Authorization": tokenJwtusuarioLogado
+    }
+}
+
+
 function alterarEstadoDaTarefa(idTarefaEspecifica) {
+    
     const idTarefaBuscada = idTarefaEspecifica
     //busca uma tarefa especifica, pelo ID
     const configTarefas = {
@@ -29,37 +47,21 @@ function alterarEstadoDaTarefa(idTarefaEspecifica) {
         }
     };
     fetch(`https://ctd-todo-api.herokuapp.com/v1/tasks/${idTarefaBuscada}`, configTarefas)
-        .then(response => response.json())
-        .then(tarefaEspecifica => {
-            console.log(tarefaEspecifica)
-
+    .then(response => response.json())
+    .then(tarefaEspecifica => {
+        containerModal.classList.add('show');
+        inputAlteracaoTarefa.innerText = tarefaEspecifica.description;
+        alteracoesModal.addEventListener('submit', (e) => {
+            e.preventDefault();
+                console.log(tarefaEspecifica.id);
+                objetoDeAlteracao.description = inputAlteracaoTarefa.value;
+                objetoDeAlteracao.completed = statusTarefaModal.checked;
+                alteracaoDeTarefaPeloId()
+            })
         })
         .catch(error => console.log(error));
 
-
-    //captura da classe em comum entre as tarefas, "estado"
-    //confirmação po parte do usuário
-    const confirmacaoDeAlteracao = prompt("Escolha o que deseja alterar", "");
-    console.log(confirmacaoDeAlteracao);
-
-
     //Configuração do envio para API
-    const objetoTarefaApi = {
-        description: confirmacaoDeAlteracao,
-        completed: testeTarefa
-    }
-    console.log(objetoTarefaApi)
-    const objetoTarefaApiJson = JSON.stringify(objetoTarefaApi)
-
-    const configApiAlteracaoEstado = {
-        method: 'PUT',
-        body: objetoTarefaApiJson,
-        headers: {
-            "Content-type": "application/json",
-            "Authorization": tokenJwtusuarioLogado
-        }
-    }
-
     function alteracaoDeTarefaPeloId() {
         //envia as alterações para a API
         fetch(`https://ctd-todo-api.herokuapp.com/v1/tasks/${idTarefaEspecifica}`, configApiAlteracaoEstado)
@@ -68,10 +70,9 @@ function alterarEstadoDaTarefa(idTarefaEspecifica) {
             .then(response => { response.json() })
             .then(response => {
                 alert("Tarefa alterada com sucesso!")
+                containerModal.classList.remove('show');
                 location.reload();
                 console.log(response)
             })
-            .catch(error => console.log(error))
     }
-    alteracaoDeTarefaPeloId()
-}
+}	

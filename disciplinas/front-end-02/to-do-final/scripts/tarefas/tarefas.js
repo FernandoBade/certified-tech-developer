@@ -45,6 +45,6 @@ function renderizarTareas(listaTarefas) {
         } else {
             renderizaTarefasPendentes(tarefa)
         }
-    console.log(testeTarefa);
+    // console.log(testeTarefa);
 }
 }

@@ -4,6 +4,7 @@ tarefasPendetes.innerHTML = "";
 const tarefasTerminadas = document.querySelector('.tarefas-terminadas');
 tarefasTerminadas.innerHTML = "";
 
+
 function renderizaTarefasTerminadas(tarefa) {
     //Da para utilizar o método toLocaleDateString() e 'new Date()' para transformar a data no formato PT-BR
     const addData = new Date(tarefa.createdAt);
@@ -45,7 +46,7 @@ function renderizaTarefasPendentes(tarefa) {
             <p class="nome">${tarefa.description}</p>
             </div>
             <div class="icones-edit">
-                <button dada-open="modal1" onclick="alterarEstadoDaTarefa(${tarefa.id})" id="${tarefa.id}" title="Marcar como terminada"><i class="fa-solid fa-edit"></i></button>
+                <button onclick="alterarEstadoDaTarefa(${tarefa.id})" id="${tarefa.id}" title="Marcar como terminada"><i class="fa-solid fa-edit"></i></button>
                 <button onclick="excluirTarefa(${tarefa.id})" id="${tarefa.id}" title="Excluir tarefa"><i class="fa fa-trash"></i></button>
             </div>
         </div>
