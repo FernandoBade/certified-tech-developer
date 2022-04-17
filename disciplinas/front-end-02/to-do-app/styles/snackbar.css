@@ -1,0 +1,74 @@
+@import url('./root.css');
+
+.snackbarEstilo {
+    visibility: hidden;
+    width: 50rem;
+    text-align: center;
+    line-height: 1rem;
+    background-color: var(--roxo-escuro);
+    color: var(--rosa-claro);
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    bottom: 0;
+    position: fixed;
+    z-index: 10;
+    font-size: .9rem;
+}
+
+.showSnackbar {
+    visibility: visible;
+    -webkit-animation: fadeIn ease-in-out, fadeout ease-in-out 2s;
+    -moz-animation: fadeIn ease-in-out, fadeout ease-in-out 2s;
+    -o-animation: fadeIn ease-in-out, fadeout ease-in-out 2s;
+    -ms-animation: fadeIn ease-in-out, fadeout ease-in-out 2s;
+    animation: fadein 0.7s, fadeout 0.7s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: -3rem;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: -3rem;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 0;
+        opacity: 1;
+    }
+
+    to {
+        bottom: -3rem;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 0;
+        opacity: 1;
+    }
+
+    to {
+        bottom: -3rem;
+        opacity: 0;
+    }
+}
