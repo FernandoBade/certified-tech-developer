@@ -26,36 +26,36 @@ const novoUsuario = {
 //função de envio do cadastro para a API
 formCadastro.addEventListener('submit', (e) => {
     e.preventDefault();
-    if(validacaoDeSenhas(senhaCadastro.value, senhaConfCadastro.value)){
-        console.log('Senhas iguais');
-    //Insersão dos valores no objeto de criação de usuário
+    if (validacaoDeSenhas(senhaCadastro.value, senhaConfCadastro.value)) {
 
-    novoUsuario.firstName = nomeCadastro.value.trim().toLowerCase();
-    novoUsuario.lastName = sobrenomeCadastro.value.trim().toLowerCase();
-    novoUsuario.email = emailCadastro.value.trim().toLowerCase();
-    novoUsuario.password = senhaCadastro.value.trim().toLowerCase();
+        //Insersão dos valores no objeto de criação de usuário
+        novoUsuario.firstName = nomeCadastro.value.trim().toLowerCase();
+        novoUsuario.lastName = sobrenomeCadastro.value.trim().toLowerCase();
+        novoUsuario.email = emailCadastro.value.trim().toLowerCase();
+        novoUsuario.password = senhaCadastro.value.trim().toLowerCase();
 
-    console.log(novoUsuario);
-    const novoUsuarioJson = JSON.stringify(novoUsuario);
+        console.log(novoUsuario);
+        const novoUsuarioJson = JSON.stringify(novoUsuario);
 
-    const configApiCadastro = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: novoUsuarioJson
-    }
-
-    fetch(endpointCadastro, configApiCadastro)
-        .then(response => {
-            console.log(response);
-            return response.json()
+        const configApiCadastro = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: novoUsuarioJson
         }
-        ).catch((error) => {
-            console.log(error);
-        })
+
+        fetch(endpointCadastro, configApiCadastro)
+            .then(response => {
+                console.log(response);
+                return response.json()
+            }
+            ).catch((error) => {
+                console.log(error);
+            })
     } else {
         criarSnackbar("A senhas não conferem");
         console.log('Senhas difentes');
+        validacaoDeSenhas(senhaCadastro.value, senhaConfCadastro.value)
     }
 })

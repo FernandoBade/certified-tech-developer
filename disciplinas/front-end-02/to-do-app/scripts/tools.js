@@ -32,11 +32,9 @@ function validacaoEmailRegex(email) {
     // check if the email is valid
     const result = regex.test(email);
     if (result) {
-        console.log('The email is valid.');
-    }
-    else {
-        let newEmail = alert('E-mail inválido. Confira novamente o campo, por favor:');
-        validacaoEmailRegex(newEmail);
+        return true;
+    } else {
+        return false;
     }
 }
 
@@ -46,5 +44,5 @@ function criarSnackbar(texto) {
     const snackbar = document.getElementById('snackbar');
     snackbar.innerText = texto;
     snackbar.classList.add('showSnackbar');
-    setTimeout(() => { snackbar.style.visibility = "hidden"}, 5000);
+    setTimeout(() => { snackbar.style.visibility = "hidden" }, 5000);
 }
