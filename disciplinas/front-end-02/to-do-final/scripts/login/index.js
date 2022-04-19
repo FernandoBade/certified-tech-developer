@@ -18,7 +18,8 @@ const usuarioObjeto = {
 }
 
 botaoAcessar.addEventListener('click', function(evento){
-
+    mostrarSpinner();
+    
     if (validacaoTelaDeLogin()) {
         
         //Normalizando as informações
@@ -69,7 +70,7 @@ function loginSucesso(jwtRecebido) {
     //console.log(jwtRecebido);
     localStorage.setItem("jwt",jwtRecebido);
 
-    alert("Usuário logado com sucesso")
+    // alert("Usuário logado com sucesso")
     location.href = "tarefas.html"
 }
 function loginErro(statusRecebido){

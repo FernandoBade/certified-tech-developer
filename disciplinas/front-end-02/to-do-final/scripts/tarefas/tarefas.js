@@ -1,3 +1,7 @@
+window.onload = () => {
+    renderizarSkeletons(5, ".tarefas-pendentes");
+   };   
+
 const tokenJwtusuarioLogado = localStorage.getItem("jwt")
 onload = () => {
     if (!tokenJwtusuarioLogado) {
@@ -23,6 +27,7 @@ fetch(endPointUsuario, configuracaoRequisicao).then(resultado => {
     //adiciona o nome do usuário na parte superior direita da tela
     //a imagem de perfil é aleatória e muda a cada requisição, através do lorem picsum diretamente pelo CSS
     document.querySelector("#nome").innerText = `Olá, ${resultado.firstName}!`;
+    renderizarSkeletons(5, ".tarefas-pendentes")
 
 }).catch(erro => {
     console.log(erro);

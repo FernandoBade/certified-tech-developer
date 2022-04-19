@@ -36,7 +36,7 @@
     <div class="user-info">
       <p id="nome">Nome usuário</p>
       <div class="user-image"></div>
-      <p id="closeApp">Finalizar sessão</i>
+      <p id="closeApp" onclick="logout()">Finalizar sessão</i>
       </p>
     </div>
   </header>
@@ -56,14 +56,17 @@
       </div>
       <form id="alteracoesModal" class="alteracoesModal">
         <label for="inputAlteracaoTarefa">
-          <textarea name="textoDescription" id="inputAlteracaoTarefa" cols="20" rows="5" required maxlength="300"></textarea>
+          <textarea name="textoDescription" id="inputAlteracaoTarefa" cols="20" rows="3" required
+            maxlength="300"></textarea>
         </label>
         <div id="statusTarefas">
           <label for="statusTerminada">
-            <input type="radio" id="statusTerminada" name="statusTarefa" value="false" class="statusTarefaRadioButtons"> Pendente
+            <input type="radio" id="statusTerminada" name="statusTarefa" value="false" class="statusTarefaRadioButtons">
+            Pendente
           </label>
           <label for="statusPendente">
-            <input type="radio" id="statusPendente" name="statusTarefa" value="true" required class="statusTarefaRadioButtons"> Terminada
+            <input type="radio" id="statusPendente" name="statusTarefa" value="true" required
+              class="statusTarefaRadioButtons"> Terminada
           </label>
         </div>
         <div class="botoesAlteracaoTarefas">
@@ -81,8 +84,8 @@
 
 
   <form class="nova-tarefa" id="addNovaTarefa">
-    <div class="not-done"></div>
-    <input id="inputNovaTarefa" type="text" required placeholder="Adicione a descrição de sua nova tarefa">
+    <div class="not-done user-image"></div>
+    <input id="inputNovaTarefa" type="text" autocomplete="off" required placeholder="Adicione a descrição da sua nova tarefa">
     <button id="btnAddTarefas" type="submit">
       <img src="./assets/plus.png" alt="Adicionar uma nova tarefa">
     </button>
@@ -126,7 +129,7 @@
   <script src="./scripts/tarefas/editar-tarefas.js" defer></script>
   <script src="./scripts/tarefas/excluir-tarefas.js" defer></script>
   <script src="./scripts/logout/logout.js" defer></script>
-
+  <script src="./scripts/animations/skeleton.js" defer></script>
   </body>
 
 </html>

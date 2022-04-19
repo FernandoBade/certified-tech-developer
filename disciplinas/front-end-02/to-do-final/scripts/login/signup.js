@@ -30,7 +30,7 @@ const usuarioObjeto = {
 }
 
 botaoCriarConta.addEventListener('click', function(evento){
-
+    mostrarSpinner();
     if (validacaoTelaDeSignup()) {
         evento.preventDefault();
         //Normalizando as informações
