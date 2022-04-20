@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ----------------------------- estilos CSS ----------------------------- -->
+  <link rel="stylesheet" href="./styles/tarefas.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- ------------------- Biblioteca de icones - Fontawesome -------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/7cbbc7871e.js" crossorigin="anonymous"></script>
+
+  <!-- ----------------------------- sweet alert ----------------------------- -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- CDN example (unpkg) -->
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <title>To-Do App</title>
+</head>
+
+<div>
+  <header>
+    <nav>
+      <a href="#">Tarefas</a>
+    </nav>
+
+    <div class="user-info">
+      <p id="nome">Nome usuário</p>
+      <div class="user-image"></div>
+      <p id="closeApp" onclick="logout()">Finalizar sessão</i>
+      </p>
+    </div>
+  </header>
+
+  <!-- Modal de captura das alterações -->
+
+  <button class="openModal"></button>
+  <div class="modal-container" id="modal-container">
+    <div class="modal">
+      <div class="modalHeader">
+        <div>
+          <h1>Altere sua tarefa</h1>
+        </div>
+        <div>
+          <button id="closeModal"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+      <form id="alteracoesModal" class="alteracoesModal">
+        <label for="inputAlteracaoTarefa">
+          <textarea name="textoDescription" id="inputAlteracaoTarefa" cols="20" rows="3" required
+            maxlength="300"></textarea>
+        </label>
+        <div id="statusTarefas">
+          <label for="statusTerminada">
+            <input type="radio" id="statusTerminada" name="statusTarefa" value="false" class="statusTarefaRadioButtons">
+            Pendente
+          </label>
+          <label for="statusPendente">
+            <input type="radio" id="statusPendente" name="statusTarefa" value="true" required
+              class="statusTarefaRadioButtons"> Terminada
+          </label>
+        </div>
+        <div class="botoesAlteracaoTarefas">
+          <p id="btnCancelar">Cancelar</p>
+          <button id="btnConfirmaAlteracoes">Confirmar Alterações</button>
+        </div>
+      </form>
+      </p>
+    </div>
+  </div>
+
+  <!-------------------------------------------------------------------->
+
+  <!-- Skeleton, base e render das tarefas -->
+
+
+  <form class="nova-tarefa" id="addNovaTarefa">
+    <div class="not-done user-image"></div>
+    <input id="inputNovaTarefa" type="text" autocomplete="off" required placeholder="Adicione a descrição da sua nova tarefa">
+    <button id="btnAddTarefas" type="submit">
+      <img src="./assets/plus.png" alt="Adicionar uma nova tarefa">
+    </button>
+  </form>
+  <h2 class="titulo-pendentes">Tarefas pendentes</h2>
+  <ul class="tarefas-pendentes">
+    <!-- <div id="skelton">
+      <li class="tarefa">
+        <div class="not-done"></div>
+        <div class="descricao">
+          <p class="nome">Nova tarefa</p>
+          <p class="timestamp">Criada em: 15/07/21</p>
+        </div>
+      </li>
+      <li class="tarefa">
+        <div class="not-done"></div>
+        <div class="descricao">
+          <p class="nome">Nova tarefa</p>
+          <p class="timestamp">Criada em: 15/07/21</p>
+        </div>
+      </li>
+      <li class="tarefa">
+        <div class="not-done"></div>
+        <div class="descricao">
+          <p class="nome">Nova tarefa</p>
+          <p class="timestamp">Criada em: 15/07/21</p>
+        </div>
+      </li>
+
+    </div> -->
+  </ul>
+
+  <h2 class="titulo-terminadas">Tarefas terminadas</h2>
+  <ul class="tarefas-terminadas">
+
+  </ul>
+  <script src="./scripts/tarefas/tarefas.js" defer></script>
+  <script src="./scripts/tarefas/render-tarefas.js" defer></script>
+  <script src="./scripts/tarefas/busca-tarefas.js" defer></script>
+  <script src="./scripts/tarefas/criar-tarefas.js" defer></script>
+  <script src="./scripts/tarefas/editar-tarefas.js" defer></script>
+  <script src="./scripts/tarefas/excluir-tarefas.js" defer></script>
+  <script src="./scripts/logout/logout.js" defer></script>
+  <script src="./scripts/animations/skeleton.js" defer></script>
+  </body>
+
+</html>

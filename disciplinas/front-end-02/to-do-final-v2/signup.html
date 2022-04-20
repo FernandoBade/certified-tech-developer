@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+
+  <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+  <link rel="stylesheet" href="./styles/acesso.css">
+  <link rel="stylesheet" href="./styles/animations.css" <!-- ---------------------- lógica aplicada no registro
+    -------------------- -->
+
+</head>
+
+<body>
+
+  <div class="left">
+    <img src="./assets/pessoa-signup.png" alt="">
+  </div>
+  <div class="right">
+    <form>
+      <div class="form-header">
+        <p>To-Do App</p>
+        <small id="erro400"></small>
+      </div>
+
+      <label>
+        Nome:
+        <input id="inputNome" type="text">
+        <small id="inputNomeValidacao"></small>
+      </label>
+      <label>
+        Sobrenome:
+        <input id="inputSobrenome" type="text">
+        <small id="inputSobrenomeValidacao"></small>
+      </label>
+      <label>
+        Email:
+        <input id="inputEmail" type="text">
+        <small id="inputEmailValidacao"></small>
+      </label>
+      <label>
+        Senha:
+        <div id="eyeSenhaHolder">
+          <input class="password" id="inputSenha" type="password">
+          <img src="assets/eye-off.svg" id="eyeSenha1">
+        </div>
+        <small id="inputSenhaValidacao"></small>
+      </label>
+      <div class="requirements-container">
+        <div class="help-text" id="help-text">
+          <p id="titulo-ul">Sua senha deve ter:</p>
+          <ul class="requirement" id="requirement">
+            <li class="length" id="length">6 a 8 caracteres</li>
+          </ul>
+          <ul class="requirement" id="requirement">
+            <li class="number" id="number">um número</li>
+          </ul>
+          <ul class="requirement" id="requirement">
+            <li class="lowercase" id="lowercase">uma letra minúscula</li>
+          </ul>
+          <ul class="requirement" id="requirement">
+            <li class="uppercase" id="uppercase">uma letra maiúscula</li>
+          </ul>
+
+          <ul class="requirement" id="requirement">
+            <li class="special" id="special"> um caracter especial !@#$%^&* _=+-</li>
+          </ul>
+        </div>
+      </div>
+      <label>
+        Repetir senha:
+        <div id="eyeSenhaHolder">
+
+        <input id="inputRepetirSenha" type="password">
+        <img src="assets/eye-off.svg" id="eyeSenha2">
+      </div>
+        <small id="inputRepetirSenhaValidacao"></small>
+      </label>
+
+      <button id="botaoCriarConta" type="submit">Criar conta</button>
+
+    </form>
+    <div class="ingressar">
+      <a href="index.html">Já possui conta? Acesse aqui</a>
+    </div>
+  </div>
+  <script src="./scripts/validacoes/utils.js" defer></script>
+  <script src="./scripts/login/signup.js" defe></script>
+  <script src="./scripts/animations/loader.js" defer></script>
+</body>
+
+</html>
