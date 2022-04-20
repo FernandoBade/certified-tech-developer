@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<style>
+    body {
+        background-color: #f0f0f0;
+        height: 100vh;
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #SEUIDENTIFICADOR {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background-color: rgba(255, 255, 0, 0.75);
+        background-image: url('https://s2.glbimg.com/KXzHWvbpu7qLlPKIZA4hAec1n9k=/0x0:292x323/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_ba3db981e6d14e54bb84be31c923b00c/internal_photos/bs/2021/8/C/9dtzTLTwSOQuR0feEM6A/2017-05-22-giphy.gif');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px #999;
+        padding: 10px;
+    }
+
+    #SEUIDENTIFICADORHeader {
+        text-align: center;
+        height: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teste de arraste de post-its</title>
+</head>
+
+<body>
+    <section id="SEUIDENTIFICADOR">
+
+        <header id="SEUIDENTIFICADORHeader">
+            Clique aqui para arrastar
+        </header>
+        <div>
+            <hr>
+            <!-- Seu conteúdo aqui -->
+
+            <!-- ----------------- -->
+        </div>
+    </section>
+
+    <script>
+        dragElement(document.getElementById("SEUIDENTIFICADOR"));
+        function dragElement(elmnt) {
+            var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            if (document.getElementById(elmnt.id + "header")) {
+                // Se existir cabeçalho, ele pega pra arrastar a div
+                document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+            } else {
+                // senão, ele arrasta por onde conseguir segurar
+                elmnt.onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // pega o cursor do mouse e verifica onde ele está na tela
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // cada vez que o mouse se move, ele executa a função
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // calcula as novas posições do mouse
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // define a nova posição do elemento
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                // para de se mover quando o mouse é solto
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+    </script>
+</body>
+</html>
