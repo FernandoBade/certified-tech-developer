@@ -1,4 +1,4 @@
-**Princípio do Testing:**
+## Princípio do Testing:
 
 1) Teste demonstra a presença de defeitos:
 *Não é porque não encontrei um bug, que ele nãoo existe*
@@ -23,7 +23,7 @@
 
 ---
 
-**Etapas do Ciclo de Vida de Teste de Software**
+## Etapas do Ciclo de Vida de Teste de Software:
 
 1) Análise de requisitos:
 *Identificar os tipos de testes que devem e podem ser executados*
