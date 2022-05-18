@@ -10,10 +10,9 @@
 8) Fechado.
 
 
-# RELATÓRIO DE DEFEITOS
+## RELATÓRIO DE DEFEITOS
 
-
-## Identificador:
+#### Identificador:
 *003*
 
 #### Título:
