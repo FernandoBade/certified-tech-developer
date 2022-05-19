@@ -1,4 +1,4 @@
-# Princípios do Teste de Software de
+## Princípios do Teste de Software de
 
 1) Teste demonstra a presença de DEFEITOS:
 *Se o teste não pode comprovar o bug, não assuma que ele não exista.*
@@ -22,3 +22,28 @@
 *Não é preferível não arriscar em uma nova tecnologia pensando em evitar novos erros. É mais aconselhável arriscar em novas funcionalidades e crescimento do sistema do que se abster de novos desafios.*
 
 
+
+## Erros, defeitos e falhas
+
+- *Erro* é humano;
+- Erros causam *defeitos* no sistema;
+- O retorno do defeito, a interação com ele, é uma *falha*.
+
+
+## Campos obrigatórios num relatório de defeitos:
+
+- ID/Identificador único;
+- Título/Resumo do problema;
+- Descrição;
+- Data do defeito;
+- Autor;
+- Identificação do elemento de teste/Nome do módulo/App;
+- Versão do sistema a ser testado;
+- Ambiente de teste;
+- Passos para reprodução;
+- Resultado esperado;
+- Resultado obtido;
+- Criticidade;
+- Prioridade;
+- Status do defeito;
+- Evidência/Print/Vídeo.
