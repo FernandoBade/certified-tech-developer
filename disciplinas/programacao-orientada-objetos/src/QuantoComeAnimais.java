@@ -1,7 +1,5 @@
-class Main {
+class QuantoComeAnimais {
     public static void main(String[] args) {
-        // String nome = "ernando Bade";
-        // char primeiraLetra = 'F';
 
         String cachorro = "Shesheu";
         int idadeCachorro = 2;

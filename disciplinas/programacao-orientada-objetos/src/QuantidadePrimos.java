@@ -6,6 +6,10 @@
 
 // Mesa:
 
+//Fernando Bade
+//Issao
+
+
 import java.util.Scanner;
 
 public class QuantidadePrimos {
