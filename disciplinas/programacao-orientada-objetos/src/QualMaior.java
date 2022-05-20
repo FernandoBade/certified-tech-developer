@@ -1,3 +1,8 @@
+//Exercício 2
+//        Escreva uma função que receba três números e retorne o maior valor entre os três números.
+//        Em seguida, faça um programa que permita a entrada de 3 valores pelo usuário, use a função e exiba o resultado.
+
+
 import java.util.Scanner;
 
 public class QualMaior {

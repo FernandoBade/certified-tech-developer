@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 
 public class PedraPapelTesouraLagartoSpock {
@@ -21,12 +20,16 @@ public class PedraPapelTesouraLagartoSpock {
                     + "1 - Pedra;" + System.lineSeparator()
                     + "2 - Papel;" + System.lineSeparator()
                     + "3 - Tesoura;" + System.lineSeparator()
+                    + "4 - Lagarto;" + System.lineSeparator()
+                    + "5 - Spock;" + System.lineSeparator()
                     + "* - Sair.");
             String opcaoJogador1 = scanner.nextLine();
             System.out.println(nomeJogador2 + ", escolha uma opção: " + System.lineSeparator()
                     + "1 - Pedra;" + System.lineSeparator()
                     + "2 - Papel;" + System.lineSeparator()
                     + "3 - Tesoura;" + System.lineSeparator()
+                    + "4 - Lagarto;" + System.lineSeparator()
+                    + "5 - Spock;" + System.lineSeparator()
                     + "* - Sair.");
             String opcaoJogador2 = scanner.nextLine();
 
@@ -37,34 +40,208 @@ public class PedraPapelTesouraLagartoSpock {
             switch (opcaoJogador1) {
                 case "1":
                     if (opcaoJogador1.equals(opcaoJogador2)) {
-                        System.out.println("-------------------------------" + System.lineSeparator() + "É um empate! Ninguém pontuou!" + System.lineSeparator() + "-------------------------------");
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + "É um empate! Ninguém pontuou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
                     } else if (opcaoJogador2.equals("2")) {
-                        System.out.println("-------------------------------" + System.lineSeparator() + nomeJogador2 + " ganhou!" + System.lineSeparator() + "-------------------------------");
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador2 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
                         ptsJogador2++;
                     } else if (opcaoJogador2.equals("3")) {
-                        System.out.println("-------------------------------" + System.lineSeparator() + nomeJogador1 + " ganhou!" + System.lineSeparator() + "-------------------------------");
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador1 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
                         ptsJogador1++;
+                    } else if (opcaoJogador2.equals("4")) {
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador1 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
+                        ptsJogador1++;
+                    } else if (opcaoJogador2.equals("5")) {
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador2 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
+                        ptsJogador2++;
                     }
+
                     break;
                 case "2":
                     if (opcaoJogador1.equals(opcaoJogador2)) {
-                        System.out.println("-------------------------------" + System.lineSeparator() + "É um empate! Ninguém pontuou!" + System.lineSeparator() + "-------------------------------");
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + "É um empate! Ninguém pontuou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
                     } else if (opcaoJogador2.equals("1")) {
-                        System.out.println("-------------------------------" + System.lineSeparator() + nomeJogador1 + " ganhou!" + System.lineSeparator() + "-------------------------------");
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador1 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
                         ptsJogador2++;
                     } else if (opcaoJogador2.equals("3")) {
-                        System.out.println("-------------------------------" + System.lineSeparator() + nomeJogador2 + " ganhou!" + System.lineSeparator() + "-------------------------------");
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador2 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
+                        ptsJogador1++;
+                    } else if (opcaoJogador2.equals("4")) {
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador2 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
+                        ptsJogador2++;
+                    } else if (opcaoJogador2.equals("5")) {
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador1 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
                         ptsJogador1++;
                     }
                     break;
                 case "3":
                     if (opcaoJogador1.equals(opcaoJogador2)) {
-                        System.out.println("-------------------------------" + System.lineSeparator() + "É um empate! Ninguém pontuou!" + System.lineSeparator() + "-------------------------------");
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + "É um empate! Ninguém pontuou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
                     } else if (opcaoJogador2.equals("1")) {
-                        System.out.println("-------------------------------" + System.lineSeparator() + nomeJogador2 + " ganhou!" + System.lineSeparator() + "-------------------------------");
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador2 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
                         ptsJogador2++;
                     } else if (opcaoJogador2.equals("2")) {
-                        System.out.println("-------------------------------" + System.lineSeparator() + nomeJogador1 + " ganhou!" + System.lineSeparator() + "-------------------------------");
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador1 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
+                        ptsJogador1++;
+                    } else if (opcaoJogador2.equals("4")) {
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador1 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
+                        ptsJogador1++;
+                    } else if (opcaoJogador2.equals("5")) {
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador2 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
+                        ptsJogador2++;
+                    }
+                    break;
+                case "4":
+                    if (opcaoJogador1.equals(opcaoJogador2)) {
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + "É um empate! Ninguém pontuou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
+                    } else if (opcaoJogador2.equals("1")) {
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador1 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
+                        ptsJogador2++;
+                    } else if (opcaoJogador2.equals("2")) {
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador2 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
+                        ptsJogador1++;
+                    } else if (opcaoJogador2.equals("3")) {
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador2 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
+                        ptsJogador1++;
+                    } else if (opcaoJogador2.equals("5")) {
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + nomeJogador1 + " ganhou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
+                        ptsJogador2++;
+                    }
+                    break;
+                case "5":
+                    if (opcaoJogador1.equals(opcaoJogador2)) {
+                        System.out.println(
+                                "-------------------------------"
+                                        + System.lineSeparator()
+                                        + "É um empate! Ninguém pontuou!"
+                                        + System.lineSeparator()
+                                        + "-------------------------------");
+                    } else if (opcaoJogador2.equals("1")) {
+                        System.out.println("-------------------------------"
+                                + System.lineSeparator()
+                                + nomeJogador2 + " ganhou!"
+                                + System.lineSeparator()
+                                + "-------------------------------");
+                        ptsJogador2++;
+                    } else if (opcaoJogador2.equals("2")) {
+                        System.out.println("-------------------------------"
+                                + System.lineSeparator()
+                                + nomeJogador1
+                                + " ganhou!" + System.lineSeparator()
+                                + "-------------------------------");
+                        ptsJogador1++;
+                    } else if (opcaoJogador2.equals("3")) {
+                        System.out.println("-------------------------------"
+                                + System.lineSeparator()
+                                + nomeJogador1 + " ganhou!"
+                                + System.lineSeparator()
+                                + "-------------------------------");
+                        ptsJogador2++;
+                    } else if (opcaoJogador2.equals("4")) {
+                        System.out.println("-------------------------------"
+                                + System.lineSeparator()
+                                + nomeJogador2 + " ganhou!"
+                                + System.lineSeparator()
+                                + "-------------------------------");
                         ptsJogador1++;
                     }
                     break;
@@ -80,17 +257,19 @@ public class PedraPapelTesouraLagartoSpock {
             }
         }
     }
+
     public static String quemGanha(int pontosTotaisJogador1, int PontosTotaisJogador2, String nomeJogador1, String nomeJogador2) {
         if (pontosTotaisJogador1 == PontosTotaisJogador2) {
 
-             System.out.println("O jogo terminou empatado!");
+            System.out.println("O jogo terminou empatado!");
         } else if (pontosTotaisJogador1 > PontosTotaisJogador2) {
 
-             System.out.println(nomeJogador1 + " venceu!");
+            System.out.println(nomeJogador1 + " venceu!");
         } else {
 
-             System.out.println(nomeJogador2 + " venceu!");
-        } return "-------------------------------";
+            System.out.println(nomeJogador2 + " venceu!");
+        }
+        return "-------------------------------";
     }
 
 }

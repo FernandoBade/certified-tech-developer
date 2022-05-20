@@ -1,3 +1,30 @@
+//Exercício
+//        Para representar cada uma das características do animal de estimação, crie uma variável e atribua a ela o valor correspondente no Replit.
+//        Não se esqueça de dar o tipo certo ao que queremos que contenha.
+//        Para cada animal listado na tabela a seguir, teremos que exibir as informações correspondentes.
+//        As informações serão exibidas como o seguinte exemplo:
+//
+//        ?Shesheu 2 anos?
+//        ?Shesheu come um 1kg e meio e faz au au?
+//
+//
+//        Shesheu
+//        2 anos
+//        1kg e meio
+//        Como é o latido?
+//
+//        Nemo
+//        1 ano
+//        140 gramas
+//        Que som suas bolhas de ar fazem na água?
+//
+//        Snow
+//        3 anos
+//        meio quilo
+//        Como soa seu miado?
+
+
+
 class QuantoComeAnimais {
     public static void main(String[] args) {
 
