@@ -1,8 +1,18 @@
+//Exercício
+//        Com base no diagrama de classe, implemente o código da classe UsuarioJogo para provar que o diagrama criado é válido.
+//        Crie dois objetos da classe UsuarioJogo com pontuações e níveis diferentes.
+
+// Mesa 8:
+// Fernando Bade
+// Thiago Vilela
+// Johnny Wesley
+
 public class NovoUsuarioJogo {
     public static void main(String[] args) {
         UsuarioJogo usuarioJogo = new UsuarioJogo("Fernando", "F4GUDES", 0, 1);
         usuarioJogo.aumentarPontuacao(500);
         usuarioJogo.bonus(550);
+
 
         System.out.println("Nome: " + usuarioJogo.getNome());
         System.out.println("Nickname: " + usuarioJogo.getNickname());
