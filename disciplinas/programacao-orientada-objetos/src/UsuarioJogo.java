@@ -1,6 +1,9 @@
 //Implementando uma Classe
-//        Para desenvolver um jogo, precisamos implementar a classe UsuarioJogo. Os usu·rios possuem nome e um nickname, e estes dados devem ser fornecidos ao criar um novo usu·rio. Inicialmente, a pontuaÁ„o È zero. PorÈm, eles podem aumentar esse nÌvel em 1.
-//        Assim, devemos fornecer um mÈtodo para realizar esse aumento. O usu·rio tambÈm pode receber um bÙnus, ou seja, um valor extra que È acrescentado em sua pontuaÁ„o.
+//        Para desenvolver um jogo, precisamos implementar a classe UsuarioJogo.
+//        Os usu√°rios possuem nome e um nickname, e estes dados devem ser fornecidos ao criar um novo usu√°rio.
+//        Inicialmente, a pontua√ß√£o √© zero. Por√©m, eles podem aumentar esse n√≠vel em 1.
+//        Assim, devemos fornecer um m√©todo para realizar esse aumento. O usu√°rio tamb√©m pode receber um b√¥nus,
+//        ou seja, um valor extra que √© acrescentado em sua pontua√ß√£o.
 //
 //        UsuarioJogo
 //        ----------------------------------------------
