@@ -15,6 +15,4 @@ public class NovaImpressora {
         impressoraSemPapel.imprimir("Olá, mundo!");
         impressoraComPapel.imprimir("Olá, mundo!");
     }
-
-    return System.lineSeparator();
 }
