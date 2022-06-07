@@ -17,8 +17,9 @@ public class NovoJogo {
 
         player.mover('s');
         nave.girar('l');
+        asteroid.mover('o');
         System.out.println(player);
         System.out.println(nave);
-
+        System.out.println(asteroid);
     }
 }
