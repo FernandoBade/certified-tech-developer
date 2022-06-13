@@ -1,21 +1,23 @@
 package Checkpoint01;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
 public class SessaoDeJogo<Jogador> {
     public String nomeDaAventura;
     public String dificuldade;
-    public Date dataEHora;
-    public int horasEstimadas;
+    public Date data;
+    public Integer horasEstimadas;
     public List<Jogador> jogadores;
 
-    public SessaoDeJogo(String nomeDaAventura, String dificuldade, Date dataEHora, int horasEstimadas) {
+    public SessaoDeJogo(String nomeDaAventura, String dificuldade, Date data, int horasEstimadas) {
         this.nomeDaAventura = nomeDaAventura;
         this.dificuldade = dificuldade;
-        this.dataEHora = dataEHora;
+        this.data = data;
         this.horasEstimadas = horasEstimadas;
-        this.jogadores = new ArrayList<Jogador>();
+        this.jogadores = new ArrayList<>();
     }
 
     public String getNomeDaAventura() {
@@ -34,12 +36,12 @@ public class SessaoDeJogo<Jogador> {
         this.dificuldade = dificuldade;
     }
 
-    public Date getDataEHora() {
-        return dataEHora;
+    public Date getData() {
+        return data;
     }
 
-    public void setDataEHora(Date dataEHora) {
-        this.dataEHora = dataEHora;
+    public void setData(Date data) {
+        this.data = data;
     }
 
     public int getHorasEstimadas() {
@@ -58,17 +60,25 @@ public class SessaoDeJogo<Jogador> {
         this.jogadores = jogadores;
     }
 
-    public void adicionarJogador(Jogador jogador){
+    public void adicionarJogador(Jogador jogador) {
         this.jogadores.add(jogador);
     }
 
-    public void removerJogador(Jogador jogador){
+    public void removerJogador(Jogador jogador) {
         this.jogadores.remove(jogador);
     }
 
-    public void imprimirListaDeJogadores(){
-        for(Jogador jogador : this.jogadores){
-            System.out.println(jogador.toString());
-        }
+    @Override
+    public String toString() {
+        return "================================" + "\n" +
+                "Nome da aventura: " + this.nomeDaAventura + "\n" +
+                "Dificuldade: " + this.dificuldade + "\n" +
+                "Data: " + this.data + "\n" +
+                "Horas estimadas: " + this.horasEstimadas + "\n" +
+                "--------------------------------" + "\n" +
+                "Jogadores confirmados: " + this.jogadores.toString() + "\n" +
+                "================================" + "\n";
+
     }
+
 }
