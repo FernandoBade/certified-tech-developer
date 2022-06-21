@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1655775747197" clover="3.2.0">
+  <project timestamp="1655775747197" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="9" coveredelements="9" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+    <file name="calculadora.js" path="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\testing-01\aula-15\calculadora-02\calculadora.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="2" count="4" type="stmt"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="17" count="4" type="stmt"/>
+    </file>
+  </project>
+</coverage>

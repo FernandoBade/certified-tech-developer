@@ -4,7 +4,7 @@
   "description": "",
   "main": "calculadora.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll --collect-coverage"
   },
   "author": "Fernando Bade",
   "license": "ISC",
