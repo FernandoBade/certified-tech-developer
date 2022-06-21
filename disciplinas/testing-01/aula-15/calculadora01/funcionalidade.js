@@ -59,7 +59,7 @@ function init(){
   }
   soma.onclick = function(e){
       operando_a = resultado.textContent;
-	  --operando_a;
+	//   --operando_a;
       operacao = "+";
       limpar();
   }
@@ -106,7 +106,8 @@ function resolver(){
         res = parseFloat(operando_a) - parseFloat(operando_b);
         break;
     case "*":
-      res = (parseFloat(operando_a) * parseFloat(operando_b))+1;
+    //   res = (parseFloat(operando_a) * parseFloat(operando_b))+1;
+      res = (parseFloat(operando_a) * parseFloat(operando_b));
       break;
     case "/":
       res = parseFloat(operando_a) / parseFloat(operando_b);

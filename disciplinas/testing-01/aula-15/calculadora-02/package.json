@@ -1,0 +1,11 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculadora.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Fernando Bade",
+  "license": "ISC"
+}
