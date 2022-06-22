@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655858413643" clover="3.2.0">
-  <project timestamp="1655858413643" name="All files">
+<coverage generated="1655913531346" clover="3.2.0">
+  <project timestamp="1655913531346" name="All files">
     <metrics statements="15" coveredstatements="4" conditionals="10" coveredconditionals="0" methods="3" coveredmethods="1" elements="28" coveredelements="5" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
     <file name="util.js" path="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\testing-01\aula-14\util.js">
       <metrics statements="15" coveredstatements="4" conditionals="10" coveredconditionals="0" methods="3" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
-      <line num="3" count="1" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
       <line num="6" count="1" type="stmt"/>
       <line num="8" count="0" type="stmt"/>
       <line num="9" count="0" type="stmt"/>
