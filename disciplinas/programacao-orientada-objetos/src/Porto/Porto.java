@@ -1,6 +1,7 @@
 package Porto;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Porto {
@@ -42,14 +43,20 @@ public class Porto {
         containers.remove(container);
     }
 
-    public void ordenarContainers() {
-        Arrays.sort(containers.toArray());
-    }
-
     @Override
     public String toString() {
         return "Porto: " + nome + System.lineSeparator()
-                + "Total de containers: " + containers.size() + System.lineSeparator()
+                + "Total de containers: " + containers + System.lineSeparator()
                 + "Total de Containers Perigosos de Origem Desconhecida: " + ContainersPerigososDeOrigemDesconhecida() + System.lineSeparator();
     }
+
+    public void ordenarContainersPorNumero() {
+        containers.sort(new Comparator<Container>() {
+            @Override
+            public int compare(Container o1, Container o2) {
+                return o1.getNumero().compareTo(o2.getNumero());
+            }
+        });
+    }
+
 }
