@@ -7,7 +7,7 @@ public class Paciente {
     String nome;
     String sobrenome;
     String historiaClinica;
-    Date dataInternacao;
+    LocalDate dataInternacao;
     Date dataAlta;
 
 
@@ -17,11 +17,10 @@ public class Paciente {
         this.nome=nome;
         this.sobrenome=sobrenome;
         dataAlta=null;
-        if (dataInternacao.(hoje))
-            this.dataInternacao=dataInternacao;
+        this.dataInternacao = dataInternacao;
     }
 
-    public Date getDataInternacao() {
+    public LocalDate getDataInternacao() {
         return dataInternacao;
     }
 
@@ -31,7 +30,7 @@ public class Paciente {
 
     public void darAlta(LocalDate dataAlta)    {
         try {
-            if (dataAlta.after(dataInternacao))
+            if (dataInternacao.isAfter(dataAlta))
                 System.out.println("Ok");
             else
                 throw new DateException();
@@ -41,7 +40,5 @@ public class Paciente {
             System.out.println(e.getMessage());
         }
     }
-
-
 
 }
