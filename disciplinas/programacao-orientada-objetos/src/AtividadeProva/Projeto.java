@@ -1,6 +1,7 @@
 package AtividadeProva;
 
 public class Projeto {
+
     private final String identificador;
     private String nomeDoProjeto;
     private final String cidade;
@@ -52,12 +53,14 @@ public class Projeto {
     }
 
     //método para imprimir o projeto
-    public String imprimirProjeto() {
+
+    @Override
+    public String toString() {
         return "---------------------------------" + System.lineSeparator() +
                 "Identificador: " + identificador + System.lineSeparator() +
                 "Nome do projeto: " + nomeDoProjeto + System.lineSeparator() +
-                "Cidade: " + cidade + System.lineSeparator() +
-                "Detalhes da obra: " + obra.toString() + System.lineSeparator() +
+                "Cidade: " + cidade +
+                obra.toString() + System.lineSeparator() +
                 "Status: " + status.getDescricao() + System.lineSeparator() +
                 "---------------------------------" + System.lineSeparator();
     }

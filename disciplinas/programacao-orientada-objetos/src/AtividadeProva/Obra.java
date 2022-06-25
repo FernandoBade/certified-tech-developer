@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public abstract class Obra {
 
-    public final String nomeDaObra;
+    private final String nomeDaObra;
     private final String endereco;
     private final LocalDate dataDeInicio;
     private LocalDate dataPrevisaoTermino;
@@ -54,9 +54,13 @@ public abstract class Obra {
     }
 
     //método para imprimir os detalhes da obra
-
     @Override
     public String toString() {
-        return super.toString();
+         return "---------------------------------" + System.lineSeparator() +
+                 "Nome da obra: " + nomeDaObra + System.lineSeparator() +
+                "Endereço: " + endereco + System.lineSeparator() +
+                "Data de início: " + dataDeInicio + System.lineSeparator() +
+                "Data prevista para término: " + dataPrevisaoTermino + System.lineSeparator() +
+                "Data de conclusão: " + dataConclusaoFinal;
     }
 }

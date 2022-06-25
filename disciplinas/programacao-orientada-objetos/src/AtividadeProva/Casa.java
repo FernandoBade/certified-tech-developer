@@ -68,7 +68,7 @@ public class Casa extends Obra {
     //impressao dos detalhes da casa
     @Override
     public String toString() {
-        return "---------------------------------" +
+        return System.lineSeparator() +
                 super.toString() + System.lineSeparator() +
                "Tamanho do terreno: " + tamanhoTerreno + System.lineSeparator() +
                "Total de banheiros: " + totalBanheiros + System.lineSeparator() +

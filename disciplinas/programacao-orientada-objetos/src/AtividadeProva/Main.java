@@ -1,11 +1,10 @@
 package AtividadeProva;
-
 import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
         //casa comum
-        Obra casaCantareira = new Casa(
+        Casa casaCantareira = new Casa(
                 "Jardins do Elísio",
                 "Rua das Flores, 229",
                 LocalDate.of(2022, 5, 9),
@@ -16,9 +15,8 @@ public class Main {
                 2
         );
 
-
-        //apartamento com prazo de conclusão estourado
-        Obra apartamentoPerdizes = new Predio(
+        //apartamento com prazo de conclusão estourado e nao é arranha-céu
+        Predio apartamentoPerdizes = new Predio(
                 "Nascer de Perdizes",
                 "Rua Cláudio, 341",
                 LocalDate.of(2021, 4, 1),
@@ -28,8 +26,8 @@ public class Main {
                 2
         );
 
-        //apartamento com prazo de conclusão à vista, dentro do prazo.
-        Obra apartamentoPinheiros = new Predio(
+        //apartamento com prazo de conclusão à vista, dentro do prazo, e é um arranha-céu
+        Predio apartamentoPinheiros = new Predio(
                 "Parque dos Pinheiros",
                 "Avenida Faria Lima, 5000",
                 LocalDate.of(2022, 6, 18),
@@ -38,17 +36,38 @@ public class Main {
                 4
         );
 
-        //agragação das obras aos projetos
+        //agregação das obras aos projetos
         Projeto projetoCantareira = new Projeto(
-                "CASA001",
+                "CASA-001-2022",
                 "Casa de campo",
-                "Mairipirã",
+                "Mairiporã",
                 casaCantareira,
                 Status.ACABADO
-                );
+        );
 
-        System.out.println(projetoCantareira.prazoCumprido());
+        Projeto projetoPerdizes = new Projeto(
+                "APTO-001-2021",
+                "Apartamento em Perdizes",
+                "São Paulo",
+                apartamentoPerdizes,
+                Status.ACABADO
+        );
 
+        Projeto projetoPinheiros = new Projeto(
+                "APTO-002-2022",
+                "Apartamento em Pinheiros",
+                "São Paulo",
+                apartamentoPinheiros,
+                Status.CONSTRUCAO
+        );
+
+//        testes dos métodos criados na classe Projeto, imprimindo os resultados formatados no console
+//        --------------------------------------------------------------------------------------------
+
+//        System.out.println(projetoCantareira.prazoCumprido());
+//        System.out.println(projetoCantareira);
+//        System.out.println(apartamentoPerdizes.comparaPredios((Predio) apartamentoPinheiros));
+//        System.out.println(apartamentoPinheiros.ehArranhaceu());
 
     }
 }
