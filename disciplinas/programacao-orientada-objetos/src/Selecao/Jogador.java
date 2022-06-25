@@ -3,13 +3,14 @@ package Selecao;
 public class Jogador {
     private final String sobrenome;
     private final int numeroDaCamisa;
-    private Posicoes posicao;
+    private String posicao;
+    private Escalacao escalacao;
 
-    public Jogador(String sobrenome, int numeroDaCamisa, Posicoes posicao) {
+    public Jogador(String sobrenome, int numeroDaCamisa, String posicao, Escalacao escalacao) {
         this.sobrenome = sobrenome;
         this.numeroDaCamisa = numeroDaCamisa;
         this.posicao = posicao;
-
+        this.escalacao = escalacao;
     }
 
     public String getSobrenome() {
@@ -20,12 +21,12 @@ public class Jogador {
         return numeroDaCamisa;
     }
 
-    public Posicoes getPosicao() {
-        return posicao;
+    public Escalacao getPosicao() {
+        return escalacao;
     }
 
-    public void setPosicao(Posicoes posicao) {
-        this.posicao = posicao;
+    public void setEscalacao(Escalacao escalacao) {
+        this.posicao = escalacao.toString();
     }
 
     @Override

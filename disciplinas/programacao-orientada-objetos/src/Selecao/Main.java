@@ -3,30 +3,31 @@ package Selecao;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) throws PosicaoException {
-        Jogador jogador1 = new Jogador("Fernando", 1, Posicoes.GOLEIRO);
-        Jogador jogador2 = new Jogador("João", 2, Posicoes.DEFENSOR);
-        Jogador jogador3 = new Jogador("Maria", 3, Posicoes.DEFENSOR);
-        Jogador jogador4 = new Jogador("Pedro", 4, Posicoes.DEFENSOR);
-        Jogador jogador5 = new Jogador("José", 5, Posicoes.MEIO_CAMPISTA);
-        Jogador jogador6 = new Jogador("Mauro", 6, Posicoes.MEIO_CAMPISTA);
-        Jogador jogador7 = new Jogador("Pedro", 7, Posicoes.MEIO_CAMPISTA);
-        Jogador jogador8 = new Jogador("Thiago", 8, Posicoes.MEIO_CAMPISTA);
-        Jogador jogador9 = new Jogador("Robson", 9, Posicoes.ATACANTE);
-        Jogador jogador10 = new Jogador("João", 10, Posicoes.ATACANTE);
-        Jogador jogador11 = new Jogador("Adilson", 11, Posicoes.ATACANTE);
-        Jogador jogador12 = new Jogador("Cleyton", 12, Posicoes.GOLEIRO);
-        Jogador jogador13 = new Jogador("Allejo", 13, Posicoes.DEFENSOR);
-        Jogador jogador14 = new Jogador("Ferreira", 14, Posicoes.DEFENSOR);
-        Jogador jogador15 = new Jogador("Rafael", 15, Posicoes.MEIO_CAMPISTA);
-        Jogador jogador16 = new Jogador("Pepe", 16, Posicoes.MEIO_CAMPISTA);
-        Jogador jogador17 = new Jogador("Taffarel", 17, Posicoes.GOLEIRO);
-        Jogador jogador18 = new Jogador("Dionísio", 18, Posicoes.DEFENSOR);
-        Jogador jogador19 = new Jogador("Ulisses", 19, Posicoes.MEIO_CAMPISTA);
-        Jogador jogador20 = new Jogador("Maurici", 20, Posicoes.ATACANTE);
-        Jogador jogador21 = new Jogador("Adamastor", 21, Posicoes.ATACANTE);
-        Jogador jogador22 = new Jogador("Luciano", 22, Posicoes.GOLEIRO);
-        Jogador jogador23 = new Jogador("Gabriel", 23, Posicoes.ATACANTE);
+    public static void main(String[] args) throws EscalacaoException {
+        Jogador jogador1 = new Jogador("Messi", 11, "Atacante", Escalacao.TITULAR);
+        Jogador jogador2 = new Jogador("Neymar", 8, "Meio campista", Escalacao.TITULAR);
+        Jogador jogador3 = new Jogador("Suarez", 9, "Meio campista", Escalacao.TITULAR);
+        Jogador jogador4 = new Jogador("Coutinho", 7, "Defensor", Escalacao.TITULAR);
+        Jogador jogador5 = new Jogador("Marcelo", 6, "Defensor", Escalacao.TITULAR);
+        Jogador jogador6 = new Jogador("Pirlo", 5, "Atacante", Escalacao.TITULAR);
+        Jogador jogador7 = new Jogador("Rafinha", 4, "Atacante", Escalacao.TITULAR);
+        Jogador jogador8 = new Jogador("Paco", 3, "Meio campista", Escalacao.TITULAR);
+        Jogador jogador9 = new Jogador("Pirlo", 2, "Defensor", Escalacao.TITULAR);
+        Jogador jogador10 = new Jogador("Rafinha", 1, "Goleiro", Escalacao.TITULAR);
+        Jogador jogador11 = new Jogador("Paco", 10, "Atacante", Escalacao.TITULAR);
+        Jogador jogador12 = new Jogador("Paco", 22, "Meio campista", Escalacao.SUPLENTE);
+        Jogador jogador13 = new Jogador("Pirlo", 13, "Defensor", Escalacao.SUPLENTE);
+        Jogador jogador14 = new Jogador("Rafinha", 8, "Meio campista", Escalacao.SUPLENTE);
+        Jogador jogador15 = new Jogador("Paco", 71, "Defensor", Escalacao.SUPLENTE);
+        Jogador jogador16 = new Jogador("Marcos", 62, "Meio campista", Escalacao.SUPLENTE);
+        Jogador jogador17 = new Jogador("Allejo", 15, "Atacante", Escalacao.SUPLENTE);
+        Jogador jogador18 = new Jogador("Sandro", 42, "Defensor", Escalacao.SUPLENTE);
+        Jogador jogador19 = new Jogador("Arce", 53, "Meio campista", Escalacao.RESERVA);
+        Jogador jogador20 = new Jogador("Ferreira", 22, "Meio campista", Escalacao.RESERVA);
+        Jogador jogador21 = new Jogador("Marco", 17, "Atacante", Escalacao.RESERVA);
+        Jogador jogador22 = new Jogador("Robson", 19, "Meio campista", Escalacao.RESERVA);
+        Jogador jogador23 = new Jogador("Anderson", 91, "Goleiro", Escalacao.RESERVA);
+
 
         List<Jogador> jogadores = new ArrayList<>();
         jogadores.add(jogador1);
@@ -53,18 +54,12 @@ public class Main {
         jogadores.add(jogador22);
         jogadores.add(jogador23);
 
+
         Selecao selecao = new Selecao("Brasil", jogadores);
-        int totalDeGoleiros = selecao.quantidadeJogadoresPorPosicao(Posicoes.GOLEIRO);
-        int totalDeDefensores = selecao.quantidadeJogadoresPorPosicao(Posicoes.DEFENSOR);
-        int totalDeMeioCampistas = selecao.quantidadeJogadoresPorPosicao(Posicoes.MEIO_CAMPISTA);
-        int totalDeAtacantes = selecao.quantidadeJogadoresPorPosicao(Posicoes.ATACANTE);
-        int totalDeGandulas = selecao.quantidadeJogadoresPorPosicao(Posicoes.GANDULA);
+
 //        System.out.println(selecao.quantidadeDeReservas());
-        System.out.println("Total de goleiros: " + totalDeGoleiros);
-        System.out.println("Total de defensores: " + totalDeDefensores);
-        System.out.println("Total de meio campistas: " + totalDeMeioCampistas);
-        System.out.println("Total de atacantes: " + totalDeAtacantes);
-//        System.out.println(selecao);
+        selecao.ordenaJogadoresPorNumeroDaCamisa();
+        System.out.println(selecao);
 
 
     }

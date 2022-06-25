@@ -39,7 +39,7 @@ public class Selecao {
         });
     }
 
-    public int quantidadeJogadoresPorPosicao(Enum posicao) throws PosicaoException {
+    public int quantidadeJogadoresPorPosicao(Enum posicao) throws EscalacaoException {
         try {
 
 
@@ -51,7 +51,7 @@ public class Selecao {
             }
             return quantidade;
         } catch (Exception e) {
-            throw new PosicaoException("Posição inválida");
+            throw new EscalacaoException("Posição inválida");
         }
     }
 
@@ -69,5 +69,12 @@ public class Selecao {
                 + "Lista de jogadores: " + jogadores + System.lineSeparator();
     }
 
+    public void ordenaJogadoresPorNumeroDaCamisa() {
+        jogadores.sort(Comparator.comparingInt(Jogador::getNumeroDaCamisa));
+    }
+
+    public void ordenarJogadoresPorEscalacao() {
+        jogadores.sort(Comparator.comparing(Jogador::getPosicao));
+    }
 
 }
