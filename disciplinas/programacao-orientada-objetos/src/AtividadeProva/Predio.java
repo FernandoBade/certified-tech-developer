@@ -8,7 +8,7 @@ public class Predio extends Obra {
     private int apartamentosPorAndar;
 
     //construtor completo
-        public Predio(String nomeDaObra,
+    public Predio(String nomeDaObra,
                   String endereco,
                   LocalDate dataDeInicio,
                   LocalDate dataPrevisaoTermino,
@@ -18,18 +18,20 @@ public class Predio extends Obra {
     ) {
         super(nomeDaObra, endereco, dataDeInicio, dataPrevisaoTermino, dataConclusaoFinal);
         this.totalAndares = totalAndares;
+        this.apartamentosPorAndar = apartamentosPorAndar;
     }
 
-//construtor sem a data de conclusão final
-    public Predio(String endereco,
+    //construtor sem a data de conclusão final
+    public Predio(String nomeDaObra,
+                  String endereco,
                   LocalDate dataDeInicio,
                   LocalDate dataPrevisaoTermino,
-                  String nomeDaObra,
                   int totalAndares,
                   int apartamentosPorAndar
     ) {
         super(endereco, dataDeInicio, dataPrevisaoTermino, nomeDaObra);
         this.totalAndares = totalAndares;
+        this.apartamentosPorAndar = apartamentosPorAndar;
     }
 
 
@@ -54,8 +56,20 @@ public class Predio extends Obra {
     public String toString() {
         return "---------------------------------" +
                 super.toString() + System.lineSeparator() +
-               "Total de andares: " + totalAndares + System.lineSeparator() +
-               "Apartamentos por andar: " + apartamentosPorAndar + System.lineSeparator() +
+                "Total de andares: " + totalAndares + System.lineSeparator() +
+                "Apartamentos por andar: " + apartamentosPorAndar + System.lineSeparator() +
                 "---------------------------------";
     }
+
+    //método para comparar dois prédios diferentes
+    public String comparaPredios(Predio predio2) {
+        if (this.totalAndares * this.apartamentosPorAndar < predio2.totalAndares * predio2.apartamentosPorAndar) {
+            return "O prédio " + this.nomeDaObra + " tem menos apartamentos do que o prédio " + predio2.nomeDaObra;
+        } else if (this.totalAndares * this.apartamentosPorAndar > predio2.totalAndares * predio2.apartamentosPorAndar) {
+            return "O prédio " + this.nomeDaObra + " tem mais apartamentos do que o prédio " + predio2.nomeDaObra;
+        } else {
+            return "Os prédios " + this.nomeDaObra + " e " + predio2.nomeDaObra + " tem o mesmo número de apartamentos.";
+        }
+    }
+
 }

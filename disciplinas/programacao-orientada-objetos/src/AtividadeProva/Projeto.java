@@ -54,21 +54,23 @@ public class Projeto {
     //método para imprimir o projeto
     public String imprimirProjeto() {
         return "---------------------------------" + System.lineSeparator() +
-               "Identificador: " + identificador + System.lineSeparator() +
-               "Nome do projeto: " + nomeDoProjeto + System.lineSeparator() +
-               "Cidade: " + cidade + System.lineSeparator() +
-               "Detalhes da obra: " + obra.toString() + System.lineSeparator() +
-               "Status: " + status.getDescricao() + System.lineSeparator() +
+                "Identificador: " + identificador + System.lineSeparator() +
+                "Nome do projeto: " + nomeDoProjeto + System.lineSeparator() +
+                "Cidade: " + cidade + System.lineSeparator() +
+                "Detalhes da obra: " + obra.toString() + System.lineSeparator() +
+                "Status: " + status.getDescricao() + System.lineSeparator() +
                 "---------------------------------" + System.lineSeparator();
     }
 
     //metodo para saber se o prazo foi cumprido
     public String prazoCumprido() {
-        return obra.getDataPrevisaoTermino() == obra.getDataConclusaoFinal() && getStatus() == Status.ACABADO ?
-                "Prazo cumprido" :
-                "Prazo não cumprido";
+        int comparaAsDatas = obra.getDataPrevisaoTermino().compareTo(obra.getDataConclusaoFinal());
+        if (comparaAsDatas == 0) {
+            return "O prazo foi cumprido";
+        } else if (comparaAsDatas < 0) {
+            return "O prazo não foi cumprido";
+        } else {
+            return "O prazo foi cumprido";
+        }
     }
-
-
-
 }
