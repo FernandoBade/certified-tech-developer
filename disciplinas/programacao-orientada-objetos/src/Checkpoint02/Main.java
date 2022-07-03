@@ -21,7 +21,7 @@ public class Main {
                 "987.654.321-00",
                 "Vila do Chaves, 72",
                 "Aposentada"
-                ,2500.00);
+                , 2500.00);
 
         ContaInvestimento contaInvestimento = new ContaInvestimento(
                 "Billy Butcher",
@@ -42,6 +42,8 @@ public class Main {
         peladoBank.adicionarConta(contaInvestimento);
         //lista as contas por saldo, ordenando-as de forma decrescente.
 //        peladoBank.listarContasPorSaldo();
+
+
         //faz uma solicitação completa de cartão de crédito, solicitando os dados do cliente pelo console.
         contaCorrente.pedirCartaoDeCredito();
     }
