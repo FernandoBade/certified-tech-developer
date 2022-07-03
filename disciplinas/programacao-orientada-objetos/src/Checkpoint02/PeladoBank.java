@@ -6,6 +6,7 @@ import java.util.Collection;
 import java.util.List;
 
 public class PeladoBank {
+    //os dados do banco são cosntantes, e o único construtor serve para listar todas as contas e ordená-las.
     private final String nomeDoBanco = "PeladoBank";
     private final int numeroDoBanco = 886;
     private final String cnpj = "00.000.000/0000-00";
@@ -36,6 +37,7 @@ public class PeladoBank {
         return agenciaMatriz;
     }
 
+    //lista as contas por saldo, ordenando-as de forma decrescente.
     public void listarContasPorSaldo() {
         ArrayList<Conta> contasOrdenadas = new ArrayList<Conta>(totalDeContas);
         contasOrdenadas.sort((Conta c1, Conta c2) -> {

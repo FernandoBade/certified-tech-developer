@@ -1,15 +1,15 @@
 package Checkpoint02;
 
+import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class ContaCorrente extends Conta {
+public class ContaCorrente extends Conta{
     private boolean possuiCartaoDeCredito = false;
 
     public ContaCorrente(String nomeCompleto, String cpf, String endereco, String profissao, double rendaMensal) {
         super(nomeCompleto, cpf, endereco, profissao, rendaMensal);
     }
-
-    public String pedirCartaoDeCredito() {
+    public void pedirCartaoDeCredito() throws LimiteException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Olá " + getNomeCompleto().split(" (?!.* )")[0] + "!" + System.lineSeparator()
                 + "Bem vindo(a) ao formulário de solicitação de cartão de crédito. Vamos começar! " + System.lineSeparator()
@@ -26,15 +26,15 @@ public class ContaCorrente extends Conta {
         double rendaMensal = scanner.nextDouble();
         System.out.println("Quanto você gostaria de limite no cartão de crédito?");
         double limite = scanner.nextDouble();
+        String limiteFormatado = NumberFormat.getCurrencyInstance(ptBr).format(limite);
         boolean aprovado = limite <= rendaMensal / 2;
-
         if (aprovado) {
-            System.out.println("Parabéns! Sua solicitação foi aprovada! Seu novo cartão de crédito com um limite de R$" + limite +  " chegará no seu endereço em até 10 dias úteis.");
+            System.out.println("Parabéns! Sua solicitação foi aprovada! Seu novo cartão de crédito com um limite de " + limiteFormatado +  " chegará no seu endereço em até 10 dias úteis.");
             possuiCartaoDeCredito = true;
         } else {
-            System.out.println("Infelizmente, não pudemos solicitar um novo cartão de crédito. Fale com seu gerente para uma nova tentativa");
+            System.out.println("Infelizmente, não pudemos solicitar um novo cartão de crédito. Fale com seu gerente para uma nova tentativa.");
+            throw new LimiteException("");
         }
-        return "Processo finalizado";
     }
 
 }

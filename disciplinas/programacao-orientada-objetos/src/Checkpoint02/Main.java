@@ -3,7 +3,10 @@ package Checkpoint02;
 public class Main {
 
     public static void main(String[] args) throws SaldoException {
+        //instacias do banco
         PeladoBank peladoBank = new PeladoBank();
+
+        //criação de contas para teste
         ContaCorrente contaCorrente = new ContaCorrente(
                 "Joseph Climber",
                 "123.456.789-00",
@@ -33,10 +36,13 @@ public class Main {
         contaInvestimento.verificarRentabilidade();
         contaPoupanca.depositar(5000.00);
 
+        //adição das contas ao banco, em lista, para poder ordená-las.
         peladoBank.adicionarConta(contaCorrente);
         peladoBank.adicionarConta(contaPoupanca);
         peladoBank.adicionarConta(contaInvestimento);
+        //lista as contas por saldo, ordenando-as de forma decrescente.
 //        peladoBank.listarContasPorSaldo();
+        //faz uma solicitação completa de cartão de crédito, solicitando os dados do cliente pelo console.
         contaCorrente.pedirCartaoDeCredito();
     }
 }

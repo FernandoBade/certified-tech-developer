@@ -6,9 +6,9 @@ import java.util.Random;
 
 
 public abstract class Conta extends PeladoBank {
-    Locale ptBr = new Locale("pt", "BR");
+    Locale ptBr = new Locale("pt", "BR"); //variável para formatar os valores em Reais
     Random random = new Random();
-    private final String numeroDaConta = String.format("%d", random.nextInt(99999));
+    private final String numeroDaConta = String.format("%d", random.nextInt(99999)); //o número da conta é gerado randomicamente
     private String nomeCompleto;
     private String cpf;
     private String endereco;
@@ -17,7 +17,7 @@ public abstract class Conta extends PeladoBank {
     private double saldo;
     private double investimento;
 
-    public Conta(String nomeCompleto, String cpf, String endereco, String profissao, double rendaMensal) {
+    public Conta(String nomeCompleto, String cpf, String endereco, String profissao, double rendaMensal) { //tanto o saldo como o investimento são iniciados com zero.
         this.nomeCompleto = nomeCompleto;
         this.cpf = cpf;
         this.endereco = endereco;
@@ -27,14 +27,7 @@ public abstract class Conta extends PeladoBank {
         this.investimento = 0;
     }
 
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
-    }
-
+    //getters and setters
     public String getNumeroDaConta() {
         return numeroDaConta;
     }
@@ -95,6 +88,7 @@ public abstract class Conta extends PeladoBank {
         this.investimento = investimento;
     }
 
+    //o método de sacar aciona o erro de saldo insulficiente.
     public void sacar(double valor) throws SaldoException {
         try {
             if (valor > this.getSaldo()) {
@@ -110,6 +104,8 @@ public abstract class Conta extends PeladoBank {
     public void depositar(double valor) {
         saldo += valor;
     }
+
+    //o método de tranferir também aciona o erro de saldo insulficiente.
 
     public void transferir(double valor, Conta conta) {
 
@@ -130,6 +126,7 @@ public abstract class Conta extends PeladoBank {
         investimento += valor;
     }
 
+    //formatação para imprimir as contas com todas as informações e valores formatados.
     @Override
     public String toString() {
         String rendaFormatada = NumberFormat.getCurrencyInstance(ptBr).format(rendaMensal);
