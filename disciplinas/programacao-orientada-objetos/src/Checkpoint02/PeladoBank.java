@@ -1,6 +1,8 @@
 package Checkpoint02;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 public class PeladoBank {
@@ -14,7 +16,7 @@ public class PeladoBank {
         totalDeContas = new ArrayList<Conta>();
     }
 
-    public void abrirConta(Conta conta) {
+    public void adicionarConta(Conta conta) {
         totalDeContas.add(conta);
     }
 
@@ -34,22 +36,21 @@ public class PeladoBank {
         return agenciaMatriz;
     }
 
-    public List<Conta> getTotalDeContas() {
-        return totalDeContas;
-    }
-
-    public void setTotalDeContas(List<Conta> totalDeContas) {
-        this.totalDeContas = totalDeContas;
-    }
-
-    public List<Conta> totalDeContasAtivas() {
-        List<Conta> contasAtivas = new ArrayList<Conta>();
-        for (Conta conta : totalDeContas) {
-            if (conta.getSaldo() > 0) {
-                contasAtivas.add(conta);
+    public void listarContasPorSaldo() {
+        ArrayList<Conta> contasOrdenadas = new ArrayList<Conta>(totalDeContas);
+        contasOrdenadas.sort((Conta c1, Conta c2) -> {
+            if (c1.getSaldo() < c2.getSaldo()) {
+                return 1;
+            } else if (c1.getSaldo() > c2.getSaldo()) {
+                return -1;
+            } else {
+                return 0;
             }
+        });
+        for (Conta conta : contasOrdenadas) {
+            System.out.println(conta.toString());
         }
-        return contasAtivas;
     }
+
 
 }

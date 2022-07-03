@@ -1,23 +1,40 @@
 package Checkpoint02;
 
-public class ContaCorrente extends Conta{
+import java.util.Scanner;
 
-    public ContaCorrente(String nomeCompleto, String cpf, String endereco, String profissao, double rendaMensal, double saldo, double investimento) {
-        super(nomeCompleto, cpf, endereco, profissao, rendaMensal, saldo, investimento);
-    }
+public class ContaCorrente extends Conta {
+    private boolean possuiCartaoDeCredito = false;
 
     public ContaCorrente(String nomeCompleto, String cpf, String endereco, String profissao, double rendaMensal) {
         super(nomeCompleto, cpf, endereco, profissao, rendaMensal);
     }
 
-    public ContaCorrente(String nomeCompleto, String cpf, String endereco, String profissao) {
-        super(nomeCompleto, cpf, endereco, profissao);
-    }
+    public String pedirCartaoDeCredito() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Olá " + getNomeCompleto().split(" (?!.* )")[0] + "!" + System.lineSeparator()
+                + "Bem vindo(a) ao formulário de solicitação de cartão de crédito. Vamos começar! " + System.lineSeparator()
+                + "-----------------------------------------------------" + System.lineSeparator()
+                + "Comece digitando o nome completo do titular: ");
+        String nomeCompleto = scanner.nextLine();
+        System.out.println("Digite seu o CPF: ");
+        String cpf = scanner.nextLine();
+        System.out.println("Digite seu endereço: ");
+        String endereco = scanner.nextLine();
+        System.out.println("Digite sua profissão: ");
+        String profissao = scanner.nextLine();
+        System.out.println("Digite sua renda mensal: ");
+        double rendaMensal = scanner.nextDouble();
+        System.out.println("Quanto você gostaria de limite no cartão de crédito?");
+        double limite = scanner.nextDouble();
+        boolean aprovado = limite <= rendaMensal / 2;
 
-    public String pedirCartaoDeCredito(){
-        return this.getInvestimento() > 10000 || this.getRendaMensal() > 2500 ?
-                "Cartão de crédito aprovado com sucesso!" :
-                "Não foi possível aprovar o cartão de crédito. Procure seu gerente";
+        if (aprovado) {
+            System.out.println("Parabéns! Sua solicitação foi aprovada! Seu novo cartão de crédito com um limite de R$" + limite +  " chegará no seu endereço em até 10 dias úteis.");
+            possuiCartaoDeCredito = true;
+        } else {
+            System.out.println("Infelizmente, não pudemos solicitar um novo cartão de crédito. Fale com seu gerente para uma nova tentativa");
+        }
+        return "Processo finalizado";
     }
 
 }

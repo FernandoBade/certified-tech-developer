@@ -1,10 +1,13 @@
 package Checkpoint02;
 
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Random;
 
-public abstract class Conta extends SaldoExeption {
-    Random random = new Random();
 
+public abstract class Conta extends PeladoBank {
+    Locale ptBr = new Locale("pt", "BR");
+    Random random = new Random();
     private final String numeroDaConta = String.format("%d", random.nextInt(99999));
     private String nomeCompleto;
     private String cpf;
@@ -14,17 +17,15 @@ public abstract class Conta extends SaldoExeption {
     private double saldo;
     private double investimento;
 
-    public Conta(String nomeCompleto, String cpf, String endereco, String profissao, double rendaMensal, double investimento) {
-        super("Saldo insuficiente");
+    public Conta(String nomeCompleto, String cpf, String endereco, String profissao, double rendaMensal) {
         this.nomeCompleto = nomeCompleto;
         this.cpf = cpf;
         this.endereco = endereco;
         this.profissao = profissao;
         this.rendaMensal = rendaMensal;
         this.saldo = 0;
-        this.investimento = investimento;
+        this.investimento = 0;
     }
-
 
     public Random getRandom() {
         return random;
@@ -42,8 +43,16 @@ public abstract class Conta extends SaldoExeption {
         return nomeCompleto;
     }
 
+    public void setNomeCompleto(String nomeCompleto) {
+        this.nomeCompleto = nomeCompleto;
+    }
+
     public String getCpf() {
         return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public String getEndereco() {
@@ -86,14 +95,14 @@ public abstract class Conta extends SaldoExeption {
         this.investimento = investimento;
     }
 
-    public void sacar(double valor) {
+    public void sacar(double valor) throws SaldoException {
         try {
             if (valor > this.getSaldo()) {
-                throw new SaldoExeption("Saldo insuficiente");
+                throw new SaldoException("Saldo insuficiente");
             } else {
                 this.setSaldo(this.getSaldo() - valor);
             }
-        } catch (SaldoExeption e) {
+        } catch (SaldoException e) {
             System.out.println(e.getMessage());
         }
     }
@@ -106,12 +115,12 @@ public abstract class Conta extends SaldoExeption {
 
         try {
             if (valor > this.getSaldo()) {
-                throw new SaldoExeption("Saldo insuficiente");
+                throw new SaldoException("Saldo insuficiente");
             } else {
                 this.setSaldo(this.getSaldo() - valor);
                 conta.setSaldo(conta.getSaldo() + valor);
             }
-        } catch (SaldoExeption e) {
+        } catch (SaldoException e) {
             System.out.println(e.getMessage());
         }
     }
@@ -123,16 +132,20 @@ public abstract class Conta extends SaldoExeption {
 
     @Override
     public String toString() {
+        String rendaFormatada = NumberFormat.getCurrencyInstance(ptBr).format(rendaMensal);
+        String saldoFormatado = NumberFormat.getCurrencyInstance(ptBr).format(this.getSaldo());
+        String investimentoFormatado = NumberFormat.getCurrencyInstance(ptBr).format(this.getInvestimento());
         return "Detalhes da Conta: " + System.lineSeparator()
                 + "--------------------------------" + System.lineSeparator()
+                + "Número da Agência: " + this.getAgenciaMatriz() + System.lineSeparator()
                 + "Número da Conta: " + this.getNumeroDaConta() + System.lineSeparator()
                 + "Nome Completo: " + this.getNomeCompleto() + System.lineSeparator()
                 + "CPF: " + this.getCpf() + System.lineSeparator()
                 + "Endereço: " + this.getEndereco() + System.lineSeparator()
                 + "Profissão: " + this.getProfissao() + System.lineSeparator()
-                + "Renda Mensal: " + this.getRendaMensal() + System.lineSeparator()
-                + "Saldo: " + this.getSaldo() + System.lineSeparator()
-                + "Investimento: " + this.getInvestimento() + System.lineSeparator()
+                + "Renda Mensal: " + rendaFormatada + System.lineSeparator()
+                + "Saldo: " + saldoFormatado + System.lineSeparator()
+                + "Investimento: " + investimentoFormatado + System.lineSeparator()
                 + "--------------------------------" + System.lineSeparator();
     }
 }
