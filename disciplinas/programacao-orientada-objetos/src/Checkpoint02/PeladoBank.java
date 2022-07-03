@@ -41,13 +41,7 @@ public class PeladoBank {
     public void listarContasPorSaldo() {
         ArrayList<Conta> contasOrdenadas = new ArrayList<Conta>(totalDeContas);
         contasOrdenadas.sort((Conta c1, Conta c2) -> {
-            if (c1.getSaldo() < c2.getSaldo()) {
-                return 1;
-            } else if (c1.getSaldo() > c2.getSaldo()) {
-                return -1;
-            } else {
-                return 0;
-            }
+            return Double.compare(c2.getSaldo(), c1.getSaldo());
         });
         for (Conta conta : contasOrdenadas) {
             System.out.println(conta.toString());
