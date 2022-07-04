@@ -41,8 +41,7 @@ public class Main {
         peladoBank.adicionarConta(contaPoupanca);
         peladoBank.adicionarConta(contaInvestimento);
         //lista as contas por saldo, ordenando-as de forma decrescente.
-//        peladoBank.listarContasPorSaldo();
-
+        peladoBank.listarContasPorSaldo();
 
         //faz uma solicitação completa de cartão de crédito, solicitando os dados do cliente pelo console.
         contaCorrente.pedirCartaoDeCredito();
