@@ -1,18 +1,17 @@
 package CompositeTrain;
 
-public class Triangulo extends Forma {
-
-    private double base;
+public class Triangulo extends FormaGeometrica {
     private double altura;
+    private double base;
 
-    public Triangulo(double base, double altura) {
-        this.base = base;
+    public Triangulo(double altura, double base) {
         this.altura = altura;
+        this.base = base;
     }
 
-    public double calcularAreaTotal(double base, double altura) {
+    @Override
+    public double calcularArea() {
         return (base * altura) / 2;
     }
-
 
 }

@@ -1,13 +1,17 @@
 package CompositeTrain;
 
-public class Circulo extends Forma {
+public class Circulo extends FormaGeometrica {
     private double raio;
+    private double area;
 
     public Circulo(double raio) {
         this.raio = raio;
     }
 
-    public double calcularAreaTotal(double raio) {
-        return Math.PI * (raio * raio);
+    @Override
+    public double calcularArea() {
+        area = Math.PI * (raio * raio);
+        return area;
     }
 }
+

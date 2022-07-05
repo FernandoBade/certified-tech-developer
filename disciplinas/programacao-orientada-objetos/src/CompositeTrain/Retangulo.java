@@ -1,6 +1,6 @@
 package CompositeTrain;
 
-public class Retangulo extends Forma {
+public class Retangulo extends FormaGeometrica{
     private double altura;
     private double largura;
 
@@ -10,7 +10,7 @@ public class Retangulo extends Forma {
     }
 
     @Override
-    public void calcularAreaTotal() {
-
+    public double calcularArea() {
+        return altura * largura;
     }
 }
