@@ -12,7 +12,7 @@ public class Main {
         vagao1.formas.add(circulo1);
         vagao1.formas.add(circulo2);
         vagao1.formas.add(circulo3);
-        System.out.println("O vagão tem a superfície total de " + (Math.round(vagao1.calcularAreaVagao(vagao1.formas) * 100)/100) + " m²");
+        System.out.println("O vagão tem a superfície total de " + Math.round(vagao1.calcularAreaVagao(vagao1.formas)) + " m²");
 
         FormaGeometrica retangulo2 = new Retangulo(6,4);
         FormaGeometrica circulo4 = new Circulo(1);
@@ -24,7 +24,7 @@ public class Main {
         locomotiva1.formas.add(circulo5);
         locomotiva1.formas.add(triangulo1);
 
-        System.out.println("A locomotiva tem a superfície total de " + (Math.round(locomotiva1.calcularAreaLocomotiva(locomotiva1.formas) * 100)/100) + " m²");
+        System.out.println("A locomotiva tem a superfície total de " + Math.round(locomotiva1.calcularAreaLocomotiva(locomotiva1.formas)) + " m²");
 
     }
 }
