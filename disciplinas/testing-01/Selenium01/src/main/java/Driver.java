@@ -18,8 +18,8 @@ public class Driver {
         campoSenha.sendKeys("secret_sauce");
         WebElement botaoLogin = driver.findElement(By.className("btn_action"));
         botaoLogin.click();
-        WebElement botaoAdd = driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
-        botaoAdd.click();
+        WebElement btnAddCart = driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
+        btnAddCart.click();
         WebElement cliqueCarrinho = driver.findElement(By.className("shopping_cart_link"));
         cliqueCarrinho.click();
         WebElement cliqueCheckout = driver.findElement(By.id("checkout"));
@@ -34,7 +34,8 @@ public class Driver {
         btnContinue.click();
         WebElement btnFinish = driver.findElement(By.id("finish"));
         btnFinish.click();
-
+        WebElement btnBackToProducts = driver.findElement(By.id("back-to-products"));
+        btnBackToProducts.click();
 
     }
 }
