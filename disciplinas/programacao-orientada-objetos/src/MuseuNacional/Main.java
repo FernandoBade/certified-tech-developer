@@ -34,16 +34,16 @@ package MuseuNacional;
 public class Main {
 
     public static void main(String[] args) {
-        Leilao leilao = new Leilao(2500, "Coleção de Livros Barsa");
-        Licitante licitante1 = new Licitante("Arthur", "Campolina", "123456789-0", 1000);
-        Licitante licitante2 = new Licitante("Fernando", "Bade", "123456789-1", 2000);
-        Licitante licitante3 = new Licitante("Douglas", "Nascimento", "123456789-2", 3000);
-        Licitante licitante4 = new Licitante("Cristian", "Fernandes", "123456789-3", 4000);
-        Licitante licitante5 = new Licitante("Guilherme", "Carvalho", "123456789-4", 5000);
-        Licitante licitante6 = new Licitante("Victor", "Leão", "123456789-5", 6000);
-        Licitante licitante7 = new Licitante("Luiz", "Delgado", "123456789-6", 7000);
-        Licitante licitante8 = new Licitante("Luiz", "Espicalsky", "123456789-7", 8000);
-        Licitante licitante9 = new Licitante("Lucas", "Gabriel Johann", "123456789-8", 9000);
+        Leilao leilao = new Leilao(4200, "Coleção de Livros Barsa");
+        Licitante licitante1 = new Licitante("Arthur", "Campolina", "123456789-0", 2000);
+        Licitante licitante2 = new Licitante("Fernando", "Bade", "123456789-1", 3000);
+        Licitante licitante3 = new Licitante("Douglas", "Nascimento", "123456789-2", 4000);
+        Licitante licitante4 = new Licitante("Cristian", "Fernandes", "123456789-3", 5000);
+        Licitante licitante5 = new Licitante("Guilherme", "Carvalho", "123456789-4", 6000);
+        Licitante licitante6 = new Licitante("Victor", "Leão", "123456789-5", 7000);
+        Licitante licitante7 = new Licitante("Luiz", "Delgado", "123456789-6", 8000);
+        Licitante licitante8 = new Licitante("Luiz", "Espicalsky", "123456789-7", 9000);
+        Licitante licitante9 = new Licitante("Lucas", "Gabriel Johann", "123456789-8", 10000);
 
         leilao.adicionarLicitante(licitante1);
         leilao.adicionarLicitante(licitante2);
@@ -55,7 +55,8 @@ public class Main {
         leilao.adicionarLicitante(licitante8);
         leilao.adicionarLicitante(licitante9);
 
-        System.out.println(leilao.notificarLicitantes());
+        leilao.notificarLicitantes();
+
 
     }
 

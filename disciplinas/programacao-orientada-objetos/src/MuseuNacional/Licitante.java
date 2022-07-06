@@ -48,6 +48,7 @@ public class Licitante {
     public void update(Leilao leilao) {
         if (leilao.getValor() < this.valorMaximo) {
             System.out.println(this.nome + " " + this.sobrenome + " está dando um lance de " + leilao.getValor() + " para o leilão do item " + leilao.getDescricao());
+            leilao.aumentarLances(100);
         } else if (leilao.getValor() >= this.valorMaximo) {
             System.out.println(this.nome + " " + this.sobrenome + " saiu da disputa.");
         }

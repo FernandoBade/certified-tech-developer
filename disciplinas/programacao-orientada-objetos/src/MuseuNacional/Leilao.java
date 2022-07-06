@@ -42,11 +42,11 @@ public class Leilao implements Lances {
         this.valor += valor;
     }
 
-    public String notificarLicitantes() {
+    public void notificarLicitantes() {
         for (Licitante licitante : this.licitantes) {
-            licitante.update(this);
-            aumentarLances(100);
+            if (this.valor < licitante.getValorMaximo()) {
+                licitante.update(this);
+            }
         }
-        return "Leilão finalizado";
     }
 }
