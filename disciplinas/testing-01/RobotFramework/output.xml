@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220705 22:37:56.137" rpa="false" schemaversion="3">
+<suite id="s1" name="Fernando" source="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\testing-01\RobotFramework\fernando.robot">
+<test id="s1-t1" name="Login e compra completa na loja Sauce Demo" line="9">
+<kw name="Acessar o site" library="fernando">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.25</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220705 22:37:56.418" endtime="20220705 22:37:56.418"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220705 22:37:56.419" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20220705 22:37:56.418" endtime="20220705 22:37:58.884"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220705 22:37:58.884" endtime="20220705 22:37:59.272"/>
+</kw>
+<status status="PASS" starttime="20220705 22:37:56.418" endtime="20220705 22:37:59.272"/>
+</kw>
+<kw name="Efetuar o login" library="fernando">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_USUARIO}</arg>
+<arg>${USUARIO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220705 22:37:59.275" level="INFO">Typing text 'standard_user' into text field 'css=#user-name'.</msg>
+<status status="PASS" starttime="20220705 22:37:59.273" endtime="20220705 22:38:00.194"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_SENHA}</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220705 22:38:00.195" level="INFO">Typing text 'secret_sauce' into text field 'css=#password'.</msg>
+<status status="PASS" starttime="20220705 22:38:00.194" endtime="20220705 22:38:01.069"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220705 22:38:01.069" level="INFO">Clicking element 'css=#login-button'.</msg>
+<status status="PASS" starttime="20220705 22:38:01.069" endtime="20220705 22:38:01.735"/>
+</kw>
+<status status="PASS" starttime="20220705 22:37:59.273" endtime="20220705 22:38:01.735"/>
+</kw>
+<kw name="Adicionar o produto Sauce Labs Backpack ao carrinho" library="fernando">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_ADD_TO_CART}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220705 22:38:01.736" level="INFO">Clicking element 'css=#add-to-cart-sauce-labs-backpack'.</msg>
+<status status="PASS" starttime="20220705 22:38:01.736" endtime="20220705 22:38:02.291"/>
+</kw>
+<status status="PASS" starttime="20220705 22:38:01.736" endtime="20220705 22:38:02.291"/>
+</kw>
+<kw name="Acessar o carrinho" library="fernando">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_CARRINHO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220705 22:38:02.293" level="INFO">Clicking element 'css=#shopping_cart_container &gt; a'.</msg>
+<status status="PASS" starttime="20220705 22:38:02.293" endtime="20220705 22:38:02.861"/>
+</kw>
+<status status="PASS" starttime="20220705 22:38:02.292" endtime="20220705 22:38:02.861"/>
+</kw>
+<kw name="Efetuar o checkout" library="fernando">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_CHECKOUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220705 22:38:02.863" level="INFO">Clicking element 'css=#checkout'.</msg>
+<status status="PASS" starttime="20220705 22:38:02.862" endtime="20220705 22:38:03.431"/>
+</kw>
+<status status="PASS" starttime="20220705 22:38:02.862" endtime="20220705 22:38:03.431"/>
+</kw>
+<kw name="Adicionar os dados do cliente" library="fernando">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_FIRST_NAME}</arg>
+<arg>${NOME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220705 22:38:03.431" level="INFO">Typing text 'Fernando' into text field 'css=#first-name'.</msg>
+<status status="PASS" starttime="20220705 22:38:03.431" endtime="20220705 22:38:04.316"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_LAST_NAME}</arg>
+<arg>${SOBRENOME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220705 22:38:04.316" level="INFO">Typing text 'Bade' into text field 'css=#last-name'.</msg>
+<status status="PASS" starttime="20220705 22:38:04.316" endtime="20220705 22:38:05.177"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_CEP}</arg>
+<arg>${CEP}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220705 22:38:05.177" level="INFO">Typing text '123456-000' into text field 'css=#postal-code'.</msg>
+<status status="PASS" starttime="20220705 22:38:05.177" endtime="20220705 22:38:06.060"/>
+</kw>
+<status status="PASS" starttime="20220705 22:38:03.431" endtime="20220705 22:38:06.060"/>
+</kw>
+<kw name="Confirmar o pedido" library="fernando">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_CONTINUE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220705 22:38:06.061" level="INFO">Clicking element 'css=#continue'.</msg>
+<status status="PASS" starttime="20220705 22:38:06.061" endtime="20220705 22:38:06.643"/>
+</kw>
+<status status="PASS" starttime="20220705 22:38:06.061" endtime="20220705 22:38:06.643"/>
+</kw>
+<kw name="Finalizar o pedido" library="fernando">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_FINISH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220705 22:38:06.644" level="INFO">Clicking element 'css=#finish'.</msg>
+<status status="PASS" starttime="20220705 22:38:06.644" endtime="20220705 22:38:07.226"/>
+</kw>
+<status status="PASS" starttime="20220705 22:38:06.644" endtime="20220705 22:38:07.226"/>
+</kw>
+<status status="PASS" starttime="20220705 22:37:56.417" endtime="20220705 22:38:07.228"/>
+</test>
+<status status="PASS" starttime="20220705 22:37:56.141" endtime="20220705 22:38:07.232"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Fernando">Fernando</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
