@@ -14,7 +14,9 @@ package MuseuNacional;
 //        Objetivo:
 //
 //        Modelar e programar em Java as classes do problema abaixo utilizando o Padrão Observer.
-////
+
+//        *************************************************************************************************************************
+
 //        O Museu Nacional pede a modelagem de um novo sistema para a realização de leilões.
 //        Um leilão tem um valor em real e uma descrição que descreve o que está sendo leiloado. O leilão deve ser instanciado com um valor inicial.
 //        Por outro lado, estão os licitantes. Um licitante tem um nome, sobrenome, identidade e um valor máximo que está disposto a gastar no leilão.
