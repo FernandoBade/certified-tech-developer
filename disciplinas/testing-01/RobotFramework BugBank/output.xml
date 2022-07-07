@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220706 23:54:19.882" rpa="false" schemaversion="3">
+<suite id="s1" name="Bugbank" source="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\testing-01\RobotFramework BugBank\bugbank.robot">
+<test id="s1-t1" name="Registrar um novo usuário" line="8">
+<kw name="Acessar o site" library="bugbank">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.25</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220706 23:54:20.234" endtime="20220706 23:54:20.234"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220706 23:54:20.234" level="INFO">Opening browser 'Chrome' to base url 'https://bugbank.netlify.app/'.</msg>
+<status status="PASS" starttime="20220706 23:54:20.234" endtime="20220706 23:54:22.745"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220706 23:54:22.745" endtime="20220706 23:54:23.140"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:20.233" endtime="20220706 23:54:23.140"/>
+</kw>
+<kw name="Clicar em &quot;Registrar&quot;" library="bugbank">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_REGISTRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:23.149" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/div[2]/div/div[1]/form/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20220706 23:54:23.148" endtime="20220706 23:54:23.726"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:23.148" endtime="20220706 23:54:23.726"/>
+</kw>
+<kw name="Inserir email" library="bugbank">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_EMAIL}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:23.728" level="INFO">Typing text 'fernando.tester@email.com' into text field 'xpath=//*[@id="__next"]/div/div[2]/div/div[2]/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20220706 23:54:23.728" endtime="20220706 23:54:24.677"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:23.727" endtime="20220706 23:54:24.677"/>
+</kw>
+<kw name="Inserir nome" library="bugbank">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_NOME}</arg>
+<arg>${NOME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:24.681" level="INFO">Typing text 'Fernando Bade' into text field 'xpath=//*[@id="__next"]/div/div[2]/div/div[2]/form/div[3]/input'.</msg>
+<status status="PASS" starttime="20220706 23:54:24.681" endtime="20220706 23:54:25.561"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:24.680" endtime="20220706 23:54:25.561"/>
+</kw>
+<kw name="Inserir senha" library="bugbank">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_CADASTRO_SENHA}</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:25.562" level="INFO">Typing text '123456' into text field 'xpath=//*[@id="__next"]/div/div[2]/div/div[2]/form/div[4]/div/input'.</msg>
+<status status="PASS" starttime="20220706 23:54:25.562" endtime="20220706 23:54:26.481"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:25.562" endtime="20220706 23:54:26.481"/>
+</kw>
+<kw name="Confirmar senha" library="bugbank">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_CONFIRMACAO_SENHA}</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:26.482" level="INFO">Typing text '123456' into text field 'xpath=//*[@id="__next"]/div/div[2]/div/div[2]/form/div[5]/div/input'.</msg>
+<status status="PASS" starttime="20220706 23:54:26.482" endtime="20220706 23:54:27.358"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:26.481" endtime="20220706 23:54:27.359"/>
+</kw>
+<kw name="Escolher conta com saldo" library="bugbank">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_CRIAR_CONTA_COM_SALDO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:27.361" level="INFO">Clicking element 'id=toggleAddBalance'.</msg>
+<status status="PASS" starttime="20220706 23:54:27.361" endtime="20220706 23:54:27.929"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:27.360" endtime="20220706 23:54:27.929"/>
+</kw>
+<kw name="Clicar em Cadastrar" library="bugbank">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_CADASTRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:27.931" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/div[2]/div/div[2]/form/button'.</msg>
+<status status="PASS" starttime="20220706 23:54:27.931" endtime="20220706 23:54:28.514"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:27.931" endtime="20220706 23:54:28.514"/>
+</kw>
+<kw name="Fechar o modal de confirmação" library="bugbank">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_FECHAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:28.516" level="INFO">Clicking element 'id=btnCloseModal'.</msg>
+<status status="PASS" starttime="20220706 23:54:28.516" endtime="20220706 23:54:29.067"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:28.515" endtime="20220706 23:54:29.067"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:20.232" endtime="20220706 23:54:29.068"/>
+</test>
+<test id="s1-t2" name="Login no app do Bugbank" line="19">
+<kw name="Efetuar o login" library="bugbank">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_USUARIO}</arg>
+<arg>${USUARIO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:29.070" level="INFO">Typing text 'fernando.tester@email.com' into text field 'xpath=//*[@id="__next"]/div/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20220706 23:54:29.070" endtime="20220706 23:54:29.962"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_SENHA}</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:29.962" level="INFO">Typing text '123456' into text field 'xpath=//*[@id="__next"]/div/div[2]/div/div[1]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220706 23:54:29.962" endtime="20220706 23:54:30.816"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:30.816" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/div[2]/div/div[1]/form/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20220706 23:54:30.816" endtime="20220706 23:54:31.381"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:29.070" endtime="20220706 23:54:31.381"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:29.069" endtime="20220706 23:54:31.382"/>
+</test>
+<test id="s1-t3" name="Efetuar uma transferência para conta inválida" line="22">
+<kw name="Clicar em extrato" library="bugbank">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_EXTRATO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:31.384" level="INFO">Clicking element 'id=btn-EXTRATO'.</msg>
+<status status="PASS" starttime="20220706 23:54:31.384" endtime="20220706 23:54:31.933"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:31.384" endtime="20220706 23:54:31.933"/>
+</kw>
+<kw name="Verificar saldo inicial" library="bugbank">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${LANCAMENTO_SALDO_INICIAL}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220706 23:54:32.468" level="INFO">Current page contains text 'Saldo adicionado ao abrir conta'.</msg>
+<status status="PASS" starttime="20220706 23:54:31.934" endtime="20220706 23:54:32.468"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:31.934" endtime="20220706 23:54:32.468"/>
+</kw>
+<kw name="Voltar para o menu principal" library="bugbank">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_VOLTAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:32.469" level="INFO">Clicking element 'xpath=//*[@id="btnBack"]'.</msg>
+<status status="PASS" starttime="20220706 23:54:32.469" endtime="20220706 23:54:33.065"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:32.469" endtime="20220706 23:54:33.065"/>
+</kw>
+<kw name="Acessar a área de transferência" library="bugbank">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_TRANSFERENCIA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:33.068" level="INFO">Clicking element 'id=btn-TRANSFERÊNCIA'.</msg>
+<status status="PASS" starttime="20220706 23:54:33.067" endtime="20220706 23:54:33.681"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:33.066" endtime="20220706 23:54:33.681"/>
+</kw>
+<kw name="Inserir dados da conta de destino incorreta" library="bugbank">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_NUMERO_DA_CONTA}</arg>
+<arg>${NUMERO_DA_CONTA_INCORRETA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:33.682" level="INFO">Typing text '999' into text field 'xpath=//*[@id="__next"]/div/div[3]/form/div[1]/div[1]/input'.</msg>
+<status status="PASS" starttime="20220706 23:54:33.682" endtime="20220706 23:54:34.565"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_DIGITO_DA_CONTA}</arg>
+<arg>${DIGITO_DA_CONTA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:34.565" level="INFO">Typing text '9' into text field 'xpath=//*[@id="__next"]/div/div[3]/form/div[1]/div[2]/input'.</msg>
+<status status="PASS" starttime="20220706 23:54:34.565" endtime="20220706 23:54:35.494"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:33.681" endtime="20220706 23:54:35.494"/>
+</kw>
+<kw name="Inserir valor da transferência" library="bugbank">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_VALOR_DA_TRANSFERENCIA}</arg>
+<arg>${VALOR_DA_TRANSFERENCIA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:35.495" level="INFO">Typing text '100' into text field 'xpath=//*[@id="__next"]/div/div[3]/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20220706 23:54:35.495" endtime="20220706 23:54:36.364"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:35.495" endtime="20220706 23:54:36.364"/>
+</kw>
+<kw name="Inserir a descrição da transferência" library="bugbank">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_DESCRICAO}</arg>
+<arg>${DESCRICAO_DA_TRANSFERENCIA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:36.366" level="INFO">Typing text 'Transferência de teste' into text field 'xpath=//*[@id="__next"]/div/div[3]/form/div[3]/input'.</msg>
+<status status="PASS" starttime="20220706 23:54:36.365" endtime="20220706 23:54:37.274"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:36.365" endtime="20220706 23:54:37.274"/>
+</kw>
+<kw name="Clicar no botão &quot;Transferir Agora&quot;" library="bugbank">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_TRANSFERIR_AGORA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:37.275" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/div[3]/form/button'.</msg>
+<status status="PASS" starttime="20220706 23:54:37.275" endtime="20220706 23:54:37.872"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:37.275" endtime="20220706 23:54:37.872"/>
+</kw>
+<kw name="Confere se ocorre o erro de conta inválida" library="bugbank">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${TEXTO_ERRO_CONTA_INVALIDA}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220706 23:54:38.400" level="INFO">Current page contains text 'Conta inválida ou inexistente'.</msg>
+<status status="PASS" starttime="20220706 23:54:37.874" endtime="20220706 23:54:38.400"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_FECHAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:38.401" level="INFO">Clicking element 'id=btnCloseModal'.</msg>
+<status status="PASS" starttime="20220706 23:54:38.400" endtime="20220706 23:54:38.969"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:37.874" endtime="20220706 23:54:38.969"/>
+</kw>
+<kw name="Efetuar logout da conta" library="bugbank">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_SAIR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 23:54:38.972" level="INFO">Clicking element 'id=btnExit'.</msg>
+<status status="PASS" starttime="20220706 23:54:38.972" endtime="20220706 23:54:39.542"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:38.971" endtime="20220706 23:54:39.542"/>
+</kw>
+<status status="PASS" starttime="20220706 23:54:31.383" endtime="20220706 23:54:39.543"/>
+</test>
+<status status="PASS" starttime="20220706 23:54:19.884" endtime="20220706 23:54:39.544"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Bugbank">Bugbank</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
