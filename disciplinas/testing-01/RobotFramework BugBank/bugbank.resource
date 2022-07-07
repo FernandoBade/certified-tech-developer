@@ -81,14 +81,14 @@ Acessar a área de transferência
     Click Element                   ${BOTAO_TRANSFERENCIA}
 
 Inserir dados da conta de destino incorreta
-    Input Text                      ${CAMPO_NUMERO_DA_CONTA}         ${NUMERO_DA_CONTA_INCORRETA}
-    Input Text                      ${CAMPO_DIGITO_DA_CONTA}             ${DIGITO_DA_CONTA}
+    Input Text                      ${CAMPO_NUMERO_DA_CONTA}            ${NUMERO_DA_CONTA_INCORRETA}
+    Input Text                      ${CAMPO_DIGITO_DA_CONTA}            ${DIGITO_DA_CONTA}
 
 Inserir valor da transferência
-    Input Text                      ${CAMPO_VALOR_DA_TRANSFERENCIA}      ${VALOR_DA_TRANSFERENCIA}
+    Input Text                      ${CAMPO_VALOR_DA_TRANSFERENCIA}     ${VALOR_DA_TRANSFERENCIA}
 
 Inserir a descrição da transferência	
-    Input Text                      ${CAMPO_DESCRICAO}                   ${DESCRICAO_DA_TRANSFERENCIA}
+    Input Text                      ${CAMPO_DESCRICAO}                  ${DESCRICAO_DA_TRANSFERENCIA}
 
 Clicar no botão "Transferir Agora"
     Click Element                   ${BOTAO_TRANSFERIR_AGORA}
