@@ -1,8 +1,14 @@
 *** Variables ***
 ${SITE}                                     https://digitalhouse.com/br
 ${NAVEGADOR}                                Chrome
-
-${BOTAO_COOKIES}                            xpath=/html/body/div/div/div[1]/div[1]/div[2]/div[1]/div[2]
+${OUTROS_CURSOS}                            css=#__next > div > main > section > div > div.mt-8.flex.justify-center > div > a
+${DATA_ANALYTICS}                           xpath=//*[@id="__next"]/div/main/section[2]/div/div/div[3]/a
+${CHAMADA_DATA_ANALYTICS}                   voltado para qualquer pessoa que deseja ampliar suas capacidades analíticas
+${DESCRICAO_DATA_ANALYTICS}                 Esse curso é voltado para qualquer pessoa e/ou profissional que queira ampliar suas capacidades analíticas para tomar as melhores decisões estratégicas em sua empresa, não importa em qual momento da vida esteja.
+${BTN_INSCREVA_SE_AGORA}                    xpath=//*[@id="__next"]/div/main/section/div/div/div[1]/div/div[2]/div[1]/a
+${BTN_INSCREVA_SE}                          xpath=//*[@id="0"]/div/a
+${DATA_SCIENCE}                             xpath=//*[@id="__next"]/div/main/section[2]/div/div/div[4]/a/span
+${CHAMADA_DATA_SCIENCE}                     voltado para qualquer pessoa que deseja ampliar suas capacidades analíticas
 
 
 *** Keywords ***
@@ -10,13 +16,35 @@ Abrir o novo site da Digital House Brasil
     Open Browser                            ${SITE}                              ${NAVEGADOR}
     Maximize Browser Window
 
-Clicar em “Aceitar Cookies”
-  Sleep  5
+Clicar em “Ver outros cursos”
+    Execute Javascript                      window.scroll(0,900)
+    Wait and Click                          ${OUTROS_CURSOS}
 
-  Wait and Click                            ${BOTAO_COOKIES}
-  Unselect Frame
+Selecionar o curso “Data Analytics”
+    Execute Javascript                      window.scroll(0,900)
+    Wait and Click                          ${DATA_ANALYTICS}
+
+Verificar se o texto de chamada do curso Data Analytics está correta
+    Page Should Contain                     ${CHAMADA_DATA_ANALYTICS}
+
+Verificar se a descrição do curso Data Analytics está correta
+    Page Should Contain                     ${DESCRICAO_DATA_ANALYTICS}
+
+Clicar em “Inscreva-se agora
+    Wait and Click                          ${BTN_INSCREVA_SE_AGORA}
+
+Clicar em “Inscreva-se”
+    Execute Javascript                      window.scroll(0,3000)
+    Wait and Click                          ${BTN_INSCREVA_SE}
+
+Validar que o valor do curso é “R$10.315”
+    Page Should Contain                     R$10.315
+
+Verificar se o texto de chamada do curso Data Science está correta
+    Execute Javascript                      window.scroll(0,900)
+    Wait and Click                          ${DATA_SCIENCE}
 
 Wait and Click
-  [Arguments]                               ${ELEMENTO}
-  Wait Until Element is Visible             ${ELEMENTO}
-  Click Element                             ${ELEMENTO}
+    [Arguments]                             ${ELEMENTO}
+    Wait Until Element is Visible           ${ELEMENTO}
+    Click Element                           ${ELEMENTO}

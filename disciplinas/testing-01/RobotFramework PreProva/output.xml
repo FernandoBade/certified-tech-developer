@@ -1,78 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220711 21:49:36.738" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220711 22:16:35.155" rpa="false" schemaversion="3">
 <suite id="s1" name="Preprova" source="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\testing-01\RobotFramework PreProva\preprova.robot">
-<test id="s1-t1" name="Validação das informações do curso de Data Analytics" line="8">
+<test id="s1-t1" name="Validação das informações do curso de Data Science" line="17">
 <kw name="Abrir o novo site da Digital House Brasil" library="preprova" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${SITE}</arg>
 <arg>${NAVEGADOR}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220711 21:49:37.008" level="INFO">Opening browser 'Chrome' to base url 'https://digitalhouse.com/br'.</msg>
-<status status="PASS" starttime="20220711 21:49:37.007" endtime="20220711 21:49:42.072"/>
+<msg timestamp="20220711 22:16:35.447" level="INFO">Opening browser 'Chrome' to base url 'https://digitalhouse.com/br'.</msg>
+<status status="PASS" starttime="20220711 22:16:35.446" endtime="20220711 22:16:40.828"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220711 21:49:42.072" endtime="20220711 21:49:42.202"/>
+<status status="PASS" starttime="20220711 22:16:40.828" endtime="20220711 22:16:40.962"/>
 </kw>
-<status status="PASS" starttime="20220711 21:49:37.006" endtime="20220711 21:49:42.202"/>
+<status status="PASS" starttime="20220711 22:16:35.446" endtime="20220711 22:16:40.962"/>
 </kw>
-<kw name="Clicar em “Aceitar Cookies”" library="preprova">
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220711 21:49:47.215" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220711 21:49:42.203" endtime="20220711 21:49:47.215"/>
+<kw name="Clicar em “Ver outros cursos”" library="preprova">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,900)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220711 22:16:40.964" level="INFO">Executing JavaScript:
+window.scroll(0,900)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220711 22:16:40.963" endtime="20220711 22:16:40.968"/>
 </kw>
 <kw name="Wait and Click" library="preprova">
-<arg>${BOTAO_COOKIES}</arg>
+<arg>${OUTROS_CURSOS}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20220711 21:49:52.662" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220711 21:49:52.664" level="FAIL">Element 'xpath=/html/body/div/div/div[1]/div[1]/div[2]/div[1]/div[2]' not visible after 5 seconds.</msg>
-<status status="FAIL" starttime="20220711 21:49:47.216" endtime="20220711 21:49:52.665"/>
+<status status="PASS" starttime="20220711 22:16:40.969" endtime="20220711 22:16:40.995"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220711 21:49:52.665" endtime="20220711 21:49:52.665"/>
+<msg timestamp="20220711 22:16:40.996" level="INFO">Clicking element 'css=#__next &gt; div &gt; main &gt; section &gt; div &gt; div.mt-8.flex.justify-center &gt; div &gt; a'.</msg>
+<status status="PASS" starttime="20220711 22:16:40.995" endtime="20220711 22:16:42.446"/>
 </kw>
-<status status="FAIL" starttime="20220711 21:49:47.215" endtime="20220711 21:49:52.666"/>
+<status status="PASS" starttime="20220711 22:16:40.969" endtime="20220711 22:16:42.447"/>
 </kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="NOT RUN" starttime="20220711 21:49:52.666" endtime="20220711 21:49:52.666"/>
+<status status="PASS" starttime="20220711 22:16:40.963" endtime="20220711 22:16:42.447"/>
 </kw>
-<status status="FAIL" starttime="20220711 21:49:42.202" endtime="20220711 21:49:52.667"/>
-</kw>
-<kw name="Clicar em “Ver outros cursos”">
-<status status="NOT RUN" starttime="20220711 21:49:52.673" endtime="20220711 21:49:52.673"/>
-</kw>
-<kw name="Selecionar o curso “Data Analytics”">
-<status status="NOT RUN" starttime="20220711 21:49:52.679" endtime="20220711 21:49:52.680"/>
-</kw>
-<kw name="Verificar se o texto de chamada do curso está correto">
-<status status="NOT RUN" starttime="20220711 21:49:52.684" endtime="20220711 21:49:52.684"/>
-</kw>
-<kw name="Verificar se a descrição do curso está correta">
-<status status="NOT RUN" starttime="20220711 21:49:52.687" endtime="20220711 21:49:52.687"/>
-</kw>
-<kw name="Clicar em “Inscreva-se agora">
-<status status="NOT RUN" starttime="20220711 21:49:52.691" endtime="20220711 21:49:52.691"/>
-</kw>
-<kw name="Clicar em “Inscreva-se”">
-<status status="NOT RUN" starttime="20220711 21:49:52.694" endtime="20220711 21:49:52.694"/>
-</kw>
-<kw name="Validar que o valor do curso é “R$10.315”">
-<status status="NOT RUN" starttime="20220711 21:49:52.699" endtime="20220711 21:49:52.699"/>
+<kw name="Selecionar o curso “Data Science”">
+<msg timestamp="20220711 22:16:42.451" level="FAIL">No keyword with name 'Selecionar o curso “Data Science”' found.</msg>
+<status status="FAIL" starttime="20220711 22:16:42.451" endtime="20220711 22:16:42.451"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220711 21:49:52.701" endtime="20220711 21:49:55.255"/>
+<status status="PASS" starttime="20220711 22:16:42.452" endtime="20220711 22:16:44.834"/>
 </kw>
-<status status="FAIL" starttime="20220711 21:49:37.004" endtime="20220711 21:49:55.256">Element 'xpath=/html/body/div/div/div[1]/div[1]/div[2]/div[1]/div[2]' not visible after 5 seconds.</status>
+<status status="FAIL" starttime="20220711 22:16:35.445" endtime="20220711 22:16:44.835">No keyword with name 'Selecionar o curso “Data Science”' found.</status>
 </test>
-<status status="FAIL" starttime="20220711 21:49:36.741" endtime="20220711 21:49:55.258"/>
+<status status="FAIL" starttime="20220711 22:16:35.159" endtime="20220711 22:16:44.837"/>
 </suite>
 <statistics>
 <total>
