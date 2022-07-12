@@ -11,6 +11,22 @@ public class Ponto {
         this.longitude = longitude;
     }
 
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+
     public String calcularDistancia (Ponto ponto2) {
         double distancia = 0;
         distancia = abs(this.latitude - ponto2.latitude) + abs(this.longitude - ponto2.longitude);

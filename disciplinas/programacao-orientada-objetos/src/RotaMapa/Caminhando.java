@@ -1,6 +1,6 @@
 package RotaMapa;
 
-public class Caminhando implements CalcularTempoViagem {
+public class Caminhando implements StrategyCalcularTempoViagem {
     public double ponto1 = 0;
     public double ponto2 = 0;
 
