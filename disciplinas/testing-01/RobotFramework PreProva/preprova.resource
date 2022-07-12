@@ -8,7 +8,7 @@ ${DESCRICAO_DATA_ANALYTICS}                 Esse curso é voltado para qualquer 
 ${BTN_INSCREVA_SE_AGORA}                    xpath=//*[@id="__next"]/div/main/section/div/div/div[1]/div/div[2]/div[1]/a
 ${BTN_INSCREVA_SE}                          xpath=//*[@id="0"]/div/a
 ${DATA_SCIENCE}                             xpath=//*[@id="__next"]/div/main/section[2]/div/div/div[4]/a/span
-${CHAMADA_DATA_SCIENCE}                     voltado para qualquer pessoa que deseja ampliar suas capacidades analíticas
+${CHAMADA_DATA_SCIENCE}                     voltado para estudantes e profissionais de diversas áreas que desejam melhorar sua comunicação como engenheiros de Big Data
 
 
 *** Keywords ***
@@ -16,7 +16,7 @@ Abrir o novo site da Digital House Brasil
     Open Browser                            ${SITE}                              ${NAVEGADOR}
     Maximize Browser Window
 
-Clicar em “Ver outros cursos”
+DA.Clicar em “Ver outros cursos”
     Execute Javascript                      window.scroll(0,900)
     Wait and Click                          ${OUTROS_CURSOS}
 
@@ -40,9 +40,17 @@ Clicar em “Inscreva-se”
 Validar que o valor do curso é “R$10.315”
     Page Should Contain                     R$10.315
 
-Verificar se o texto de chamada do curso Data Science está correta
+
+Ds.Clicar em “Ver outros cursos”
+    Execute Javascript                      window.scroll(0,900)
+    Wait and Click                          ${OUTROS_CURSOS}
+
+Selecionar o curso “Data Science”
     Execute Javascript                      window.scroll(0,900)
     Wait and Click                          ${DATA_SCIENCE}
+
+Verificar se o texto de chamada do curso Data Science está correta
+    Page Should Contain                     ${CHAMADA_DATA_SCIENCE} 
 
 Wait and Click
     [Arguments]                             ${ELEMENTO}
