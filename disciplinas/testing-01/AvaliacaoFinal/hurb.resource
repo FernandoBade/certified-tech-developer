@@ -5,7 +5,7 @@ ${ACEITE_COOKIES}                           xpath=/html/body/div[1]/div[2]/div/a
 ${ABA_PACOTES}                              xpath=//*[@id="__next"]/div[1]/div[2]/div/div/div[1]/div/div/button[2]
 ${INPUT_BUSCA_PACOTES}                      xpath=/html/body/div[2]/div[1]/div[2]/div/div/div[2]/div/div/div/div/div/div/input
 ${BTN_PESQUISAR}                            xpath=/html/body/div[2]/div[1]/div[2]/div/div/div[2]/button
-${PACOTE_TOQUIO}                            xpath=/html/body/div[1]/div/main/section/div[1]/a
+${PACOTE_TOQUIO}                            xpath=/html/body/div[1]/div/main/section/div[1]/a/div[1]
 ${BTN_ESCOLHER_PACOTE}                      xpath=/html/body/div[1]/div/main/div[3]/aside/div/div/div[2]/button
 ${RADIO_SAO_PAULO}                          xpath=//*[@id="LGPKG-1140178-2779861"]
 ${BTN_PROXIMO_1}                            xpath=/html/body/div[9]/div/div/div/footer/button
@@ -17,8 +17,8 @@ ${BTN_IR_PARA_PAGAMENTO}                    xpath=/html/body/div[9]/div/div/div/
 *** Keywords ***
 
 Abrir o site do Hurb
-    Set Selenium Speed              0.25
-    Open Browser                    ${SITE}                                 ${NAVEGADOR}
+    Set Selenium Speed                      0.25
+    Open Browser                            ${SITE}                         ${NAVEGADOR}
     Maximize Browser Window
 
 Clicar em “Permitir todos os cookies”

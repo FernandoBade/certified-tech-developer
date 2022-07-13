@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220712 22:38:28.464" rpa="false" schemaversion="3">
+<suite id="s1" name="Hurb" source="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\testing-01\AvaliacaoFinal\hurb.robot">
+<test id="s1-t1" name="Processo de reserva de pacote de viagens para Tóquio - Japão" line="10">
+<kw name="Abrir o site do Hurb" library="hurb" type="SETUP">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.25</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220712 22:38:28.778" endtime="20220712 22:38:28.779"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220712 22:38:28.780" level="INFO">Opening browser 'Chrome' to base url 'https://hurb.com/br'.</msg>
+<msg timestamp="20220712 22:38:34.199" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220712 22:38:34.199" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00B26463+2188387]
+	Ordinal0 [0x00ABE461+1762401]
+	Ordinal0 [0x009D3D78+802168]
+	Ordinal0 [0x009C7210+750096]
+	Ordinal0 [0x009C675A+747354]
+	Ordinal0 [0x009C5D3F+744767]
+	Ordinal0 [0x009C4C28+740392]
+	Ordinal0 [0x009C5228+741928]
+	Ordinal0 [0x009CEF2F+782127]
+	Ordinal0 [0x009D9FBB+827323]
+	Ordinal0 [0x009DD310+840464]
+	Ordinal0 [0x009C54F6+742646]
+	Ordinal0 [0x009D9BF3+826355]
+	Ordinal0 [0x00A2CF6D+1167213]
+	Ordinal0 [0x00A1C5F6+1099254]
+	Ordinal0 [0x009F6BE0+945120]
+	Ordinal0 [0x009F7AD6+948950]
+	GetHandleVerifier [0x00DC71F2+2712546]
+	GetHandleVerifier [0x00DB886D+2652765]
+	GetHandleVerifier [0x00BB002A+520730]
+	GetHandleVerifier [0x00BAEE06+516086]
+	Ordinal0 [0x00AC468B+1787531]
+	Ordinal0 [0x00AC8E88+1805960]
+	Ordinal0 [0x00AC8F75+1806197]
+	Ordinal0 [0x00AD1DF1+1842673]
+	BaseThreadInitThunk [0x7576FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77127A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77127A6E+238]
+</msg>
+<status status="FAIL" starttime="20220712 22:38:28.779" endtime="20220712 22:38:34.202"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220712 22:38:34.202" endtime="20220712 22:38:34.202"/>
+</kw>
+<status status="FAIL" starttime="20220712 22:38:28.778" endtime="20220712 22:38:34.203"/>
+</kw>
+<status status="FAIL" starttime="20220712 22:38:28.777" endtime="20220712 22:38:34.204">Setup failed:
+WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00B26463+2188387]
+	Ordinal0 [0x00ABE461+1762401]
+	Ordinal0 [0x009D3D78+802168]
+	Ordinal0 [0x009C7210+750096]
+	Ordinal0 [0x009C675A+747354]
+	Ordinal0 [0x009C5D3F+744767]
+	Ordinal0 [0x009C4C28+740392]
+	Ordinal0 [0x009C5228+741928]
+	Ordinal0 [0x009CEF2F+782127]
+	Ordinal0 [0x009D9FBB+827323]
+	Ordinal0 [0x009DD310+840464]
+	Ordinal0 [0x009C54F6+742646]
+	Ordinal0 [0x009D9BF3+826355]
+	Ordinal0 [0x00A2CF6D+1167213]
+	Ordinal0 [0x00A1C5F6+1099254]
+	Ordinal0 [0x009F6BE0+945120]
+	Ordinal0 [0x009F7AD6+948950]
+	GetHandleVerifier [0x00DC71F2+2712546]
+	GetHandleVerifier [0x00DB886D+2652765]
+	GetHandleVerifier [0x00BB002A+520730]
+	GetHandleVerifier [0x00BAEE06+516086]
+	Ordinal0 [0x00AC468B+1787531]
+	Ordinal0 [0x00AC8E88+1805960]
+	Ordinal0 [0x00AC8F75+1806197]
+	Ordinal0 [0x00AD1DF1+1842673]
+	BaseThreadInitThunk [0x7576FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77127A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77127A6E+238]
+</status>
+</test>
+<status status="FAIL" starttime="20220712 22:38:28.466" endtime="20220712 22:38:34.213"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Hurb">Hurb</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
