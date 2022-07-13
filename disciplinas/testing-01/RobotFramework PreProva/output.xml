@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220711 22:27:58.796" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220712 21:11:56.853" rpa="false" schemaversion="3">
 <suite id="s1" name="Preprova" source="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\testing-01\RobotFramework PreProva\preprova.robot">
 <test id="s1-t1" name="Validação das informações do curso de Data Analytics" line="8">
 <kw name="Abrir o novo site da Digital House Brasil" library="preprova" type="SETUP">
@@ -7,84 +7,84 @@
 <arg>${SITE}</arg>
 <arg>${NAVEGADOR}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220711 22:27:59.083" level="INFO">Opening browser 'Chrome' to base url 'https://digitalhouse.com/br'.</msg>
-<status status="PASS" starttime="20220711 22:27:59.082" endtime="20220711 22:28:03.760"/>
+<msg timestamp="20220712 21:11:57.119" level="INFO">Opening browser 'Chrome' to base url 'https://digitalhouse.com/br'.</msg>
+<status status="PASS" starttime="20220712 21:11:57.119" endtime="20220712 21:12:01.496"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220711 22:28:03.761" endtime="20220711 22:28:03.883"/>
+<status status="PASS" starttime="20220712 21:12:01.496" endtime="20220712 21:12:01.628"/>
 </kw>
-<status status="PASS" starttime="20220711 22:27:59.082" endtime="20220711 22:28:03.883"/>
+<status status="PASS" starttime="20220712 21:11:57.118" endtime="20220712 21:12:01.628"/>
 </kw>
 <kw name="DA.Clicar em “Ver outros cursos”" library="preprova">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scroll(0,900)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220711 22:28:03.885" level="INFO">Executing JavaScript:
+<msg timestamp="20220712 21:12:01.630" level="INFO">Executing JavaScript:
 window.scroll(0,900)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220711 22:28:03.884" endtime="20220711 22:28:03.890"/>
+<status status="PASS" starttime="20220712 21:12:01.629" endtime="20220712 21:12:01.634"/>
 </kw>
 <kw name="Wait and Click" library="preprova">
 <arg>${OUTROS_CURSOS}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220711 22:28:03.890" endtime="20220711 22:28:03.918"/>
+<status status="PASS" starttime="20220712 21:12:01.635" endtime="20220712 21:12:01.662"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220711 22:28:03.918" level="INFO">Clicking element 'css=#__next &gt; div &gt; main &gt; section &gt; div &gt; div.mt-8.flex.justify-center &gt; div &gt; a'.</msg>
-<status status="PASS" starttime="20220711 22:28:03.918" endtime="20220711 22:28:05.241"/>
+<msg timestamp="20220712 21:12:01.662" level="INFO">Clicking element 'css=#__next &gt; div &gt; main &gt; section &gt; div &gt; div.mt-8.flex.justify-center &gt; div &gt; a'.</msg>
+<status status="PASS" starttime="20220712 21:12:01.662" endtime="20220712 21:12:03.088"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:03.890" endtime="20220711 22:28:05.241"/>
+<status status="PASS" starttime="20220712 21:12:01.634" endtime="20220712 21:12:03.088"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:03.884" endtime="20220711 22:28:05.241"/>
+<status status="PASS" starttime="20220712 21:12:01.629" endtime="20220712 21:12:03.088"/>
 </kw>
 <kw name="Selecionar o curso “Data Analytics”" library="preprova">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scroll(0,900)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220711 22:28:05.246" level="INFO">Executing JavaScript:
+<msg timestamp="20220712 21:12:03.090" level="INFO">Executing JavaScript:
 window.scroll(0,900)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220711 22:28:05.246" endtime="20220711 22:28:05.252"/>
+<status status="PASS" starttime="20220712 21:12:03.089" endtime="20220712 21:12:03.114"/>
 </kw>
 <kw name="Wait and Click" library="preprova">
 <arg>${DATA_ANALYTICS}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220711 22:28:05.253" endtime="20220711 22:28:05.285"/>
+<status status="PASS" starttime="20220712 21:12:03.115" endtime="20220712 21:12:03.149"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220711 22:28:05.285" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/main/section[2]/div/div/div[3]/a'.</msg>
-<status status="PASS" starttime="20220711 22:28:05.285" endtime="20220711 22:28:06.569"/>
+<msg timestamp="20220712 21:12:03.150" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/main/section[2]/div/div/div[3]/a'.</msg>
+<status status="PASS" starttime="20220712 21:12:03.149" endtime="20220712 21:12:04.426"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:05.252" endtime="20220711 22:28:06.570"/>
+<status status="PASS" starttime="20220712 21:12:03.115" endtime="20220712 21:12:04.426"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:05.245" endtime="20220711 22:28:06.570"/>
+<status status="PASS" starttime="20220712 21:12:03.088" endtime="20220712 21:12:04.426"/>
 </kw>
 <kw name="Verificar se o texto de chamada do curso Data Analytics está correta" library="preprova">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>${CHAMADA_DATA_ANALYTICS}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220711 22:28:06.612" level="INFO">Current page contains text 'voltado para qualquer pessoa que deseja ampliar suas capacidades analíticas'.</msg>
-<status status="PASS" starttime="20220711 22:28:06.571" endtime="20220711 22:28:06.612"/>
+<msg timestamp="20220712 21:12:04.462" level="INFO">Current page contains text 'voltado para qualquer pessoa que deseja ampliar suas capacidades analíticas'.</msg>
+<status status="PASS" starttime="20220712 21:12:04.428" endtime="20220712 21:12:04.462"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:06.570" endtime="20220711 22:28:06.612"/>
+<status status="PASS" starttime="20220712 21:12:04.428" endtime="20220712 21:12:04.462"/>
 </kw>
 <kw name="Verificar se a descrição do curso Data Analytics está correta" library="preprova">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>${DESCRICAO_DATA_ANALYTICS}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220711 22:28:06.635" level="INFO">Current page contains text 'Esse curso é voltado para qualquer pessoa e/ou profissional que queira ampliar suas capacidades analíticas para tomar as melhores decisões estratégicas em sua empresa, não importa em qual momento da vida esteja.'.</msg>
-<status status="PASS" starttime="20220711 22:28:06.613" endtime="20220711 22:28:06.635"/>
+<msg timestamp="20220712 21:12:04.482" level="INFO">Current page contains text 'Esse curso é voltado para qualquer pessoa e/ou profissional que queira ampliar suas capacidades analíticas para tomar as melhores decisões estratégicas em sua empresa, não importa em qual momento da vida esteja.'.</msg>
+<status status="PASS" starttime="20220712 21:12:04.463" endtime="20220712 21:12:04.482"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:06.612" endtime="20220711 22:28:06.635"/>
+<status status="PASS" starttime="20220712 21:12:04.463" endtime="20220712 21:12:04.482"/>
 </kw>
 <kw name="Clicar em “Inscreva-se agora" library="preprova">
 <kw name="Wait and Click" library="preprova">
@@ -92,58 +92,53 @@ Without any arguments.</msg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220711 22:28:06.636" endtime="20220711 22:28:06.658"/>
+<status status="PASS" starttime="20220712 21:12:04.483" endtime="20220712 21:12:04.503"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220711 22:28:06.659" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/main/section/div/div/div[1]/div/div[2]/div[1]/a'.</msg>
-<status status="PASS" starttime="20220711 22:28:06.658" endtime="20220711 22:28:06.752"/>
+<msg timestamp="20220712 21:12:04.504" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/main/section/div/div/div[1]/div/div[2]/div[1]/a'.</msg>
+<status status="PASS" starttime="20220712 21:12:04.504" endtime="20220712 21:12:04.559"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:06.636" endtime="20220711 22:28:06.752"/>
+<status status="PASS" starttime="20220712 21:12:04.483" endtime="20220712 21:12:04.559"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:06.635" endtime="20220711 22:28:06.752"/>
+<status status="PASS" starttime="20220712 21:12:04.483" endtime="20220712 21:12:04.559"/>
 </kw>
 <kw name="Clicar em “Inscreva-se”" library="preprova">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scroll(0,3000)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220711 22:28:06.771" level="INFO">Executing JavaScript:
+<msg timestamp="20220712 21:12:04.578" level="INFO">Executing JavaScript:
 window.scroll(0,3000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220711 22:28:06.770" endtime="20220711 22:28:06.789"/>
+<status status="PASS" starttime="20220712 21:12:04.577" endtime="20220712 21:12:04.603"/>
 </kw>
 <kw name="Wait and Click" library="preprova">
 <arg>${BTN_INSCREVA_SE}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220711 22:28:06.790" endtime="20220711 22:28:06.817"/>
+<msg timestamp="20220712 21:12:09.958" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220712 21:12:09.959" level="FAIL">Element 'xpath=//*[@id="0"]/div/a' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20220712 21:12:04.604" endtime="20220712 21:12:09.961"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220711 22:28:06.817" level="INFO">Clicking element 'xpath=//*[@id="0"]/div/a'.</msg>
-<status status="PASS" starttime="20220711 22:28:06.817" endtime="20220711 22:28:07.870"/>
+<status status="NOT RUN" starttime="20220712 21:12:09.961" endtime="20220712 21:12:09.962"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:06.790" endtime="20220711 22:28:07.870"/>
+<status status="FAIL" starttime="20220712 21:12:04.603" endtime="20220712 21:12:09.963"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:06.770" endtime="20220711 22:28:07.870"/>
+<status status="FAIL" starttime="20220712 21:12:04.577" endtime="20220712 21:12:09.963"/>
 </kw>
 <kw name="Validar que o valor do curso é “R$10.315”" library="preprova">
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>R$10.315</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220711 22:28:07.907" level="INFO">Current page contains text 'R$10.315'.</msg>
-<status status="PASS" starttime="20220711 22:28:07.871" endtime="20220711 22:28:07.908"/>
-</kw>
-<status status="PASS" starttime="20220711 22:28:07.871" endtime="20220711 22:28:07.909"/>
+<status status="NOT RUN" starttime="20220712 21:12:09.964" endtime="20220712 21:12:09.964"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220711 22:28:07.912" endtime="20220711 22:28:11.574"/>
+<status status="PASS" starttime="20220712 21:12:09.965" endtime="20220712 21:12:12.528"/>
 </kw>
-<status status="PASS" starttime="20220711 22:27:59.080" endtime="20220711 22:28:11.575"/>
+<status status="FAIL" starttime="20220712 21:11:57.117" endtime="20220712 21:12:12.529">Element 'xpath=//*[@id="0"]/div/a' not visible after 5 seconds.</status>
 </test>
 <test id="s1-t2" name="Validação das informações do curso de Data Science" line="17">
 <kw name="Abrir o novo site da Digital House Brasil" library="preprova" type="SETUP">
@@ -151,92 +146,92 @@ Without any arguments.</msg>
 <arg>${SITE}</arg>
 <arg>${NAVEGADOR}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220711 22:28:11.579" level="INFO">Opening browser 'Chrome' to base url 'https://digitalhouse.com/br'.</msg>
-<status status="PASS" starttime="20220711 22:28:11.579" endtime="20220711 22:28:16.130"/>
+<msg timestamp="20220712 21:12:12.532" level="INFO">Opening browser 'Chrome' to base url 'https://digitalhouse.com/br'.</msg>
+<status status="PASS" starttime="20220712 21:12:12.531" endtime="20220712 21:12:17.682"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220711 22:28:16.131" endtime="20220711 22:28:16.250"/>
+<status status="PASS" starttime="20220712 21:12:17.682" endtime="20220712 21:12:17.809"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:11.578" endtime="20220711 22:28:16.251"/>
+<status status="PASS" starttime="20220712 21:12:12.531" endtime="20220712 21:12:17.810"/>
 </kw>
 <kw name="Ds.Clicar em “Ver outros cursos”" library="preprova">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scroll(0,900)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220711 22:28:16.252" level="INFO">Executing JavaScript:
+<msg timestamp="20220712 21:12:17.812" level="INFO">Executing JavaScript:
 window.scroll(0,900)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220711 22:28:16.251" endtime="20220711 22:28:16.256"/>
+<status status="PASS" starttime="20220712 21:12:17.812" endtime="20220712 21:12:17.829"/>
 </kw>
 <kw name="Wait and Click" library="preprova">
 <arg>${OUTROS_CURSOS}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220711 22:28:16.257" endtime="20220711 22:28:16.290"/>
+<status status="PASS" starttime="20220712 21:12:17.830" endtime="20220712 21:12:17.873"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220711 22:28:16.291" level="INFO">Clicking element 'css=#__next &gt; div &gt; main &gt; section &gt; div &gt; div.mt-8.flex.justify-center &gt; div &gt; a'.</msg>
-<status status="PASS" starttime="20220711 22:28:16.290" endtime="20220711 22:28:18.246"/>
+<msg timestamp="20220712 21:12:17.873" level="INFO">Clicking element 'css=#__next &gt; div &gt; main &gt; section &gt; div &gt; div.mt-8.flex.justify-center &gt; div &gt; a'.</msg>
+<status status="PASS" starttime="20220712 21:12:17.873" endtime="20220712 21:12:19.967"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:16.256" endtime="20220711 22:28:18.246"/>
+<status status="PASS" starttime="20220712 21:12:17.829" endtime="20220712 21:12:19.967"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:16.251" endtime="20220711 22:28:18.246"/>
+<status status="PASS" starttime="20220712 21:12:17.811" endtime="20220712 21:12:19.967"/>
 </kw>
 <kw name="Selecionar o curso “Data Science”" library="preprova">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scroll(0,900)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220711 22:28:18.248" level="INFO">Executing JavaScript:
+<msg timestamp="20220712 21:12:19.968" level="INFO">Executing JavaScript:
 window.scroll(0,900)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220711 22:28:18.247" endtime="20220711 22:28:18.258"/>
+<status status="PASS" starttime="20220712 21:12:19.968" endtime="20220712 21:12:19.973"/>
 </kw>
 <kw name="Wait and Click" library="preprova">
 <arg>${DATA_SCIENCE}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220711 22:28:18.259" endtime="20220711 22:28:18.288"/>
+<status status="PASS" starttime="20220712 21:12:19.973" endtime="20220712 21:12:20.001"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ELEMENTO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220711 22:28:18.289" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/main/section[2]/div/div/div[4]/a/span'.</msg>
-<status status="PASS" starttime="20220711 22:28:18.288" endtime="20220711 22:28:19.564"/>
+<msg timestamp="20220712 21:12:20.001" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/main/section[2]/div/div/div[4]/a/span'.</msg>
+<status status="PASS" starttime="20220712 21:12:20.001" endtime="20220712 21:12:21.642"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:18.258" endtime="20220711 22:28:19.564"/>
+<status status="PASS" starttime="20220712 21:12:19.973" endtime="20220712 21:12:21.643"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:18.247" endtime="20220711 22:28:19.564"/>
+<status status="PASS" starttime="20220712 21:12:19.967" endtime="20220712 21:12:21.643"/>
 </kw>
 <kw name="Verificar se o texto de chamada do curso Data Science está correta" library="preprova">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>${CHAMADA_DATA_SCIENCE}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220711 22:28:19.591" level="INFO">Current page contains text 'voltado para estudantes e profissionais de diversas áreas que desejam melhorar sua comunicação como engenheiros de Big Data'.</msg>
-<status status="PASS" starttime="20220711 22:28:19.567" endtime="20220711 22:28:19.591"/>
+<msg timestamp="20220712 21:12:21.679" level="INFO">Current page contains text 'voltado para estudantes e profissionais de diversas áreas que desejam melhorar sua comunicação como engenheiros de Big Data'.</msg>
+<status status="PASS" starttime="20220712 21:12:21.645" endtime="20220712 21:12:21.679"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:19.566" endtime="20220711 22:28:19.592"/>
+<status status="PASS" starttime="20220712 21:12:21.645" endtime="20220712 21:12:21.679"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220711 22:28:19.593" endtime="20220711 22:28:21.991"/>
+<status status="PASS" starttime="20220712 21:12:21.687" endtime="20220712 21:12:24.914"/>
 </kw>
-<status status="PASS" starttime="20220711 22:28:11.577" endtime="20220711 22:28:21.992"/>
+<status status="PASS" starttime="20220712 21:12:12.530" endtime="20220712 21:12:24.914"/>
 </test>
-<status status="PASS" starttime="20220711 22:27:58.798" endtime="20220711 22:28:21.993"/>
+<status status="FAIL" starttime="20220712 21:11:56.856" endtime="20220712 21:12:24.916"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Preprova">Preprova</stat>
+<stat pass="1" fail="1" skip="0" id="s1" name="Preprova">Preprova</stat>
 </suite>
 </statistics>
 <errors>
