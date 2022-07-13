@@ -1,10 +1,11 @@
 # Fernando Ramos Bade - Turma 06
 
 *** Settings ***
+
 Library                     SeleniumLibrary
 Resource                    ./hurb.resource
 Test Setup                  Abrir o site do Hurb
-# Test Teardown               Close Browser
+Test Teardown               Close Browser
 
 *** Test Cases ***
 Processo de reserva de pacote de viagens para Tóquio - Japão
