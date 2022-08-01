@@ -6,14 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pessoa {
-    public class Pessoa {
+    public class pessoa {
         private String nome;
         private String sobrenome;
         LocalDate idade;
         List<String> colecao = new ArrayList<>();
 
 
-        public Pessoa(String nome, String sobrenome) {
+        public pessoa(String nome, String sobrenome) {
             this.nome = nome;
             this.sobrenome = sobrenome;
         }
@@ -50,19 +50,19 @@ public class Pessoa {
             this.colecao = colecao;
         }
 
-        public List<String> adicionarNomes(Pessoa pessoa) {
+        public List<String> adicionarNomes(pessoa pessoa) {
             int var = pessoa.getNome().length();
             int idade = pessoa.Idade();
             if(var > 5 && idade > 18) {
                 colecao.add(pessoa.getNome());
-                System.out.println("Nome adicionado com sucesso!");
+                System.out.println(colecao);
             }
             return colecao;
         }
 
         private int Idade() {
-            int idade = Period.between(this.idade, LocalDate.now()).getYears();
-            return idade;
+            int dataNascimento = Period.between(this.idade, LocalDate.now()).getYears();
+            return dataNascimento;
         }
 
         @Override
