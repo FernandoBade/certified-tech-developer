@@ -19,17 +19,21 @@ public class Efetivo extends Funcionario {
 
     @Override
     public void imprimirRecibo(double quantia) {
+        System.out.println("----------------------------------------");
         System.out.println("Recibo de pagamento");
         System.out.println("Nome: " + getNome() + " " + getSobrenome());
         System.out.println("Salário: R$" + salarioBase);
         System.out.println("Bonificações: R$" + bonificacoes);
         System.out.println("Descontos: R$" + descontos);
         System.out.println("Saldo: R$" + quantia);
+        System.out.println("----------------------------------------");
     }
 
     @Override
     public void depositar(double quantia) {
+        System.out.println("***");
         System.out.println("Depósito de R$" + quantia + " na conta " + getNumeroConta());
+        System.out.println("***");
     }
 }
 

@@ -17,15 +17,19 @@ public class Contratado extends Funcionario {
 
     @Override
     public void imprimirRecibo(double quantia) {
+        System.out.println("----------------------------------------");
         System.out.println("Recibo de pagamento");
         System.out.println("Nome: " + getNome() + " " + getSobrenome());
         System.out.println("Salário: R$" + valorHora);
         System.out.println("Horas: " + horas);
         System.out.println("Saldo: R$" + quantia);
+        System.out.println("----------------------------------------");
     }
 
     @Override
     public void depositar(double quantia) {
+        System.out.println("***");
         System.out.println("Depósito de R$" + quantia + " na conta " + getNumeroConta());
+        System.out.println("***");
     }
 }
