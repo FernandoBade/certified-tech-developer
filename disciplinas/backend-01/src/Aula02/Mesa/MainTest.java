@@ -17,9 +17,7 @@
 //        Deve ser implementado um método mostrarCategoria que deve primeiro calcularPontos, depois recategorizar de acordo com
 //        a pontuação obtida no método anterior e, finalmente, exibir o nome do vendedor, total de pontos e categoria por console.
 
-
 package Aula02.Mesa;
-
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -65,6 +63,25 @@ class MainTest {
         assertEquals("Novato", a1.getCategoria());
         assertEquals("Mestre", a2.getCategoria());
         assertEquals("Mestre", a3.getCategoria());
+
     }
+
+    @Test
+    public void confirmaTempoDeCasa() {
+        assertEquals(0, f1.getTempoDeCasa());
+        assertEquals(0, f2.getTempoDeCasa());
+        assertEquals(5, f3.getTempoDeCasa());
+    }
+
+    @Test
+    public void confirmaPontos() {
+        assertEquals(15, f1.getPontos());
+        assertEquals(25, f2.getPontos());
+        assertEquals(35, f3.getPontos());
+        assertEquals(15, a1.getPontos());
+        assertEquals(75, a2.getPontos());
+        assertEquals(150, a3.getPontos());
+    }
+
 
 }
