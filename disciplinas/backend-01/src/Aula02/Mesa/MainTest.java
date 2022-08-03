@@ -21,37 +21,50 @@
 package Aula02.Mesa;
 
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class MainTest  {
 
-    Funcionario f1, f2, f3;
-    Afiliados a1, a2, a3;
+class MainTest {
 
-    @Test
-    void testaCategorias() {
-        Funcionario f1 = new Funcionario("João", 0);
+    static Funcionario f1, f2, f3;
+    static Afiliados a1, a2, a3;
+
+    @BeforeAll
+    static void doBefore() {
+        f1 = new Funcionario("João", 0);
         f1.vender(1);
         f1.obterAfiliado(1);
-        Funcionario f2 = new Funcionario("Maria");
-        f2.vender(2);
+        f2 = new Funcionario("Maria");
+        f2.vender(3);
         f2.obterAfiliado(1);
-        Funcionario f3 = new Funcionario("Pedro", 10);
+        f3 = new Funcionario("Pedro", 10, 5);
         f3.vender(5);
         f3.obterAfiliado(1);
-        Afiliados a1 = new Afiliados("José", 10);
+        a1 = new Afiliados("José", 10);
         a1.vender(1);
-        Afiliados a2 = new Afiliados("Luiz");
+        a2 = new Afiliados("Luiz");
         a2.vender(5);
-        Afiliados a3 = new Afiliados("Camila", 20);
+        a3 = new Afiliados("Camila", 20);
         a3.vender(10);
+    }
+
+    @Test
+    public void testImpressaoCategorias() {
         f1.mostrarCategoria();
         f2.mostrarCategoria();
         f3.mostrarCategoria();
         a1.mostrarCategoria();
         a2.mostrarCategoria();
         a3.mostrarCategoria();
-
+        assertEquals("Novato", f1.getCategoria());
+        assertEquals("Aprendiz", f2.getCategoria());
+        assertEquals("Bom", f3.getCategoria());
+        assertEquals("Novato", a1.getCategoria());
+        assertEquals("Mestre", a2.getCategoria());
+        assertEquals("Mestre", a3.getCategoria());
     }
+
 }

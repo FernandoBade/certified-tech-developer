@@ -15,4 +15,8 @@ public class Afiliados extends Vendedor {
         this.pontos = this.pontos + (qtdVendas * 15);
     }
 
+    @Override
+    public void calculaPontos() {
+    }
+
 }

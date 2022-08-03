@@ -53,6 +53,8 @@ public abstract class Vendedor {
 
     public abstract void vender(int qtdVendas);
 
+    public abstract void calculaPontos();
+
     public Enum<Categorias> mostrarCategoria() {
         if (pontos < 20) {
             setCategoria(NOVATO);
