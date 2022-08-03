@@ -1,6 +1,4 @@
-package Aula02.Mesa;
-
-import static Aula02.Mesa.Categorias.*;
+package Aula03;
 
 public abstract class Vendedor {
     public String nome;
@@ -10,7 +8,7 @@ public abstract class Vendedor {
     public Vendedor(String nome, int pontos) {
         this.nome = nome;
         this.pontos = 0;
-        this.categoria = NOVATO;
+        this.categoria = Categorias.NOVATO;
     }
 
     public Vendedor(String nome) {
@@ -39,13 +37,13 @@ public abstract class Vendedor {
     }
 
     public String getCategoria() {
-        if (this.categoria == NOVATO) {
+        if (this.categoria == Categorias.NOVATO) {
             return "Novato";
-        } else if (this.categoria == APRENDIZ) {
+        } else if (this.categoria == Categorias.APRENDIZ) {
             return "Aprendiz";
-        } else if (this.categoria == BOM) {
+        } else if (this.categoria == Categorias.BOM) {
             return "Bom";
-        } else if (this.categoria == MESTRE) {
+        } else if (this.categoria == Categorias.MESTRE) {
             return "Mestre";
         }
         return null;
@@ -57,16 +55,16 @@ public abstract class Vendedor {
 
     public Enum<Categorias> mostrarCategoria() {
         if (pontos < 20) {
-            setCategoria(NOVATO);
+            setCategoria(Categorias.NOVATO);
             System.out.println("O vendedor " + nome + " tem um total de " + getPontos() + " pontos e está na categoria " + getCategoria());
         } else if (pontos <= 30) {
-            setCategoria(APRENDIZ);
+            setCategoria(Categorias.APRENDIZ);
             System.out.println("O vendedor " + nome + " tem um total de " + getPontos() + " pontos e está na categoria " + getCategoria());
         } else if (pontos <= 40) {
-            setCategoria(BOM);
+            setCategoria(Categorias.BOM);
             System.out.println("O vendedor " + nome + " tem um total de " + getPontos() + " pontos e está na categoria " + getCategoria());
         } else {
-            setCategoria(MESTRE);
+            setCategoria(Categorias.MESTRE);
             System.out.println("O vendedor " + nome + " tem um total de " + getPontos() + " pontos e está na categoria " + getCategoria());
         }
         return null;

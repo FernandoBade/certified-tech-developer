@@ -17,7 +17,7 @@
 //        Deve ser implementado um método mostrarCategoria que deve primeiro calcularPontos, depois recategorizar de acordo com
 //        a pontuação obtida no método anterior e, finalmente, exibir o nome do vendedor, total de pontos e categoria por console.
 
-package Aula02.Mesa;
+package Aula03;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
