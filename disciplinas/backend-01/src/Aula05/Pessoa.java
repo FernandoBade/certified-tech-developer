@@ -56,4 +56,15 @@ public class Pessoa {
     public void setNomeVacina(String nomeVacina) {
         this.nomeVacina = nomeVacina;
     }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", rg='" + rg + '\'' +
+                ", dataVacina=" + dataVacina +
+                ", nomeVacina='" + nomeVacina + '\'' +
+                '}';
+    }
 }
