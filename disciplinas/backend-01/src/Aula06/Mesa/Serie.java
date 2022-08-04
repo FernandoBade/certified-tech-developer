@@ -1,7 +1,5 @@
 package Aula06.Mesa;
 
-import static org.junit.jupiter.params.shadow.com.univocity.parsers.conversions.Conversions.toLowerCase;
-
 public class Serie implements ISerie {
 
     private String nome;
@@ -16,7 +14,7 @@ public class Serie implements ISerie {
 
     @Override
     public String getSerie(String nome) {
-        return "www.dhflix.com/" + nome.toLowerCase().replaceAll("[^a-z]", "") + "/watch";
+        return "Link para assistir sua série: www.dhflix.com/" + nome.toLowerCase().replaceAll("[^a-z]", "") + "/watch";
     }
 }
 

@@ -11,7 +11,7 @@ public class SerieProxy {
             qtdViews++;
             return serie.getSerie(serie.getNome());
         } else {
-            throw new SerieException("Excede o número de reproduções permitidas");
+            throw new SerieException("Você excedeu o número de reproduções permitidas.");
         }
     }
 }
