@@ -15,19 +15,53 @@
 //
 //        Não se esqueça de implementar os casos de teste necessários a fim de garantir a qualidade do código produzido.
 
-
 package Aula08_Facade.Mesa;
 
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
 
-public class Voo {
+public class Viagem {
 
-        public String buscarVoo(String destino, LocalDate dataPartida, LocalDate dataRetorno){
-            List<String> empresasAereas = Arrays.asList("Empresa Aérea 1", "Empresa Aérea 2", "Empresa Aérea 3");
-            Random r = new Random();
-            return empresasAereas.get(r.nextInt(empresasAereas.size()));
-        }
+    private String destino;
+    private LocalDate dataPartida;
+    private LocalDate dataRetorno;
+    private String empresaAerea;
+    private String hotel;
+
+    public Viagem( String destino, LocalDate dataPartida, LocalDate dataRetorno) {
+        this.dataPartida = dataPartida;
+        this.dataRetorno = dataRetorno;
+        this.destino = destino;
     }
+
+    public void setCompanhia(String companhia) {
+        this.empresaAerea = companhia;
+    }
+
+    public void setHotel(String hotel) {
+        this.hotel = hotel;
+    }
+
+    public LocalDate getDataPartida() {
+        return dataPartida;
+    }
+
+    public LocalDate getDataRetorno() {
+        return dataRetorno;
+    }
+
+
+    public String getDestino() {
+        return destino;
+    }
+
+    @Override
+    public String toString() {
+        return "Viagem{" +
+                "destino='" + destino + '\'' +
+                ", dataPartida=" + dataPartida +
+                ", dataRetorno=" + dataRetorno +
+                ", empresaAerea='" + empresaAerea + '\'' +
+                ", hotel='" + hotel + '\'' +
+                '}';
+    }
+}

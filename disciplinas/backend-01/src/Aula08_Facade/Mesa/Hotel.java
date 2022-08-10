@@ -1,36 +1,16 @@
 package Aula08_Facade.Mesa;
 
+import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+
 public class Hotel {
 
-    public String destino;
-    public String dataIda;
-    public String dataVolta;
-
-    public String getDestino() {
-        return destino;
-    }
-
-    public void setDestino(String destino) {
-        this.destino = destino;
-    }
-
-    public String getDataIda() {
-        return dataIda;
-    }
-
-    public void setDataIda(String dataIda) {
-        this.dataIda = dataIda;
-    }
-
-    public String getDataVolta() {
-        return dataVolta;
-    }
-
-    public void setDataVolta(String dataVolta) {
-        this.dataVolta = dataVolta;
-    }
-
-    public String disponibilidade(String destino, String dataIda, String dataVolta) {
-        return "Busca de hotel para: " + destino + ", de " + dataIda + " até " + dataVolta;
+    public String buscarHotel(String destino, LocalDate dataPartida, LocalDate dataRetorno){
+        List<String> hoteis = Arrays.asList("Hotel 1", "Hotel 2", "Hotel 3");
+        Random r = new Random();
+        return hoteis.get(r.nextInt(hoteis.size()));
     }
 }
+
