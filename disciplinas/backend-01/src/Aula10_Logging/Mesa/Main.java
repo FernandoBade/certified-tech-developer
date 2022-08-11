@@ -42,7 +42,6 @@ public class Main {
         lista2.criaLista(10);
         lista4.criaLista(15);
         lista4.calculaMedia();
-
         lista3.criaLista(0);
     }
 
