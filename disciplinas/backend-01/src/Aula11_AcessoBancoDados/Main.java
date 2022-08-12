@@ -5,13 +5,11 @@ import java.sql.*;
 import static java.sql.DriverManager.getConnection;
 
 public class Main {
-    private static final String sqlCreateTable =
-            "DROP TABLE IF EXISTS Animal; CREATE TABLE Animal "
-                    + "(id INTEGER PRIMARY KEY, "
-                    + "nome VARCHAR(100) NOT NULL, "
-                    + "tipo VARCHAR(100) NOT NULL, "
-                    + ")";
-
+    private static final String sqlCreateTable = "DROP TABLE IF EXISTS Animal;CREATE TABLE Animal"+
+            "("+"id INT PRIMARY KEY,"
+            +"Nome VARCHAR(100) NOT NULL,"
+            +"Tipo VARCHAR(100) NOT NULL"
+            +")";
 
     private static final String sqlInsert1 = "INSERT INTO Animal (id, nome, tipo) VALUES (1, 'Valentino', 'Cachorro')";
     private static final String sqlInsert2 = "INSERT INTO Animal (id, nome, tipo) VALUES (2, 'Niki', 'Cachorro')";
