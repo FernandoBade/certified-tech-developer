@@ -80,7 +80,6 @@ public class Main {
             if (connection == null) logger.info("Não foi possível conectar ao banco de dados");
             connection.close();
         }
-
     }
 
     //Conecta com o banco de dados
@@ -88,5 +87,4 @@ public class Main {
         Class.forName("org.h2.Driver").newInstance();
         return DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
     }
-
 }
