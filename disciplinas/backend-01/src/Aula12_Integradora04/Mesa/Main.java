@@ -52,7 +52,7 @@ public class Main {
             + " (3, 'Pedro', 'Santos', 32, 'pedro.santos@empresa.com')";
 
     //atualização da idade do funcionario com o ID 3
-    private static final String sqlUpdate = "UPDATE Funcionario SET Idade = 30 WHERE id = 3";
+    private static final String sqlUpdate = "UPDATE Funcionario SET idade = 40 WHERE id = 3";
 
     //exclusão do funcionario com o ID 1
     private static final String sqlDelete1 = "DELETE FROM Funcionario WHERE id = 1";
@@ -84,18 +84,15 @@ public class Main {
 
             //atualiza a idade do funcionario com o ID 3
             statement.execute(sqlUpdate);
-
-            logger.info("Dados do funcionario " + sqlUpdate + " atualizados com sucesso");
-
+            logger.info("Dados do funcionario atualizados com sucesso: " + (sqlUpdate.toString()));
 
             //exclui o funcionario com o ID 1
             statement.execute(sqlDelete1);
-            resultSet = statement.executeQuery("SELECT * FROM Funcionario");
-            logger.warning("Dados do funcionario " + sqlDelete1 + " excluidos com sucesso");
+            logger.info("Dados do funcionario excluidos com sucesso: " + sqlDelete1.toString());
 
             //exclui o funcionario com o e-mail pedro.santos@empresa.com
             statement.execute(sqlDelete2);
-            logger.warning("Dados do funcionario " + sqlDelete2 + " excluidos com sucesso");
+            logger.info("Dados do funcionario excluidos com sucesso: " + sqlDelete2.toString());
 
         } catch (SQLException e) {
             e.printStackTrace();
