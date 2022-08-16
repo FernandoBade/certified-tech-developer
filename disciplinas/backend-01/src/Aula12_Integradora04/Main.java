@@ -9,7 +9,6 @@
 //
 //        Em seguida, devemos inserir 3 linhas (tuplas) diferentes, depois excluir uma delas (a de sua escolha) e registrar em log para saber qual coluna foi eliminada.
 
-
 package Aula12_Integradora04;
 
 import java.sql.Connection;

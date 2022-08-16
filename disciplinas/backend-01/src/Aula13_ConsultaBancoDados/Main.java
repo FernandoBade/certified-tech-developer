@@ -29,7 +29,7 @@ public class Main {
         //cria a conexão com o banco de dados
         Connection connection = null;
         try {
-            connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
+            connection = ConnectionJDBC.getConnection();
 
             //cria o statement para executar as instruções SQL
             Statement statement = connection.createStatement();
