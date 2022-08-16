@@ -32,6 +32,14 @@ public class Medicamento {
         this.preco = preco;
     }
 
+    public Medicamento(String nome, String laboratorio, Integer quantidade, Double preco) {
+        this.nome = nome;
+        this.laboratorio = laboratorio;
+        this.quantidade = quantidade;
+        this.preco = preco;
+    }
+
+
     public Integer getId() {
         return id;
     }

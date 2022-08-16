@@ -18,10 +18,7 @@ public class ConfiguracaoJDBC {
 
     public ConfiguracaoJDBC() {
         this.jdbcDriver = "org.h2.Driver";
-        this.jdbcURL = ""
-                + "jdbc:mem:medicamentos;"
-                + "DB_CLOSE_DELAY=-1;"
-                + "INIT=RUNSCRIPT FROM create.sql'";
+        this.jdbcURL = "jdbc:h2:mem:medicamentos;DB_CLOSE_DELAY=-1;INIT=RUNSCRIPT FROM 'create.sql'";
         this.nomeUsuario = "sa";
         this.senha = "";
     }

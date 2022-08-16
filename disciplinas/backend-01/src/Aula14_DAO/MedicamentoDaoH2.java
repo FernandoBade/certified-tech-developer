@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Logger;
 
-public class MedicamentoDaoH2 implements IDao {
+public class MedicamentoDaoH2 implements IDao<Medicamento> {
 
     private ConfiguracaoJDBC configuracaoJDBC;
     final static Logger log = Logger.getLogger(MedicamentoDaoH2.class.getName());
@@ -15,15 +15,6 @@ public class MedicamentoDaoH2 implements IDao {
         this.configuracaoJDBC = configuracaoJDBC;
     }
 
-    @Override
-    public Object salvar(Object o) {
-        return null;
-    }
-
-    @Override
-    public Object buscar(Object o) {
-        return null;
-    }
 
     @Override
     public Medicamento salvar(Medicamento medicamento) {
@@ -33,7 +24,7 @@ public class MedicamentoDaoH2 implements IDao {
 
         String query = String.format("INSERT INTO medicamentos"
                         + "(nome, laboratorio, quantidade, preco)"
-                        + "VALUES ('%s', '%s', %d, %f)",
+                        + "VALUES ('%s', '%s', %s, %s)",
                 medicamento.getNome(),
                 medicamento.getLaboratorio(),
                 medicamento.getQuantidade(),
@@ -75,8 +66,12 @@ public class MedicamentoDaoH2 implements IDao {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-
         }
         return medicamentoEncontrado;
+    }
+
+    @Override
+    public Medicamento buscar(Integer id) {
+        return null;
     }
 }
