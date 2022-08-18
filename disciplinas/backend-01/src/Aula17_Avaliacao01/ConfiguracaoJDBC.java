@@ -22,7 +22,7 @@ public class ConfiguracaoJDBC {
 
     public ConfiguracaoJDBC() {
         this.jdbcDriver = "org.h2.Driver";
-        this.dbUrl = "jdbc:h2:~/test;DB_CLOSE_DELAY=-1;INIT=RUNSCRIPT FROM 'avaliacao.sql'";
+        this.dbUrl = "jdbc:h2:~/test;DB_CLOSE_DELAY=-1;INIT=RUNSCRIPT FROM 'Aula17_Avaliacao.sql'";
         this.nomeUsuario = "sa";
         this.senha = "";
     }
