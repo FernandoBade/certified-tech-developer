@@ -8,7 +8,7 @@ public class Circulo extends Figura {
     }
 
     @Override
-    double calcularPerimetro() {
+    public double calcularPerimetro() {
         return 2 * Math.PI * raio;
     }
 }

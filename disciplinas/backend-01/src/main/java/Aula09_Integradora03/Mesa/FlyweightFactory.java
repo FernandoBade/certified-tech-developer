@@ -3,10 +3,10 @@ package Aula09_Integradora03.Mesa;
 import java.util.HashMap;
 
 public class FlyweightFactory {
-    static final HashMap<String, Roupa> tamanhos = new HashMap<>();
-    static final HashMap<String, Roupa> tipoMap = new HashMap<>();
-    static final HashMap<Boolean, Roupa> ehNovoMap = new HashMap<Boolean, Roupa>();
-    static final HashMap<Boolean, Roupa> ehImportadaMap = new HashMap<Boolean, Roupa>();
+    public static final HashMap<String, Roupa> tamanhos = new HashMap<>();
+    public static final HashMap<String, Roupa> tipoMap = new HashMap<>();
+    public static final HashMap<Boolean, Roupa> ehNovoMap = new HashMap<Boolean, Roupa>();
+    public static final HashMap<Boolean, Roupa> ehImportadaMap = new HashMap<Boolean, Roupa>();
 
 
     public static Roupa inserirRoupa(String tamanho, String tipo, boolean ehNovo, boolean ehImportada){

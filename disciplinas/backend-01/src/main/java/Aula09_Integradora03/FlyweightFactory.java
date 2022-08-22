@@ -26,7 +26,7 @@ import java.util.HashMap;
 
 
 public class FlyweightFactory {
-    static final HashMap<String, Triangulo> trianguloMap = new HashMap<>();
+    static HashMap<String, Triangulo> trianguloMap = new HashMap<>();
 
     public static Triangulo obterTriangulo(String cor) {
         Triangulo triangulo = trianguloMap.get(cor);
