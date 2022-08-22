@@ -1,11 +1,3 @@
-D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\Aula18_Maven\Dentista\Main.java
-D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\Aula18_Maven\Dentista\ConnectionJDBC.java
-D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\Aula18_Maven\Dentista\Dentista.java
-D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\Aula18_Maven\Paciente\IDao.java
-D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\Aula18_Maven\Paciente\Endereco.java
-D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\Aula18_Maven\Paciente\Paciente.java
-D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\Aula18_Maven\Paciente\PacienteDaoH2.java
-D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\Aula18_Maven\Paciente\EnderecoDaoH2.java
-D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\Aula18_Maven\Paciente\PacienteService.java
-D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\Aula18_Maven\Paciente\ConfiguracaoJDBC.java
-D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\Aula18_Maven\Paciente\EnderecoService.java
+D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\com\aula17\main\Dentista\Main.java
+D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\com\aula17\main\Dentista\ConnectionJDBC.java
+D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18_Maven\src\main\java\com\aula17\main\Dentista\Dentista.java

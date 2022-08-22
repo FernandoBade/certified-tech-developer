@@ -55,7 +55,6 @@ public class MainTest {
 
             Paciente paciente = new Paciente("José", "Silva", "123456789", "01/01/2001", endereco.getId());
             pacienteService.cadastrar(paciente);
-            pacienteService.buscar(1);
             assertTrue(paciente.getId()!=null);
 
             pacienteService.buscar(1);

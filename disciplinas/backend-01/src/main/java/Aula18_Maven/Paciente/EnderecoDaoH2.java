@@ -61,6 +61,7 @@ public class EnderecoDaoH2 implements IDao<Endereco> {
             ResultSet resultSet = statement.executeQuery(query);
 
             while (resultSet.next()){
+                System.out.println("Endereço encontrado: ");
                 System.out.println(endereco = new Endereco(
                         id,
                         resultSet.getString("rua"),
