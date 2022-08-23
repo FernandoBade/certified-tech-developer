@@ -38,9 +38,7 @@ public class ContatosApp {
             ObjectInputStream objectInputStream = new ObjectInputStream(contatoInput);
 
             contatos2 = (ArrayList) objectInputStream.readObject();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        } catch (ClassNotFoundException e) {
+        } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
         for (Contato contato : contatos2) {
