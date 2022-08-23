@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b1c3c4a7-b17c-4131-bf22-ca89f3956f20" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/apache_log4j_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Aula20_Integradora06/EmpresaFuncionarioApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Aula20_Integradora06/EmpresaFuncionarioApp.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Cm4orMlleiRQqvkyK6f0trT0PF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OneDrive - Badixy/Personal/Estudo/digital-house/certified-tech-developer/disciplinas/backend-01/Aulas01a20&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\src\main\java\Aula18_Maven\Dentista" />
+      <recent name="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\src\main\java\Aula18_Maven" />
+      <recent name="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aulas01a20" />
+      <recent name="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\src\test\java\Aula15_Integradora05_Test" />
+      <recent name="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\src\main\java\Aula18_Maven\Paciente" />
+      <recent name="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01" />
+      <recent name="D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\src\Aula17_Avaliacao01" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Aula06.Mesa" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Aula14_DAO" />
+      <recent name="Aula01" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Aula01.Mesa" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Aula17_Avaliacao01_Test" />
+      <recent name="Aula18_Maven_Test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PacienteDentistaTest">
+    <configuration name="CachorroListApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Aula19_SerializacaoIO.CachorroListApp" />
+      <module name="backend-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Aula19_SerializacaoIO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContatosApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Aula19_SerializacaoIO.Mesa.ContatosApp" />
+      <module name="backend-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Aula19_SerializacaoIO.Mesa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmpresaFuncionarioApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Aula20_Integradora06.EmpresaFuncionarioApp" />
+      <module name="backend-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Aula20_Integradora06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FiguraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Aula01_BoasVindas_Test.Mesa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Aula01_BoasVindas_Test.Mesa" />
+      <option name="MAIN_CLASS_NAME" value="Aula01_BoasVindas_Test.Mesa.FiguraTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PacienteDentistaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Aula18_Maven_Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Aula18_Maven_Test" />
+      <option name="MAIN_CLASS_NAME" value="Aula18_Maven_Test.PacienteDentistaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PacienteDentistaTest" />
+        <item itemvalue="Application.EmpresaFuncionarioApp" />
+        <item itemvalue="Application.ContatosApp" />
+        <item itemvalue="Application.CachorroListApp" />
+        <item itemvalue="JUnit.FiguraTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b1c3c4a7-b17c-4131-bf22-ca89f3956f20" name="Changes" comment="" />
+      <created>1659394606647</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659394606647</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.h2.jdbc.JdbcSQLSyntaxErrorException" package="org.h2.jdbc" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/backend_01$MainTest__2_.ic" NAME="MainTest (2) Coverage Results" MODIFIED="1660864768824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Aula18_Maven_Test.*</FILTER>
+    </SUITE>
+  </component>
+</project>
