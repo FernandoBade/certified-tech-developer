@@ -1,0 +1,5 @@
+# Created at 2022-08-23T23:56:48.621
+Boot Manifest-JAR contains absolute paths in classpath 'D:\OneDrive - Badixy\Personal\Estudo\digital-house\certified-tech-developer\disciplinas\backend-01\Aula18-Maven\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

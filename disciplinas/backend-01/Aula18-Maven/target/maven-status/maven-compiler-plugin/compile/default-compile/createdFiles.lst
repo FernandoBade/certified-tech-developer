@@ -1,0 +1,11 @@
+Paciente\Endereco.class
+Dentista\ConnectionJDBC.class
+Paciente\PacienteDaoH2.class
+Paciente\Paciente.class
+Paciente\EnderecoDaoH2.class
+Paciente\EnderecoService.class
+Dentista\Main.class
+Paciente\IDao.class
+Paciente\ConfiguracaoJDBC.class
+Paciente\PacienteService.class
+Dentista\Dentista.class
