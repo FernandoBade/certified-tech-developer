@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/pedido")
 public class PedidoController {
 
-    @RequestMapping(value = "/findPedido", method = RequestMethod.GET)
+    @RequestMapping (value = "/findPedido",method = RequestMethod.GET)
     public String getPedidoAll(){
-        return "Você buscou por todos os pedidos";
+        return "Você buscou todos os pedidos";
     }
 }

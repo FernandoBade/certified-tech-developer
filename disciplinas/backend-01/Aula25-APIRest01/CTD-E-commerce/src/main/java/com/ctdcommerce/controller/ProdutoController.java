@@ -11,36 +11,34 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/produto")
-
-public class ProdutoControler {
+public class ProdutoController {
 
     @Autowired
     ProdutoService service;
 
     @PostMapping
-    public Produto salvar(@RequestBody Produto produto) throws SQLException {
+    public Produto salvaProduto(@RequestBody Produto produto) throws SQLException{
         return service.salvar(produto);
     }
 
     @GetMapping
-    public List<Produto> buscarTodos() throws SQLException {
+    public List<Produto> buscarTodos() throws SQLException{
         return service.buscarTodos();
     }
 
-    @RequestMapping(value = "/buscaID")
-    public Produto buscarPorId(@RequestParam("id") int id) throws SQLException {
+    @RequestMapping(value = "/buscaPorId")
+    public Produto buscarPorId(@RequestParam("id") int id) throws SQLException{
         return service.buscarPorId(id).isEmpty() ? new Produto() : service.buscarPorId(id).get();
     }
 
     @PatchMapping
-    public void alterar(@RequestBody Produto produto) throws SQLException {
+    public void alterar(@RequestBody Produto produto) throws SQLException{
         System.out.println();
         service.alterar(produto);
     }
 
     @DeleteMapping
-    public void excluir(@RequestParam("id") int id) throws SQLException {
+    public void excluir(@RequestParam("id") int id) throws SQLException{
         service.excluir(id);
     }
-
 }
