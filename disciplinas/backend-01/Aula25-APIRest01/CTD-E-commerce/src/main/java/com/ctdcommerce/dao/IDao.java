@@ -1,13 +1,13 @@
 package com.ctdcommerce.dao;
 
-import com.ctdcommerce.model.Produdo;
+import com.ctdcommerce.model.Produto;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
 public interface IDao<T> {
 
-    Produdo salvar(Produdo produto) throws SQLException;
+    Produto salvar(Produto produto) throws SQLException;
 
     List<T> buscarTodos () throws SQLException;
 
