@@ -1,0 +1,18 @@
+.item_list {
+    background-color:red;
+    list-style: none;  
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div {
+    flex-direction: column;
+    width: 33%;
+    height: 100px;
+    align-items: center;
+    justify-items: center;
+}
