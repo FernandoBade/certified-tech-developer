@@ -5,7 +5,7 @@ const CitiesList = ({ item }) => {
     if (country === "BRA") {
         return <li className={styles.item_list}>
             <h2>{country}</h2>
-            <h3>{city}</h3>
+            <h3 style={{color:color}}>{city}</h3>
             <p>População: {population}</p>
         </li>;
     }
