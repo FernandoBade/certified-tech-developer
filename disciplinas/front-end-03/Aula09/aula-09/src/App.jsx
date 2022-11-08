@@ -88,7 +88,7 @@ import { useState } from "react";
 import "./styles.css";
 
 function App() {
-  const [grades, setGrades] = useState({ 
+  const [grades, setGrades] = useState({
     bancoDeDados: {
       studentsAmount: 0,
       averageGrade: 0
@@ -102,24 +102,30 @@ function App() {
       averageGrade: 0
     },
   })
-  const [formData, setFormData] = useState({subject: "", grade: ""})
+  const [formData, setFormData] = useState({ subject: "", grade: "" })
   function handleSubmit(event) {
     event.preventDefault();
     console.log(formData, grades)
     const amount = grades.bancoDeDados.studentsAmount + 1
     const average = grades.bancoDeDados.averageGrade
-    if (formData.subject == 'database') setGrades({...grades, bancoDeDados: {
-      studentsAmount: amount,
-      averageGrade: (average + formData.grade) / amount
-    }})
-    if (formData.subject == 'backend') setGrades({...grades, backEnd: {
-      studentsAmount: amount,
-      averageGrade: (average + formData.grade) / amount
-    }})
-    if (formData.subject == 'frontend') setGrades({...grades, frontEnd: {
-      studentsAmount: amount,
-      averageGrade: (average + formData.grade) / amount
-    }})
+    if (formData.subject == 'database') setGrades({
+      ...grades, bancoDeDados: {
+        studentsAmount: amount,
+        averageGrade: (average + formData.grade) / amount
+      }
+    })
+    if (formData.subject == 'backend') setGrades({
+      ...grades, backEnd: {
+        studentsAmount: amount,
+        averageGrade: (average + formData.grade) / amount
+      }
+    })
+    if (formData.subject == 'frontend') setGrades({
+      ...grades, frontEnd: {
+        studentsAmount: amount,
+        averageGrade: (average + formData.grade) / amount
+      }
+    })
     console.log(formData, grades)
     // setGrades({...grades, subject. })
   }
@@ -129,18 +135,39 @@ function App() {
       <h1>Média de Alunos por Disciplina</h1>
       <form className="form" onSubmit={handleSubmit}>
         <div className="container_input">
-          <select value={formData.subject} onChange={event => setFormData({...formData, subject: event.target.value})}>
+          <select
+            value={formData.subject}
+            onChange={event =>
+              setFormData({ ...formData, subject: event.target.value })}>
             <option selected disabled>
               Selecione uma disciplina
             </option>
-            <option value="database">Banco de Dados</option>
+            <option
+              value="database"
+              onChange={handleSubmit}
+              >Banco de Dados
+            </option>
+
             <option value="backend">Desenvolvimento Backend</option>
             <option value="frontend">Desenvolvimento Frontend</option>
             <option value="devops">Devops</option>
           </select>
-          <input value={formData.grade} onChange={event => setFormData({...formData, grade: event.target.value})} />
+
+          <input
+            type="number"
+            min="0"
+            max="10"
+            value={formData.grade}
+            onChange={event => setFormData({ ...formData, grade: event.target.value })}
+            required
+          />
+
         </div>
-        <input type="submit" value="Salvar" />
+
+        <input
+          type="submit"
+          value="Salvar"
+        />
       </form>
 
       <div className="container">
